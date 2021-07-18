@@ -1,0 +1,622 @@
+#+TITLE: How to Stay Sane with Your Tasks
+#+SUBTITLE: An Opinionated Guide to Keeping Up with Modern Human Life
+#+AUTHOR: Mohammed Ismail Ansari
+#+DESCRIPTION: An Opinionated Guide to Keeping Up with Modern Human Life
+#+KEYWORDS: to-do, task-management, planning
+#+LATEX_CLASS: book
+#+LATEX_CLASS_OPTIONS: [a4paper,12pt,oneside]
+
+\pagenumbering{roman}
+
+<<Copyight>>
+\vspace*{\fill}
+
+\begin{center}
+https://myterminal.me
+
+Copyright $\copyright$ 2021 Mohammed Ismail Ansari
+
+All rights reserved.
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<AboutTheAuthor>>
+\vspace*{\fill}
+
+\begin{center}
+\section{About The Author}
+\end{center}
+
+| [[./assets/me.jpg]] |
+
+\textbf{Mohammed Ismail Ansari} is a computer and technology enthusiast with a Degree in Electronics Engineering, over a decade of professional experience with computer software development, and more working with programming languages as a hobby.
+
+He likes to work with computer software & hardware, consumer electronics, automobiles, and almost every other mechanical thing that can be tinkered with. He is a [[https://github.com/myTerminal][regular contributor to open-source software]], has a decent reputation across developer communities on the web, and has recently resumed making [[https://www.youtube.com/myTerminal][YouTube videos]] on several topics around computer software and otherwise.
+
+In his free time, he likes to plan and visualize, delete digital files, re-arrange lines of computer code and check items off a list. He is scientific, methodical, and a little over-organized, such that he keeps looking for ways to organize his life and assets a little better and just loves talking about them.
+
+You can visit him at [[https://myterminal.me][https://myterminal.me]] where you can learn more about his work and other ways to reach him. You can feel free to message him {NERD ALERT!} as he is always happy to chat.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Dedication>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{In the memory of my mother, Ruqaiya Ansari.}
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Acknowledgements>>
+\vspace*{\fill}
+
+\begin{center}
+\section{Acknowledgements}
+\end{center}
+
+I would like to thank my parents and family for helping me see the world the way I do.
+
+Thanks to [[https://ryandsouza.in][Ryan D'Souza]] for being my mentor, influence, inspiration, a friend for almost a decade now, and also for helping me improve at pretty much everything I do. I am sure there is still a lot to learn from him, and had I not known him, things would have been very different than they are now.
+
+Thanks to my brother [[https://kamran.teamfluxion.com][Kamran Ahmed Ansari]], for being my technology scout, virtual twin, listening ears, and partner in everything tech (and non-tech). Life would have been very boring without him.
+
+Thanks to my wife for helping me get back on my feet after the tragedy in 2018, and also bearing with me even after me being the most boring person she has ever met.
+
+Thanks to the other people I did not mention here, who have helped me over the years in some way or the other to become what I am today. If you are reading this and remember helping me, you know this is about you.
+
+Last but not the least, all thanks to the Almighty for giving me this human life and also making me grateful for his gifts.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Epigraph>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{"It's so much easier to see the world in black and white. Gray? I don't know what to do with gray..."} - Garrus Vakarian
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Contents>>
+\tableofcontents
+
+
+\newpage
+
+
+<<Preface>>
+\begin{center}
+\section{Preface}
+\end{center}
+
+I have always had an obsession with documenting, planning and organizing the things that I learn and do. The form has changed over the last few decades but the idea has been more or less the same.
+
+When I first came across computers during the mid-90s, I was told that they were used only for creating documents and fax messages at offices. Then a few years later when we managed to get our first computer at home, I learned that they could replace entertainment systems and gaming consoles too. As I kept learning about these fascinating human creations, I discovered more things one could use them for and they continue to surprise me as we speak.
+
+Soon came their smart portable cousins and they started to catch up with their older relatives in almost every thinkable way. They could connect to the internet, exchange data with other machines, and given the kind of mobility they possessed, they were much more practical digital companions than we thought we will ever be able to own.
+
+My interest in pen and paper soon transformed into my friendship with these newer digital friends and that made learning much more efficient and fun. I began exploring new ways to plan and track my daily tasks digitally and since then, it has been an ever-expanding spectrum of possibilities of how I can handle tasks and events around myself a little more systematically.
+
+Since the time I adopted a To-Do system into my daily routine, many elements of my workflow and even my expectation from such a tool has been changing continuously. Also, my dependence on my To-Do list has only grown over the years and has become an inseparable part of my material life. 
+
+I have experienced quite a few task-management tools and applications across several computing platforms. After a handful of shifts in the way I look at these things now, I have realized that there is no limit on how much (and to what extent) one can organize their life digitally. For someone as methodical as me, this makes even more sense, such that one would know exactly what they are up to, at any point of time of the day.
+
+I wrote this short book to share a few of my experiences around planning and productivity and I hope to be able to enlighten you such that your workflow gains at least a thing or two and help you navigate your life a little better.
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+<<Introduction>>
+
+#+LATEX: \chapter{Introduction}
+
+[[./assets/multitasking-1733890-scaled.jpg]]
+
+Looking closely, everything in human life is based on tasks and deadlines. There are some that we "like" to do, and then there are those that we "need" to get done, with a little bit of overlap between the two. After putting everything together, one can easily realize that there is an almost infinite number of things to do in a day within a finite amount of time.
+
+It might as well be true that this imbalance between the many things to do and the little time we have, could have been there forever, but it is also true that our ancestors did not live as complicated of life as we do today. Among <<meetings>>meetings and gatherings to attend, groceries to restock, payments to make, etc., most of these things did not even exist going back a couple of decades. This does change with the part of the world or the section of society you live in, but I think you get the point.
+
+If one would go on listing the number of things they do (or are expected to do) in a day (or a week), the list would be massive, even without overdoing it by listing those smaller tasks that usually are considered as basic human nature. At times, life may appear as a game in the way that it keeps throwing increasingly difficult tasks towards you, waiting for a single missed deadline that is often followed by disappointment.
+
+Also, if you would have ever noticed, taking care of the overwhelmingly large number of tasks leaves you with one thing only: many more similar tasks staring at you, waiting to be picked up and worked on. On the flip-side, if at all there comes a situation where you have completed everything in your bucket with nothing more to do, your inner self (at least if you are the kind of person I am) will force you to look for more things to do, eventually filling up the bucket again. In short, this is a never-ending loop, at least till the day you are alive. However, if you have discovered that feeling of accomplishment you get after seeing an empty To-Do list at the end of the day, not only will it all be worth it, but you might as well get addicted to checking items off a list, sort of the way I do.
+
+In the following chapters, we will talk a little more about why you might need a system in place, followed by a few broad categories of tools that one can use to achieve "harmony" with their daily tasks. Once you get there, hopefully, the control will not just flow in one direction, but both the parties (you and your tasks) will work together to make sure things get done smoothly, and on time.
+
+#+LATEX: \chapter{Need for a System}
+
+[[./assets/memo-2331062-scaled.jpg]]
+
+Though the problem that we just started to talk about is as real as it gets, each one of us has different ways to look at the same problem. While some see it as a big issue of concern, others cannot even see the problem. The same is the case in the way we solve things, in the sense that while some of us just panic, some manage to figure out the most optimal solution to it, and the rest of us just go overboard to solve it, eventually adding more problems. No one is particularly "wrong" here, but that is how different we are from each other.
+
+Regardless of who we are and what our daily lives are like, we most certainly need things getting done as a part of our typical day.
+
+
+\newpage
+
+
+#+LATEX: \section{Living without a system}
+
+It is truly fascinating how most of us do not even realize a need to organize and track their daily lives while they still manage to meet most of their deadlines, balance their lives perfectly as if they knew exactly how to pull things towards the end, never letting even a single thing slip through their hands. You may call me weak, but I think of such people as extra-ordinarily talented. Not all of us are like that, many of us being lazy, getting easily distracted, simply having a weak memory, or having all of these characteristics at once.
+
+Most of the people who have inspired me during the last few decades or those whom I look up to, all have their unique systems in place to make sure they are up-to-date with their lives.
+
+#+LATEX: \section{Dependence on machines}
+
+Since the late 90s when I came across computers a little closely, one thing I have learned to appreciate about them is their ability to act as our second brains. There have been several instances when I have been called out in my family for relying a little too much on reminders and machines. The belief was that if one does not use their brain to remember things and instead depends on external things especially machines, they will soon find themselves pretty much helpless without those external dependencies.
+
+I did believe in it for a while initially, but then I later realized that by letting external systems remind us to do things, we are not exactly creating dependencies, but are delegating a part of the task to that entity, be it a list or a machine. This way, while the delegation takes care of reminding us about that "something" to be done, our minds can dedicatedly focus on getting it done the way we want, or rather, the "right" way.
+
+#+LATEX: \section{What about screen time?}
+
+In recent years, the term <<screen-time>>screen time[[glossary-screen-time][[/1/]]] has gained a lot of popularity, thanks to all those arguably unproductive entertainment platforms that eventually end up getting counted alongside the most productive of tasks done on a digital device. This brings up a new issue while relying on our digital companions for planning and tracking where one might find themselves facing embarrassment for living a life full of machines. I do not have a solution for this disbelief, but the only way I would justify staring at a <<task-management>>task-management app on my computer (or a mobile device) screen is to term it as important for myself in a positive way.
+
+This is exactly like what a few friends of mine used to do back in the day when <<usb-drives>>USB flash drives were not as popular as they are today. They used <<writable-disks>>writable disks instead of the more practical <<re-writable-disks>>re-writable disks (that could be erased and re-recorded hundreds of times) because they believed that re-writable disks attracted malware while the writable ones did not.
+
+To me, just as we could choose what to write on a disk instead of choosing a different data recording technology, we can also choose how to use technology instead of classifying it as time-waste.
+
+#+LATEX: \section{Things may be in control for now}
+
+If you think you can remember everything without a means of reminding yourself about stuff that is (or should be) happening, you might as well be overestimating the ability of an average human brain. One might also think that they are doing completely fine at the point of life they are right now, but as life progresses, more and more responsibilities get thrown at you, and in many cases, the number of people depending on you increases too. Sooner or later, you are bound to get overwhelmed and eventually find yourself looking for means of <<daily-reminders>>daily reminders.
+
+#+LATEX: \section{We all need reminders}
+
+There is not a single person that I have met, who has never written down something on a piece of paper to make sure they don't forget it when the time comes. So you see, we all do it at least indirectly, it is just that most of us do not admit or realize.
+
+#+LATEX: \section{My evolving system}
+
+Back before I had a task-management system in place, I never had any reminders or To-Do lists, not even those hand-written notes on sheets of paper. As I grew older, and after a few experiments I performed with my workflow, I started to introduce smaller elements into it one at a time. Before I even realized it, a system was in place, and now I cannot imagine making it through to the end of a day without referring to my plan several times and still have a sound sleep at night.
+
+#+LATEX: \chapter{Calendars}
+
+[[./assets/day-planner-828611-scaled.jpg]]
+
+Calendars are probably the most natural <<dashboards>>dashboards we can think of to keep up with the events happening in our lives. Practically all tasks that need to be taken care of, have a time (and probably place) associated with them. The "place" element could be handled differently by different people, but the "time" element makes calendars to be a great candidate to hold tasks and automatically turn them into reminders. The effectiveness of such a system, like any other system, depends on how often one looks at our calendars.
+
+Like most other tools that we will be talking about in this book, a calendar could either be a <<digital-calendar>>digital calendar rendered on a screen according to the user's preference, or it could be one of those printed calendars that we used to hang on walls or even those that some of us still keep on our desks.
+
+
+\newpage
+
+
+#+LATEX: \section{The calendar in our house}
+
+My mother was a very organized person, someone who rarely missed anything, to the point that she would remember the names and birthdays of your kids if she even just met you twice. She was not quite a digital person, and that was partly because she never got to learn computers beyond <<microsoft-paint>>Microsoft Paint (that too with a lot of hand-holding) and also because she believed in not relying on computers more than she thought was necessary, which in her case was "not at all necessary".
+
+The <<wall-calendar>>wall calendar back at home was her reminder such that she used to note down every possible thing she wanted to keep a track of. Apart from the scattered notes that included hand-written financial records, lists of invitees for the family events, etc., the wall calendar was her primary <<database>>database.
+
+We used to get new wall calendars every year, mostly through my father's workplace, and the rest from family friends who wanted to promote their business by distributing branded calendars all over. The first thing that my mother used to do as soon as we received and chose a "primary" calendar for the year was to transfer the <<recurring-events>>recurring events and her notes from the old one to the new one. Though I was not quite convinced with her method of manually migrating hand-written entries and notes between calendars, what I do appreciate is that she at least did something to help her remember not only the important dates in the family but also other events that the rest of us did not even find important.
+
+#+LATEX: \section{Digital calendars}
+
+When using calendars as a means to remember the events around us, one clear limitation is that one could almost only mark them with dates without a means to record the time. However, when using digital calendars, blocking time for a task becomes easy. Moreover, for the ones who prefer a digital calendar as a planning tool, including for tasks that do not have an associated time, they can pick an arbitrary time to start with, and can then obviously move it around later if at all needed. A calendar can also help one gauge the finite number of things they can get done during a regular work (or non-work) day.
+
+#+LATEX: \section{My Outlook calendar at work}
+
+I do not use a calendar as effectively as I would want to, but I do have been following the practice of keeping my calendar at work up-to-date with <<meetings-1>>meetings, <<appointments>>appointments, and tasks. I even take it to the level that I also have time allotted for my individual <<coding>>coding/<<testing>>testing/<<documentation>>documentation tasks that involve nobody else but just myself. Not only does this help me plan for my workday, often a few days in advance, such that I only commit to my team and colleagues for the amount of work I can pick up and drag till completion, but it also helps other people at my organization get the most accurate idea about my availability for a particular day. This also prevents <<double-booking>>double-booking such that I do not have to later choose between which one among those multiple overlapping meetings I can attend.
+
+I also make sure I keep my calendar as colorful as I can by annotating all the events with a color scheme so it is easier for me to know the nature of the meetings/appointments I have for the day with just a glance, instead of having to read through those items in detail. I do run out of color choices in <<microsoft-outlook>>Microsoft Outlook (which is the tool I have always had at work) and often have to assign different shades of the same color for activities or <<projects>>projects of similar nature, or at times even share colors between projects or <<categories>>categories.
+
+With this arrangement in place, I also have an indefinitely recurring appointment for myself scheduled at the start of every day. This is the time I allot to have a look at my current workday, make adjustments and mentally prepare for the interesting (and non-interesting) meetings I have for the day.
+
+#+LATEX: \section{My personal Google calendar}
+
+I wish I had a system similar to my work calendar even outside of work. However, given how I take care of most of my life with other (and more effective) means (that I'll cover in the upcoming sections soon), I have not been able to convince myself to spend time setting one up yet. My current primary personal calendar is my <<google-calendar>>Google Calendar, though I do have other calendars from a few more providers like my mailbox.org[[glossary-mailbox-org][[/2/]]] account, given how most of my presence is still on my <<gmail>>Gmail account, it is very unlikely this will ever change.
+
+#+LATEX: \section{Calendars with email accounts}
+
+Most email providers come with a complete <<pim>>PIM[[glossary-pim][[/3/]]] suite such that they include <<contacts>>contacts, tasks, and calendars. This includes the popular ones that almost all of us have, like Gmail, and also other relatively uncommon email providers. Though the features they provide differs by a great degree depending on the platform, most of the ones that I have seen have enough to make them usable.
+
+#+LATEX: \chapter{Emails}
+
+[[./assets/email-6370595-scaled.jpg]]
+
+Pretty much all the platforms and services we use today involve emails as the primary mode of communication. It is very different than what it used to be just a couple of decades back when not everyone had an email address. Your email <<inbox>>inbox can potentially be used to keep a track of what all is going on in your life, what items need attention, what needs to be worked on, and what you are waiting for at a particular point.
+
+
+\newpage
+
+
+#+LATEX: \section{Using emails as a dashboard}
+
+Most emails that we receive during a day are either <<notifications>>notifications, <<advertisements>>advertisements, or <<spam>>spam. With the sheer number of items in the <<mailbox>>mailbox, it is easy to confuse important emails with relatively unimportant ones. There is a lot one can do with emails, especially if they can visualize their <<conversations>>conversations as <<checklist>>checklist items. To achieve such a setup, below are a few changes one can perform in the way they use emails.
+
+1. *Conversations View*
+
+   Every email that arrives in our mailbox is shown as a separate item. This is not the most helpful as many emails are a part of a conversation between two or more people. One can enable Conversations view (or whatever their email provider calls it) in their email folders. This could be done just in a few folders like the Inbox, or also in other mail folders. Almost all email readers including <<webmail>>webmail[[glossary-webmail][[/4/]]] apps provide this feature that smartly groups conversations with matching email subject lines into a single conversation. How the conversation list appears may be different across tools, but this already helps simplify the list to a massive degree. Microsoft Outlook shows the newest email at the top of the conversation while Gmail does the exact opposite. Regardless of the order, it completely changes what your email folder looks like. Imagine searching through a list of hundreds of emails you receive in a day for that one particular response from an email <<participant>>participant when all emails appear in a single flat list. With a bigger list, there are more items to traverse through, especially when you are not sure what exactly is to be searched for. There was a time when text messages on our mobile phones used to be shown as separate items instead of as conversations. Now we do not look at them the way we did before, and instead are very used to message threads with timestamps. I hated the <<people-centric>>"people-centric"[[glossary-people-centric][[/5/]]] conversation view when that was introduced in <<windows-mobile>>Windows Mobile 6.1[[glossary-windows-mobile-6-1][[/6/]]], but once I got used to it, I could not go back to a flat list. We just have to do the same for our emails.
+
+2. *Mail folders*
+
+   After converting emails into conversations, the next thing one could do is to create plenty of email folders to hold related conversations together. This enables further sorting of emails and gets rid of even more clutter. Some email providers allow nested folders, which increases the scope of organization one can achieve here. There is no such rule as to how one should arrange these folders and they can do it according to what makes sense to them, especially with the kind of emails they receive and the kind they find more important than the other. Some providers like Google use <<tags>>tags in place of folders, which if you get used to once, you might never need folders again. To me, tags appeared weird when I first tried to use them as I kept confusing them with folders, totally missing the difference. When I finally realized that you can have multiple tags on an email, I never went back, and in fact, now I miss tags on other email platforms I get to work with.
+
+3. *Inbox Zero*[[glossary-inbox-zero][[/7/]]]
+
+   With all the conversations in place and all those mail folders to hold them, the next natural step would be to move all conversations from the <<inbox-1>>inbox into their respective folders. As mentioned earlier, these could be for <<initiatives>>initiatives, <<projects-1>>projects, <<categories-1>>categories, or whatever works for the user. After this step takes almost everything out of the way, all that gets left behind are those items that cannot be thrown into a folder because they need attention or "doing" of some kind. There will be those emails that one finds irrelevant, and those could either be deleted or moved to a dedicated <<junk-folder>>"junk" folder for future reference, just in case. Many email providers and tools also let you create automated rules that one can set up to automatically move emails matching a particular pattern either according to the subject, audience, or the email body itself, into a specific folder. I have several of such rules especially at my workplaces to reduce the manual effort that would otherwise be needed to get these emails out of the way myself. I guess being lazy is a good thing as it pushes us to come up with smarter ways to automate things and achieve the same result with lesser work.
+
+With the above changes and such a system in place, all that needs to be taken care of is that all possible pending items are handled (either worked on or responded to) before you end the day. The results will be surprising, not only giving one extra peace of mind but also help them bring the number of missed deadlines and work assignments down to zero.
+
+#+LATEX: \section{To-Do list from emails}
+
+Just as you can tag your emails as important, most providers also allow you to flag them as tasks. At a point in time, I used to use this feature a lot to make a separate task list out of my work emails. You can also set a due date for those tasks, and view them either in your mailbox or in a separate dedicated To-Do list. This might work for most of us unless you are the kind of person that wants more control over their task list, which is something we will look at in the next chapter.
+
+One can also <<star>>"star" an email, <<snooze>>"snooze" it so that it disappears from the list for the time being and shows back up at a specified time, and do much more with modern email platforms.
+
+#+LATEX: \chapter{To-Do lists}
+
+[[./assets/lists-6131213-scaled.jpg]]
+
+If you are the kind of person who is not convinced with the limited nature of task management with calendars and emails, you might be needing a dedicated To-Do list solution. This opens up an entirely new area of organizing your life, and it happens to be one that I can talk (or write) about for hours. Just the sheer number of possibilities and how there could be so many different ways to implement a To-Do list is very fascinating.
+
+
+\newpage
+
+
+#+LATEX: \section{A standard To-Do list}
+
+A To-Do list in the most basic form is where one can note down a list of tasks, track them, and mark them complete. It can be a simple flat list noted down on a piece of paper with a pen, or a list of items in a digital task-management tool. There is no standard form to do this, which is why we see so many variants today. The form, or rather the platform is not important, all that matters is that there is a list containing items that need to be "done", with possible metadata like <<priorities>>priorities, <<tags-1>>tags, dates, <<lists>>lists, etc.
+
+<<sticky-notes>>Sticky notes[[glossary-sticky-notes][[/8/]]] also form a great way to create a physical list of items to remember. Some stick them on their office walls, some to their desks, and some even at the edges of their computer screen: so convenient! Some people also use such apps on their computers to simulate sticky notes.
+
+#+LATEX: \section{Different forms of To-Do lists}
+
+We all have different lives, roles, and workflows, so what might work for one may not at all fit for the other. Also, one's requirements for (and expectations from) a To-Do system may change a few variables:
+
+1. *Their phase of life and responsibilities*
+
+   To be the same person, doing the same things all your life is close to impossible. We grow up, attract responsibilities towards us (some intentionally and some otherwise), effectively changing the way we perceive life and how it treats us.
+
+2. *Your experience with these tools*
+
+   Things would be very different when you just start your To-Do experience as compared to a point when you will be a pretty experienced To-Do-er. We human beings also cannot settle for the same thing for long such that we keep looking for something new and different as we gather experience working with different solutions. Also, after some time, you know exactly what works for you and what does not, so you want more of one thing in your tool and less (or probably none) of the other.
+
+#+LATEX: \section{My To-Do system}
+
+I remember back when I first started using a To-Do list, it used to be a flat list of items that could only be marked as "complete". Then came in multiple <<lists-1>>lists to organize those tasks into <<categories-2>>categories, followed by <<recurring-tasks>>recurring tasks for a smoother repetition, tags to group and find tasks of a particular type, and then everything else followed. I did not ever use a physical hand-written list, but I started with a software tool that was available for a very specific platform. There was no <<synchronization>>synchronization possible and my items were quite vulnerable to data loss, for which I had to perform regular manual backups. After I moved to online tools like TickTick[[glossary-ticktick][[/9/]]] and eventually Remember The Milk[[glossary-remember-the-milk][[/10/]]], things changed for me dramatically. Now when I look back, I realize there has been a massive shift in the way I use these tools.
+
+#+LATEX: \section{Keeping it simple or going overboard}
+
+After figuring out what fits your workflow, you would think that you have finally figured it out and that you would never need anything different, until you come across a shiny new tool, or end up discovering a feature within the same tool that you have been using and ignoring it all this while. I was pretty sure I used everything I needed from Remember The Milk, which if I were to list a small subset of, would be recurring tasks (including custom repeat types), nested <<subtasks>>subtasks, <<smart-lists>>smart lists, tags, etc. Then I came across one possible way of using the <<start-date>>"Start Date" field along with "Due Date", which was the feature I never understood the reason for. Since I realized its use, I could never imagine my task list without start dates on my items.
+
+#+LATEX: \section{Getting used to more tasks}
+
+There was a time when having about a hundred tasks (including one-time and recurring ones) used to stress me out, and now even a couple of hundreds of them do not bother me much. So this means that using these tools for a while also teaches you to stay calm when there are tens of pending <<action-items>>action items staring at you. I have also learned that just noting down these tasks does not help much in itself, but the way you organize them, making sure they show up in front of you at the right time helps things move smoothly.
+
+With filtering features like tags, lists, and smart lists, the number of items visible at a time can be reduced. With lesser items to look at at a particular time, things are not that scary anymore.
+
+#+LATEX: \chapter{A System that Works For You}
+
+[[./assets/typewriter-801921-scaled.jpg]]
+
+For most of us, using a single tool to manage our entire lives will almost be impossible. There might most probably be multiple tools involved, working in conjunction with each other in a sequence that depends heavily on your own life. Not only the way these tools interact with each other be different, but each of us might also have different tools altogether. One can experiment and find out what works for them.
+
+
+\newpage
+
+
+#+LATEX: \section{An example with multiple tools}
+
+Let us walk through an example scenario for a setup that includes an email inbox, a calendar, and a To-Do list in action.
+
+1. An email arrives in the mailbox mentioning an action item
+2. A meeting gets scheduled for a discussion over the task
+3. Additional calendar entries are created to spend time on research over the next couple of days for that task before the actual meeting occurs
+4. A new task entry with appropriately detailed subtasks is also created to make sure nothing is missed
+5. The meeting occurs, items change, translating to changes in the subtasks
+6. Subtasks are worked on one at a time, in the order that is the best suited and eventually marked complete
+7. After the completion of the task itself, the email that has been waiting in the inbox all this while is responded to, and finally moved out of the list into an appropriate email folder, provided there is no pending action on the task
+8. Time to move on to other tasks...
+
+#+LATEX: \section{Creating tasks on the go}
+
+When starting with a task-management system, especially with a To-Do list, not all tasks need to be created beforehand. One can start with what they have at the time of entry, and then on completion of the task, if they foresee it to be a recurring one, they can mark it as "repeating" such that it shows up again in the future according to the expected repeat pattern or frequency.
+
+#+LATEX: \section{A few of my failures}
+
+I usually have more than one "exciting" things that I am working on at the same time. Also, often they are entirely different but the other one needs to be picked up before the first one is complete. This makes it difficult to pick items and focus on them. Below are the things I have tried to solve the problem and eventually failed at it:
+
+1. *Task themed days*
+
+   Once upon a time, I tried assigning themes to days of the week such that there was one dedicated day for reading, one for evaluating a new tool, one for working on my software projects, etc. This seemed like a great idea at the start, but I soon found myself spending time on things that were not supposed to be worked on for that particular day. When ideas flow, there is no stopping or snoozing them, so this did not work. When I think about it now, your life will never be balanced with a proportionate number of tasks in each category.
+
+2. *Multiple focus-points during the week*
+
+   I have a dedicated weekly recurring task that I use for setting <<focus-items>>focus items for the week. This helps me look at only a few hand-picked items for that entire week, obviously alongside the ones that are scheduled for particular days. This does work if the number of concurrent items under focus is small, but as soon as it exceeds three to four a week, it quickly becomes a mess. Setting more things to focus on does not multiply the focus, it just divides it eventually bringing it down to zero.
+
+3. *Over-expecting from myself*
+
+   I often underestimate tasks, plan for a little too much, only considering the happy-case scenario. When reality strikes, deadlines get heavily affected, and then comes chaos. I have learned that I should not expect too much from myself and always account for breaks, just in case.
+
+4. *Having a lot of tasks scheduled at once*
+
+   Just like too many focus points cause difficulty problems, having a lot of items scheduled for a single day also brings in stress. Even though many items on a regular day are pretty quick and easy, the size of the list makes things appear out of hand and it adversely affects my efficiency.
+
+5. *Context switching*
+
+   Regardless of how many things have been scheduled for a particular day (or week), switching between multiple tasks rarely yields positive results. It often happens that the total amount of time taken to complete two tasks when picked up in parallel exceeds that needed when they are picked up one at a time.
+
+#+LATEX: \section{Starting small}
+
+Pretty much all modern task-management tools offer a way for you to work with dates (and times), <<priorities-1>>priorities, <<lists-2>>lists, tags, etc. Many offer lists, recurring tasks (which is a blessing), sub-tasks, notes, and some even let you have smart filters and the ability to share your tasks with other people. I am sure these terms may look scary to at least some of us who are just starting with these tools, but the thing to remember is that you can always start small. It could just be a very simple setup with tasks organized into a couple of lists with dates assigned to them. Soon, before you even realize it, you will find yourself with a reasonably detailed setup that will fit you better than it will for anyone else.
+
+#+LATEX: \section{Your tools may change}
+
+Not only will the tools you use change with time, but they might also make you change the way you work by influencing you. I do often carry out an arguably unproductive (but super-interesting) activity of evaluating "better" tools to adopt into my workflow, but if you know me, I have in a way been stuck to Remember The Milk for quite a while now, and I do not see a way out of it any time soon.
+
+However, before Remember The Milk, I had to hop through several other tools to finally learn what works for me and fits my workflow. Part of me loves the tool I use currently, but then there is the other part of me that keeps wondering if there is anything better out there that could potentially help me express my life into tasks in a more elaborate manner.
+
+#+LATEX: \section{Choosing tools that can travel with you}
+
+Across all the different operating systems I've used on my various digital devices including my personal (and work) desktop and laptop computers, mobile phones, Pocket PCs[[glossary-pocket-pcs][[/11/]]], etc., the only application that I have always carried with me in the past several years is Remember The Milk, which has been my choice of To-Do list platform for almost five years now. I have been wishing to have it on my SmartWatch and my Android Auto[[glossary-android-auto][[/12/]]] system too, so even if I could not create tasks on those smaller screens, I could at least have a glance at my To-Do list more often.
+
+Choosing a tool that is available on all platforms that you deal with is a good idea. Having said that, most of these tools also work within a web browser so that eliminates (or at least minimizes) the chance of you having to live without that one tool on a particular platform.
+
+#+LATEX: \section{Discovering your own system}
+
+When you start with a system, you may adopt tools and ideas from other people, and that is one of the easiest ways to get started. The people whom you follow must have already gone through several hurdles, and they might have also figured out workarounds for very particular issues, which might save you a lot of time. However, one thing worth noting is that no two people are the same and hence it is very important to customize the way you use the tool (or tools) according to your own needs.
+
+It is also likely that you might come up with a unique way of working with a tool. So go out there, see what works for you, and share it with the rest of us so that we can all learn from each other.
+
+#+LATEX: \chapter{Glossary}
+
+1. <<glossary-screen-time>>*Screen-time*
+
+ Screen time is the amount of time spent using a device with a screen such as a smartphone, computer, television, or a video game console. Read more at [[https://en.wikipedia.org/wiki/Screen_time]].
+
+2. <<glossary-mailbox-org>>*Mailbox.org*
+
+ Along with many more things, [[https://mailbox.org][/mailbox.org/]] is also a secure email provider.
+
+3. <<glossary-pim>>*PIM*
+
+ A personal information manager (often referred to as a PIM tool or, more simply, a PIM) is a type of application software that functions as a personal organizer. Read more at [[https://en.wikipedia.org/wiki/Personal_information_manager]].
+
+4. <<glossary-webmail>>*Webmail*
+
+ Webmail is an email service that can be accessed using a standard web browser instead of being accessed from a dedicated software installed on the computer.
+
+5. <<glossary-people-centric>>*People-centric*
+
+ This term was used to promote unpopular mobile devices like [[glossary-windows-mobile-6-1][/Windows Mobile devices/]] to the regular audience wherein the new update made a few communication software on the device more people-focused with features like message threads, etc.
+
+6. <<glossary-windows-mobile-6-1>>*Windows Mobile 6.1*
+
+ Windows Mobile 6.1 was the semi-final version of Windows Mobile before the rebranding as Windows Phone that started with version 7. Read more at [[https://en.wikipedia.org/wiki/Windows_Mobile#Windows_Mobile_6.1]].
+
+7. <<glossary-inbox-zero>>*Inbox Zero*
+
+ Inbox Zero in a nutshell is a way of reducing the number of emails in one's email inbox down to almost zero. Read more about it at [[https://www.howtogeek.com/413507/what-is-inbox-zero-and-how-can-you-achieve-it]].
+
+8. <<glossary-sticky-notes>>*Sticky notes*
+
+ Small, colored, adhesive notes that can be stick on almost all surfaces and removed without any residue.
+
+9. <<glossary-ticktick>>*Tick Tick*
+
+ [[https://www.ticktick.com][/TickTick/]] is one of the many To-Do list tools available across devices and platforms.
+
+10. <<glossary-remember-the-milk>>*Remember The Milk*
+
+ [[https://www.rememberthemilk.com][/Remember the Milk/]] is an application service provider for Web-based task- and time-management.
+
+11. <<glossary-pocket-pcs>>*Pocket PCs*
+
+ A class of personal digital assistants (PDA) that runs the Windows Mobile operating system. Read more about it at [[https://en.wikipedia.org/wiki/Pocket_PC]].
+
+12. <<glossary-android-auto>>*Android Auto*
+
+ Android Auto is a mobile app developed by Google to mirror features of an Android device, such as a smartphone, on a car's dashboard information and entertainment head unit. Read more about it at [[https://en.wikipedia.org/wiki/Android_Auto]].
+
+#+LATEX: \chapter{Bibliography}
+
+1. [[https://pixabay.com/users/geralt-9301][Gerd Altmann]] (2021) /Multi-tasking, thinking man/. Available at: https://pixabay.com/illustrations/man-head-arrows-multitasking-6340117 (Accessed: July 07 2021)
+
+2. [[https://pixabay.com/users/geralt-9301][Gerd Altmann]] (2016) /Multi-tasking, subconscious mind/. Available at: https://pixabay.com/illustrations/multitasking-contour-blank-1733890 (Accessed: July 07 2021)
+
+3. [[https://pixabay.com/users/alexandra_koch-621802][Alexandra Koch]] (2017) /Memo, post-it/. Available at: https://pixabay.com/illustrations/memo-postit-notitzzettel-post-it-2331062 (Accessed: July 07 2021)
+
+4. [[https://pixabay.com/users/free-photos-242387][Free-Photos]] (2015) /Day-planner, calendar/. Available at: https://pixabay.com/photos/day-planner-calendar-organizer-828611 (Accessed: July 07 2021)
+
+5. [[https://pixabay.com/users/geralt-9301][Gerd Altmann]] (2021) /Email, smartphone/. Available at: https://pixabay.com/photos/email-mail-hand-smartphone-write-6370595 (Accessed: July 07 2021)
+
+6. [[https://pixabay.com/users/geralt-9301][Gerd Altmann]] (2021) /To-Do list/. Available at: https://pixabay.com/illustrations/lists-to-do-paper-checkbox-tasks-6131213 (Accessed: July 07 2021)
+
+7. [[https://pixabay.com/users/free-photos-242387][Free-Photos]] (2015) /Typewriter/. Available at: https://pixabay.com/photos/typewriter-book-notes-paper-801921 (Accessed: July 07 2021)
+
+#+LATEX: \chapter{Index}
+
+\textbf{\emph{A}}
+
+action items, [[action-items][*16*]]
+
+advertisements, [[advertisements][*11*]]
+
+appointments, [[appointments][*8*]]
+
+\\
+
+\textbf{\emph{C}}
+
+categories, [[categories][*8*]], [[categories-1][*12*]], [[categories-2][*16*]]
+
+checklist, [[checklist][*11*]]
+
+coding, [[coding][*8*]]
+
+contacts, [[contacts][*9*]]
+
+conversations, [[conversations][*11*]]
+
+\\
+
+\textbf{\emph{D}}
+
+daily-reminders, [[daily-reminders][*5*]]
+
+dashboards, [[dashboards][*6*]]
+
+database, [[database][*7*]]
+
+digital-calendar, [[digital-calendar][*6*]]
+
+documentation, [[documentation][*8*]]
+
+double-booking, [[double-booking][*8*]]
+
+\\
+
+\textbf{\emph{F}}
+
+focus items, [[focus-items][*19*]]
+
+\\
+
+\textbf{\emph{G}}
+
+Gmail, [[gmail][*8*]]
+
+Google Calendar, [[google-calendar][*8*]]
+
+\\
+
+\textbf{\emph{I}}
+
+initiatives, [[initiatives][*12*]]
+
+inbox, [[inbox][*10*]], [[inbox-1][*12*]]
+
+\\
+
+\textbf{\emph{J}}
+
+junk folder, [[junk-folder][*12*]]
+
+\\
+
+\textbf{\emph{L}}
+
+lists, [[lists][*15*]], [[lists-1][*16*]], [[lists-2][*19*]]
+
+\\
+
+\textbf{\emph{M}}
+
+mailbox, [[mailbox][*11*]]
+
+Microsoft Outlook, [[microsoft-outlook][*8*]]
+
+Microsoft Paint, [[microsoft-paint][*7*]]
+
+meetings, [[meetings][*1*]], [[meetings-1][*8*]]
+
+\\
+
+\textbf{\emph{N}}
+
+notifications, [[notifications][*11*]]
+
+\\
+
+\textbf{\emph{P}}
+
+participant, [[participant][*11*]]
+
+people-centric, [[people-centric][*11*]]
+
+PIM, [[pim][*9*]]
+
+priorities, [[priorities][*15*]], [[priorities-1][*19*]]
+
+projects, [[projects][*8*]], [[projects-1][*12*]]
+
+\\
+
+\textbf{\emph{R}}
+
+re-writable disks, [[re-writable-disks][*5*]]
+
+recurring events, [[recurring-events][*7*]]
+
+recurring tasks, [[recurring-tasks][*16*]]
+
+\\
+
+\textbf{\emph{S}}
+
+screen time, [[screen-time][*4*]]
+
+smart lists, [[smart-lists][*16*]]
+
+snooze, [[snooze][*13*]]
+
+spam, [[spam][*11*]]
+
+star, [[star][*13*]]
+
+start date, [[start-date][*16*]]
+
+sticky notes, [[sticky-notes][*15*]]
+
+subtasks, [[subtasks][*16*]]
+
+synchronization, [[synchronization][*16*]]
+
+\\
+
+\textbf{\emph{T}}
+
+tags, [[tags][*12*]], [[tags-1][*15*]]
+
+task-management, [[task-management][*5*]]
+
+testing, [[testing][*8*]]
+
+\\
+
+\textbf{\emph{U}}
+
+USB flash drives, [[usb-drives][*5*]]
+
+\\
+
+\textbf{\emph{W}}
+
+wall calendar, [[wall-calendar][*7*]]
+
+webmail, [[webmail][*11*]]
+
+Windows Mobile, [[windows-mobile][*11*]]
+
+writable-disks, [[writable-disks][*5*]]
+
+# Local Variables:
+# eval: (visual-line-mode)
+# End:
+ End:
+End:
+-mode)
+# End:
