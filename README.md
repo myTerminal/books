@@ -1,2 +1,17 @@
-# books
-Source and output of a few books I have written
+# Books
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+A few books I have written
+
+## What this repository contains
+
+This repository contains the source for a few books I have written. Each book comes with instructions for building it or otherwise you may read it in its source form.
+
+## Books
+
+1. [How to Stay Sane with Your Tasks](01_how_to_stay_sane_with_your_tasks)
+
+## How you can support me
+
+These books may be published on more platforms and services in the future. Your reviews on those platforms are highly appreciated as they will only help me improve.
