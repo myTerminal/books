@@ -2,7 +2,9 @@
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-This book has been published on the following platforms:
+To learn about the platforms you can find this book on, use one of these universal links: [how-to-stay-sane-with-your-tasks](https://books2read.com/how-to-stay-sane-with-your-tasks) or [u/mB2QaA](https://books2read.com/u/mB2QaA).
+
+Otherwise, this book can be found on the following platforms at this point:
 
 1. [Google Play](https://play.google.com/store/books/details?id=hOU3EAAAQBAJ)
 
