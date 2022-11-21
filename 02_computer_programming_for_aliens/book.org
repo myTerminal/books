@@ -1,0 +1,1198 @@
+#+TITLE: Computer Programming for Aliens
+#+SUBTITLE: A Guide to the Art for Non-Programmers
+#+AUTHOR: Mohammed Ismail Ansari
+#+DESCRIPTION: A Guide to the Art for Non-Programmers
+#+KEYWORDS: programming, coding, software-development
+#+LATEX_CLASS: book
+#+LATEX_CLASS_OPTIONS: [a4paper,12pt,oneside]
+
+\pagenumbering{roman}
+
+<<Copyight>>
+\vspace*{\fill}
+
+\begin{center}
+https://myterminal.me
+
+Copyright $\copyright$ 2022 Mohammed Ismail Ansari
+
+All rights reserved.
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<AboutTheAuthor>>
+\vspace*{\fill}
+
+\begin{center}
+\section{About The Author}
+\end{center}
+
+| [[./assets/me.jpg]] |
+
+\textbf{Mohammed Ismail Ansari} is a computer and technology enthusiast with an academic degree in Electronics Engineering, over a decade of professional experience with computer software development, and even more so working/playing with programming languages out of curiosity.
+
+He likes to work with computer software & hardware, consumer electronics, automobiles, and almost every other mechanical thing that can be tinkered with. He is a [[https://github.com/myTerminal][regular contributor to open-source software]], has a decent reputation in software-development communities across the web, and also shares his ideas and learning on several topics around computer software and more in form of [[https://www.youtube.com/myTerminal][YouTube videos]].
+
+In his free time, he likes to plan and visualize, delete digital data, re-arrange lines of computer code, check items off his To-Do list, and re-organize items on his desk. Being the nerd he is, he is also scientific, methodical, and a little over-organized, such that he cannot seem to stop looking for ways to organize his life and assets a little better. Also, he simply loves talking about them.
+
+You can visit him at [[https://myterminal.me][https://myterminal.me]] where you can learn more about his work and other ways to reach him. You can also message him {NERD ALERT!} especially if you would like to get bored for hours.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Dedication>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{In the memory of my mother, Ruqaiya Ansari.}
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Acknowledgements>>
+\vspace*{\fill}
+
+\begin{center}
+\section{Acknowledgements}
+\end{center}
+
+I would like to thank my parents and family for helping me see the world the way I do.
+
+Thanks to the other people I did not mention here, who have helped me over the years in some way or the other to become what I am today. If you are reading this and remember helping me, you know this is about you.
+
+Last but not the least, all thanks to the Almighty for making me human and also enabling me to share and be grateful for his gifts.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Epigraph>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{"Had to be me. Someone else might have gotten it wrong."} - Mordin Solus
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Contents>>
+\tableofcontents
+
+
+\newpage
+
+
+<<Preface>>
+\begin{center}
+\section{Preface}
+\end{center}
+
+During the last seventeen years working with computer programs, with all the code that I have written, debugged[[glossary-debugging][[/1/]]] reviewed, and deleted, it still feels like I have just started. I am sure my experience with computer programming is not even remotely as extensive as most industry experts that have been doing this for way longer than I have but as I never learned this art as a part of my primary academic education, I find the depth of these principles and concepts truly fascinating.
+
+Since my early school days, I was a fan of science and mathematics. Though that is still true for me till the date of this writing, there is something else that grabbed most of my interest since my first encounter and guessing which would be a no-brainer but let me break it to you, it is computer programming.
+
+Programming combined both science and mathematics and also brought logic to the mix to make it even more interesting. There were a set of basic rules that one is required to follow, but the way I used them can determine how my solution to a problem could be different from others. I could express my style in my solutions, and create something useful, while also learning something new that I might not have even thought about.
+
+Now if I were to place myself on a scale of my expertise in the field of programming, I would place myself near the end where you would put someone who has barely even scratched the surface. This means that I consider myself someone who is not the best with computer programs, but rather merely above average. With all these years learning a variety of programming languages across several platforms, making plenty of mistakes along the way, having many misconceptions about the core concepts, and realizing a considerable shift in the way I look at the art, I learned it the hard way that being passionate about something and being good at it are two very different things.
+
+Looking back at what I used to think about programming back when I started and what it ended up being when I started to get a glimpse, I thought I would share my way of looking at it from an outsider's perspective, which is something that we professionals lose as these concepts become our second nature. With this entirely non-technical angle, I hope I can help potential newbies have a smoother learning experience, and otherwise, the existing programmers gain a different perspective towards computer programming and languages.
+
+The following chapters are reasonably concise and focus on only one thing at a time while slowly building up the idea of what programming is at its core. As it goes without saying, the later chapters assume that you have read through the earlier ones, so following along in sequence is highly recommended.
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+<<Introduction>>
+
+#+LATEX: \chapter{Introduction}
+
+[[./assets/programming-583923_1280.jpg]]
+
+Computer programming is a very broad field. Not only are there many kinds of languages and platforms, but also so many different paradigms[[glossary-paradigm][[/2/]]], principles, and concepts to discuss and learn about. Just like everything else, it is close to impossible to be knowing each and every programming concept thoroughly, let alone be able to write programs in all programming languages.
+
+In the upcoming chapters, we will look at computer programming from a fresh perspective and talk about it in functional terms instead of getting deep down into arguably boring technical details. Remember: the aim is to explore and learn about some cool programming concepts and not prepare for a job. Having said that, if you are preparing for a programming interview or test, this might not be the best resource.
+
+One of the things we will not be talking about in this book is the specific features and technicalities of a particular programming language. Of course, we will frequently come across popular programming concepts and use them as examples, but I will try my best to stay away from language-specific rules and technicalities so that one can use them across languages and platforms.
+
+#+LATEX: \chapter{FAQs on Programming}
+
+[[./assets/hd-wallpaper-6387294_1920.jpg]]
+
+Before we start diving into programming concepts, let me make an attempt at answering a few fairly common questions about programming in general that most non-programmers are often faced with. This is obviously far from a complete list, so feel free to contact me and I hope to be able to help you with a reasonable answer. 
+
+
+\newpage
+
+
+#+LATEX: \section{Before we start}
+
+As it goes without saying, all that will soon follow is merely my personal opinion and is heavily influenced by my own experiences in the past two decades. Having said that, it is in no way meant to be an academic reference. The definitions and examples are mostly oversimplified and have been purposely toned down in technicality so that they are easier to understand without getting lost in technical details. For academically accurate definitions, there is plenty of content available across the internet, but that is not the focus here, is it?
+
+So then you might ask, what makes me eligible to talk about this topic? Well, I have been writing code for almost two decades now, which obviously includes my professional and non-professional experience. Though I have always looked at this art as something much more than just a means of living, my approach towards it has changed significantly as I acquired a little deeper understanding, at least deeper than I had back when I started.
+
+#+LATEX: \section{What is Computer Programming?}
+
+In my words, computer programming is the art of making computers do the work for you. We do it to delegate jobs of repetitive, complex, and sometimes impossible nature to computers while we sit back and give the commands. In other words, it is an art to make one's own or other people's lives easier. Some computer code is visible to the person using it, while there are ways such that a code can run in the background, totally invisible to the user, just producing results in some indirect form.
+
+#+LATEX: \section{Do You Need to Learn It?}
+
+Knowing what computer programming is all about is one thing, but for most people, the more important question is whether you should bother learning it. As it goes without saying, the answer would not be the same for all of us, but instead would depend on a lot of factors including who we are and what our daily activities and tasks involve. Regardless, below are a few of my thoughts on whether one should be learning how to write (or work with) computer programs:
+
+1. *If you need it at your job*, you definitely need to learn about it, in fact, you should be pretty good at it, unless you are OK living a life like Jen, which is a character from the popular TV series The IT Crowd[[glossary-the-it-crowd][[/3/]]], where she is the head of the IT department and only pretends to be knowing about computers while in reality does not even know how to operate one properly.
+
+2. *If your job involves working with programmers*, knowing a little bit about computer programs would definitely help you with your interactions with them. When I say "little bit", I really mean just a little, probably just enough to understand their "hopefully" non-technical answers to your questions.
+
+3. *If you are curious* like me, you will learn it (or might have learned it) anyway. Besides, generally speaking, knowing a thing or two about pretty much everything around you does not hurt, does it? You may be the kind that likes to know answers to the questions you get in your daily life, just out of curiosity, or probably even out of the "fear of missing out". If that is your type, I cannot relate to you enough.
+
+4. *If you are neither of the above*, you still might want to at least be aware of what it is all about. You may not realize today how even the tiniest bit of programming knowledge would help you with your routine tasks. This could either be a small task in your daily computing that you never thought was even possible, or it could be seconds, minutes, or even hours of time saved by using a pinch of programming skills at a repetitive and boring task.
+
+#+LATEX: \chapter{Two Ways to Learn}
+
+[[./assets/two-way-6367854_1920.jpg]]
+
+For pretty much anything you are learning or are planning to learn, there are at least two approaches you can adopt. Most people I have met till date follow the first one which is to learn everything first and only think about implementing something once you are done all the way through. The other approach is to start with a problem you would like to solve, and learn something to implement a solution. I usually prefer the latter.
+
+
+\newpage
+
+
+#+LATEX: \section{Learning All At Once}
+
+There are those topics that we know nothing about and reading or listening about that new thing is not necessarily the best feeling, especially if the domain is alien to you too, lying entirely outside your area of expertise. In such cases, you might feel an urge to get up-to-speed as quickly as you can, and once you reach there, you might as well feel like you want to know "everything".
+
+I have been into this situation countless number of times, and if the topic happens to be something I feel overly passionate about, it is easy to lose sleep over it. I did however identity several problems with this approach of learning:
+
+1. *You may get overwhelmed* with all the new stuff being thrown at you all at once. The more there is to learn all at the same time, the easier it is to lose focus over details out of anxiety.
+
+2. *You may lose interest* once you realize that even though what you are learning may be useful, it starts to feel monotonous very quickly. New ideas get thrown at you one after the other, some of which might even increase in complexity as you read through the content in order.
+
+3. *You may forget things sooner than you think* with concepts piled one over another, soon starting to get all mixed up in your brain. For example, there may be a comparison you may be reading and you may end up mixing pros and cons of them.
+
+4. *The learning may appear useless*, especially when you cover each and every topic as it appears in the learning material. You might learn a thing or two that you do not find that useful, and then you might confuse it up with things that are indeed the most important.
+
+The above is just a small subset of the issues that could come with what I call sequential learning, which is why I found that it never works for me.
+
+#+LATEX: \section{Learning As You Go}
+
+If you are like me, you need to be able to see what you are learning in action. So when I start learning something, I make sure I use or implement smaller learnings in some way or another, and then continue learning where I left. I also do not always follow the lessons in sequence, but instead after a few introductory topics, jump back and forth between topics. I place those topics at higher priority, the ones that either are what I find interesting, or ones that I need for the parallel implementation that I am working at that point.
+
+As this is all in the context of computer programming, this is exactly what I follow in order to get into a new platform, language, framework, paradigm, etc.
+
+Let us have a quick look at how each of the issues we talked about in the previous section  are taken care of if we adopt this approach towards learning something new:
+
+1. *You do not get overwhelmed* with everything there is all at once. Instead, you only learn as much as you need. The way I do this is that I make sure to not step into topics that are not relevant to me at a particular point.
+
+2. *You do not lose interest* in learning as you feel that you have the absolute control of the pace as well as direction of your learning.
+
+3. *You do not forget things* as much anymore as you practically use or implement things as soon as you learn them, and it gets recorded in your mind as your personal experience with the topic that you may be able to relate to somewhere down the line, instead of just recalling it as something you read somewhere.
+
+4. *Your learning instantly feels useful* with deeper understanding of the topics that you cover. You develop first-person perspective of the new concepts and are more convinced about almost everything that you cover.
+
+#+LATEX: \section{Your Way of Learning}
+
+In this chapter, we looked at my two different approaches at learning, but those might not the be the only two approaches out there. You might definitely have your own unique ways to motivate yourself in order to learn something new and that would be an interesting conversation I would love to have with you.
+
+#+LATEX: \chapter{Computer Code, Logic, and Mathematics}
+
+[[./assets/colours-2163526_1920.jpg]]
+
+Computer programming, as mentioned earlier, involves solutions that are based on various scientific and mathematical concepts. A typical computer program is written to solve a real-world problem. As all real-world problems are based around objects that we deal with in our daily lives, the solutions to these problems have to be scientific and mathematically correct too.
+
+Depending on your programming style and also the programming language to a great extent, your programs may resemble a mathematical solution. The end result may appear to be a mathematical equation that is written in a language that we usually do not think of when talking about mathematics.
+
+
+\newpage
+
+
+#+LATEX: \section{Mathematical Operations}
+
+Computer programs work with data, and most of that data tends to be numbers that are used to calculate the result of a mathematical operation or determine the action to be taken depending upon inputs from the user or the state of the world outside the program.
+
+A few mathematical operations that one would find in almost all programming languages are addition (+), subtraction (-), multiplication (*), division (/), etc. There are also other complex mathematical calculations that involve exponentiation[[glossary-exponentiation][[/4/]]], logarithms[[glossary-logarithms][[/5/]]], and more.
+
+#+LATEX: \section{Logical Operations}
+
+Just mathematical operations may not be enough to make decisions in a program. Another common and yet the most basic evaluation in a typical program is whether a value is true or false. A boolean[[glossary-boolean][[/6/]]] value that only has two possible outcomes can be used to determine whether to ask the user to log in, or whether to make a sound to inform the user about an event that might have occurred.
+
+If you are familiar with boolean algebra[[glossary-boolean-algebra][[/7/]]], the concept of logical operations will sound very relatable. Simply true and false are not enough to make decisions in a program, and so we have logical operations like NOT, AND, OR, Exclusive-OR, Exclusive-NOR, etc. These can be used to combine states of multiple boolean true or false values into a single outcome.
+
+#+LATEX: \section{Counting Items and Working with Lists}
+
+Computer programs also often spend time counting numbers which may be the number of times an event has occurred or the number of spaces in an input the user has provided. These counts can also be combined with logical operations to determine whether an action has to be performed.
+
+Lists are the means to create a collection of values, which is also something programs often work with. A list could be something as simple as a list of numbers, a list of names, or even things like complex objects, something that is way beyond the scope of this chapter.
+
+#+LATEX: \section{And there's More...}
+
+The sections in this chapter only talked about the mathematical and logical elements of a program at the highest possible level without getting into a lot of detail. Do not worry if these did not make much sense at this point, as we will look into these closely in their own dedicated chapters that are soon to come.
+
+#+LATEX: \chapter{Typical Set of Tools}
+
+[[./assets/tools-864983_1920.jpg]]
+
+For a computer program to exist, there needs to be a problem that needs solving, but that is when we look at the exercise from the real world. In the digital world, there are quite of few elements involved some of which are visible from a distance, and the rest needs a little know-how of computers. How many of them you can see depends on your level and experience. Let us briefly talk about a few such elements in this chapter.
+
+
+\newpage
+
+
+#+LATEX: \section{Hardware}
+
+If you are running a program, you need a computer: the actual hardware where the code runs. This hardware does not always need to be a desktop or a laptop computer. It could be something as monstrous as a super-computer, something as tiny as a smart bulb, or anything in between, which could be a mobile phone or a tablet, a smartwatch, or basically, anything that one could term as an electronic gadget.
+
+#+LATEX: \section{Operating System}
+
+For a computer to be interacting with an organic being like a human or vice-versa, it needs an operating system[[glossary-operating-system][[/8/]]]. It could be an embedded operating system that has been purpose-built for the machine, or something as generic as a regular desktop operating system like Windows[[glossary-windows][[/9/]]], macOS[[glossary-macos][[/10/]]], Linux[[glossary-linux][[/11/]]], or anything other UNIX-like[[glossary-unix-like][[/12/]]] operating systems that most of us would refer to.
+
+#+LATEX: \section{Platform or Runtime}
+
+Leaving out a lot of technical stuff, it would be said that the program that runs on a computer does not run directly within an operating system. Instead, there has to be an additional layer in between, which is often referred to as program runtime. A few examples could be conventional runtimes like the DotNet CLR[[glossary-clr][[/13/]]], JVM[[glossary-jvm][[/14/]]], Node[[glossary-node][[/15/]]], etc., or the lesser-known ones like SBCL[[glossary-sbcl][[/16/]]] and the like.
+
+#+LATEX: \section{Programming Language}
+
+The language needed to interact with the runtime (and hence the operating system) has to be something that a computer can perceive. The language cannot be a verbal language that humans communicate in, nor can be it something very difficult to understand for the programmer, at least not anymore. It usually is something in between and a programming language can come in all colors, shapes, and sizes. Some are generic enough to be used in a variety of applications, while others are too specific, or even domain-specific languages that are specially designed for a very specific use case. Some languages allow the user to write their code with more freedom, while others impose a lot of restrictions on the way the code can be implemented. Some focus on readability, while others focus on efficiency, robustness[[glossary-robustness][[/17/]]], performance, or concurrency[[glossary-concurrency][[/18/]]].
+
+#+LATEX: \section{Text-editing Software}
+
+In order to code, you need some text-editing software that lets you type your code in. The software you use for this purpose could either be something as simple as an interface that lets you create, edit and save text files[[glossary-text-files][[/19/]]], or otherwise be more of a fully-fledged integrated development environment (IDE)[[glossary-ide][[/20/]]] with a lot of convenience features for the programmer. What option one might go with depends on the language, the platform, and often also on your style or preference.
+
+#+LATEX: \section{Execution Interface}
+
+The code that is once written and prepared to be used needs to be executed from an interface. This interface could be something like a graphical user interface where you run your program using buttons, input fields, etc., or otherwise something like a command-line terminal[[glossary-terminal][[/21/]]] where you type in the program to be run in form of a command and expect to see an output in form of a scrolling text.
+
+#+LATEX: \chapter{The Output of a Program}
+
+[[./assets/meter-96512_1920.jpg]]
+
+The input to a program can be in various forms and from a variety of sources like user input, data files, or even as an output from another program. Similarly, the output can also be in be read or retrieved in many different forms. In certain cases, the output could be an interaction with an external machine of an electrical system, or otherwise, it could just be some information printed on the screen.
+
+
+\newpage
+
+
+#+LATEX: \section{Text Logs}
+
+Text output is probably the simplest form of output from a program. As you would guess, it could be the result of some calculation based on the user input, or some random data being thrown out as information that can be used to know what is going on as a part of the execution. One form of such output is called logs[[glossary-logs][[/22/]]], which in most cases is only useful when something goes wrong and the issue needs to be investigated in order to fix the root cause or update the program such that it is capable to handle such situations.
+
+One advantage of text-based outputs is that these could also be fed to other programs as inputs. This is a pretty common practice in command-line-based programs, where we chain different programs together by cascading their outputs and inputs to form something more useful. This is definitely beyond the scope of this course, and hence if you would like to know more about it, you may refer to web articles about redirection[[glossary-redirection][[/23/]]].
+
+#+LATEX: \section{Graphical Output}
+
+This would be the other obvious form of output from a program and is the kind that most of us usually spend time looking at. Not looking further, even a video played on a computer screen is a form of graphical output, and so is the case while playing video games.
+
+#+LATEX: \section{Audio Output}
+
+Another kind of output that is not that obvious is audio being played through a computer speaker or an external audio device like a headset or a pair of earphones. This usually does not have to do anything on the computer itself, but can be used as a form of information that a program is generating as its output.
+
+#+LATEX: \chapter{Multiple Ways to Run Computer Code}
+
+[[./assets/doors-1767562_1920.jpg]]
+
+Computer code can be executed in different forms. The developer creates a program on their development machine and most of the code that runs on the user's computer does not resemble anything like its original form. The code is turned into an executable application that can be run without any of the tools or elements used while creating it. The user of the application has no idea about the process that was involved while writing the software or the tools that were used.
+
+In the context of this course, we will talk about the other lesser common way of running code, which involves having the source code of the program on the machine it is being run on.
+
+#+LATEX: \section{Code Files}
+
+This is a more natural way of running code: you write your program in a text file, using a text editor or an Integrated Development Environment of your choice, and then run the program using a compiler[[glossary-compiler][[/24/]]] or an interpreter[[glossary-interpreter][[/25/]]]. A major difference between a compiler and an interpreter is that the former converts the program source code from its text form into an executable application which is usually a binary file[[glossary-binary-file][[/26/]]], while the latter simply runs the source right from its text form. Which route you will take depends on whether you wrote your program in a compiled language or an interpreted language respectively.
+
+If you did not notice, there is another difference between the two (among many others). As a compiler converts the source code into an executable application, the user of the program needs neither the source code of the program nor the compiler. On the other hand, as an interpreter simply runs the source code without any conversion, in order to run it, you will need to ship both, the source code, as well as the interpreter, to be able to run it on the user's computer.
+
+A source code stored in a text file can also be used as a library[[glossary-library][[/27/]]] of reusable code that can be imported into another software project. This library is not independently executable but can help save time and effort while writing other programs that may be trying to implement similar solutions.
+
+#+LATEX: \section{Read-Eval-Print-Loop}
+
+For whatever reason, if you do not want (or need) to store your program in a text file, a source code, especially written in an interpreted language can also be executed (or evaluated) from a command-line terminal. This terminal prompt is called a Read-Eval-Print-Loop[[glossary-repl][[/28/]]], REPL for short, for the four steps involved every time you place a piece of code to be executed.
+
+This method can be used to play with smaller snippets[[glossary-snippet][[/29/]]] of code, often to practice working with a new language and learning its behavior.
+
+#+LATEX: \chapter{Reading and Working with Code}
+
+[[./assets/laptop-2838921_1920.jpg]]
+
+A computer program executes in the same direction as the algorithm[[glossary-algorithm][[/30/]]] it is based on, at least in most cases. As an algorithm is usually designed to run from top to bottom, that is exactly the direction in which a program is executed. This makes pretty much all programs readable from top to bottom, where every line (or group of lines) tries to achieve one thing at a time, solving a hopefully bigger and more complicated problem by breaking it down into smaller problems or sub-problems. This characteristic of a program heavily influences the way one reads and/or modifies code. In the following sections, we will talk about a couple of different directions a program can be traversed in order to understand the logic behind a snippet of code.
+
+
+\newpage
+
+
+#+LATEX: \section{Line By Line, From Top to Bottom}
+
+It does not matter whether a program is a line long or spans across multiple screens, but you always start reading it from the top and move towards the bottom, line-by-line. Take for example the following program:
+
+#+NAME: code_sample_top_to_bottom
+#+BEGIN_SRC js
+  // Ask the user for their name
+  const username = promptUserForName();
+
+  // Check if the user is known
+  const isUserKnown = knownUsers.includes(username);
+
+  // Conditional to greet user
+  if (isUserKnown) {
+    // Greet the user
+    console.log('Welcome Back!');
+  } else {
+    // Inform the user that they aren't recognized
+    console.log('User not identified!);
+  }
+#+END_SRC
+
+\\
+
+Though this code snippet is smaller than what most of us programmers deal with everyday, for a person who does not work with computer code as often, it appears to be a lot. If you apply the rule of going line-by-line starting from the top and slowly traveling toward the bottom of the snippet, things suddenly start to make sense. It appears even simpler when you read the comments next to each line. We ask the user to provide their name, then check whether the user appears to be a known user, and if they do, we greet them. There is also a case when they appear to be a user the program has not seen before, in which case we inform them the same.
+
+One can apply the same principle to pretty much any computer program they come across. Provided the code is clean enough, if read one line at a time, it appears like well-written prose, as Uncle Bob[[glossary-uncle-bob][[/31/]]] likes to call it.
+
+#+LATEX: \section{From Right to Left, or Left to Right}
+
+If you are used to human languages that read from left to right, which is the case with most of us, reading a computer program will feel very natural too. Most statements within a program can be read in the same direction, starting from the left and slowly (or quickly) moving toward the right.
+
+There could be an exception though when there is an assignment[[glossary-assignment][[/32/]]], which is something that you often see in programs. A value on the right is stored to a variable (associated with a symbol) on the left. In this case, the entity on the left has little to no meaning till the time the value on the right is evaluated.
+
+Figuring out between the two directions: left to right, or right to the left might take some time, but with practice, it becomes second nature while reading and understanding the logic behind a particular line or a group of lines in a particular program. Of course, as has been mentioned before, this also heavily depends on the way the program has been written, and some programs are definitely easier the others, especially for those among us who are not the ones who wrote it.
+
+#+LATEX: \chapter{Scripts vs Programs}
+
+[[./assets/monitor-933392_1920.jpg]]
+
+A running computer code is often termed as either a script or a program. What you will run in a particular case depends on the requirement and often also on the target platform where the execution is supposed to happen. There is no single answer to whether scripts are better or programs or vice-versa, as they both have their own uses.
+
+There will not be much to talk about in this section, but let us have a quick look at what the two actually mean in general.
+
+
+\newpage
+
+
+#+LATEX: \section{Scripts}
+
+Scripts have gained a lot of popularity in the recent years, at least or most developers and they are arguably easier to work with, both for writing them and also for executing them later on. They usually have a lesser number of rules to follow and conversely that also means that they are far easier to mess up. As mentioned earlier, scripts can be executed directly without having to be converted into a computer-friendly form. One can write scripts using any software that lets you work with a text file, and can be run line-by-line using a class of software known as interpreters. Having said that, in order to run scripts on a computer, you also need to have the right interpreter installed, otherwise the machine would not be able to "interpret" the script.
+
+A few examples of popular scripting languages are JavaScript[[glossary-javascript][[/33/]]], VBScript[[glossary-vbscript][[/34/]]], Python[[glossary-python][[/35/]]], etc.
+
+#+LATEX: \section{Programs}
+
+The other kind of software code is a program. These usually impose more rules on the programmer but are also harder to mess up with, often also because of the toolset they come with. Programs need to be converted from a human-readable form into a computer-friendly code so that most other computers can run them without the need for a third tool like an interpreter. To achieve this transformation, the program is first compiled into an executable binary file right from the programmer's machine, and then shipped onto the machine where it is supposed to be executed. There are certain programming languages that do not even let the compilation complete if there is a possibility of failure on the user's computer during execution. One such language is Rust[[glossary-rust][[/36/]]].
+
+A few examples of popular programming languages are C[[glossary-c][[/37/]]], C++[[glossary-c++][[/38/]]], C#[[glossary-c#][[/39/]]], Java[[glossary-java][[/40/]]], etc.
+
+#+LATEX: \chapter{Rules to Follow While Writing Code}
+
+[[./assets/board-3772063_1920.jpg]]
+
+You would not be surprised if I told you that computer programming involved certain rules to be followed. Some of these rules are imposed by the programming language that the code is being written in, and then there are some that come from the platform on which your program will run. Apart from these that are absolutely necessary, there are other rules and conventions that may be coming from the team or the organization the code belongs to. Though these rules are not as critical as the first kind, it helps people with different mindsets and coding styles to collaborate on a software project without causing a lot of chaos and confusion.
+
+
+\newpage
+
+
+#+LATEX: \section{Syntax}
+
+Programming languages are different than each other in a variety of aspects, one of the most important of which is syntax[[glossary-syntax][[/41/]]]. There are languages that look similar while the others stand out to such an extent that someone who is not familiar with that language may not even be able to make sense of a small piece of code written in that language. Following are a few examples of how one can implement a function to add two numbers in a few different languages. There may be multiple ways to achieve something in the same language as well, but the following examples will at least demonstrate how these languages are different in major aspects.
+
+#+NAME: code_sample_add_javascript_old
+#+BEGIN_SRC js
+  // Older JavaScript
+  function add(a, b) {
+    return a + b;
+  }
+#+END_SRC
+
+\\
+
+#+NAME: code_sample_add_javascript_modern
+#+BEGIN_SRC js
+  // Modern JavaScript
+  const add = (a, b) => a + b;
+#+END_SRC
+
+\\
+
+#+NAME: code_sample_add_c_charp
+#+BEGIN_SRC csharp
+  // C#
+  var add = (int a, int b) => a + b;
+#+END_SRC
+
+\\
+
+#+NAME: code_sample_add_rust
+#+BEGIN_SRC rust
+  // Rust
+  fn add(a: isize, b: isize) => isize {
+    a + b
+  }
+#+END_SRC
+
+\\
+
+#+NAME: code_sample_add_python
+#+BEGIN_SRC python
+  # Python
+  def add(a, b):
+    return a + b
+#+END_SRC
+
+\\
+
+#+NAME: code_sample_add_common_lisp
+#+BEGIN_SRC lisp
+  ;; Common Lisp
+  (defun add (a b)
+    (+ a b))
+#+END_SRC
+
+\\
+
+As you can see, each of the above languages has its own set of syntax rules. Any deviation from this form of code will make it unrecognizable to the compiler/interpreter.
+
+#+LATEX: \section{Language rules}
+
+Apart from language syntax, there are also often other unique rules that get imposed by the language itself, the platform that the code runs on, or the environment in which all this execution happens. A few examples of this could be how number arithmetic in JavaScript can be imprecise at times or how one cannot compare strings in Java, or how shooting yourself in the head being easier than implementing something called recursion[[glossary-recursion][[/42/]]] (a function calling itself) in Rust.
+
+#+LATEX: \section{Good / Best practices}
+
+One thing I find fascinating about programming is that there is not just one way to do a particular thing. A developer can choose to solve the same problem in one of many ways, and that depends on various factors including the style or the experience of the developer in that language or software development as a whole. However, there are a few known methods of implementing a few things that could potentially lead to issues in the future.
+
+There are software tools that are specifically designed to read a specific piece of code and run it through known failure patterns. The issues pointed out by these tools in no way guarantee a failure in real life, but it often is considered a good practice to resolve those potential issues by replacing identified problematic parts of the code with a better alternative. Alternatively, the developer can also write code in one of the accepted ways that are least likely to cause an error while being executed. These popular ways of writing code are called good (or best) practices, and almost each and every programming language has at least a few of these.
+
+#+LATEX: \section{Coding styles}
+
+Most software that we use is not created by a single developer. Just as each and every one of us has a unique way of looking at things, we also have our own style of working, and that also applies to the computer code that we create. Hence, multiple people working on the same code means multiple styles at once, and that could lead to a lot of time being wasted adjusting to each other's styles of coding.
+
+Most project teams and workplaces define and decide on a specific coding style across their teams so that the developers that work with code do not have to waste time understanding each other's code and instead use that time to extend it or write new code of their own.
+
+#+LATEX: \chapter{Comments can be Important}
+
+[[./assets/glasses-272399_1920.jpg]]
+
+You would be wrong if you believed that every character typed while writing computer code has a purpose in creating a result. There are optional elements in code that are called comments, and they can be scattered across code in form of statements that describe the code around it. They do not achieve anything meaningful for the computer and hence comments are ignored by compilers and interpreters.
+
+These notes written for fellow software developers could be as small as a phrase consisting of a couple of words, an entire line, or even a set of several statements forming an entire paragraph describing something in detail.
+
+Comments not only allow us to communicate with other developers that may work on the same section of code in the future, but they often also act as notes for one's own self in case you happen to stumble across your own code that you wrote a few years ago and do not seem to remember what a particular part or the entire section of a code means. For software projects that span across decades, a person joining the team today may come across comments written by people who may have left the organization for quite a while longer.
+
+How detailed or verbose comments should be, that depends on the developer or the team culture, but whether or not they should exist in the first place is also controversial. Uncle Bob, a veteran software developer says that instead of leaving code comments, a developer should write the code itself in a way that it speaks for itself, clearly explaining the underlying logic, sort of like a piece of "well-written prose" as he likes to call it. A few ways to achieve this is to use names that make sense for their purpose, which is something we will talk about in brief soon in the upcoming sections.
+
+#+LATEX: \chapter{Values and Variables}
+
+[[./assets/mathematics-878124_1920.jpg]]
+
+Most of the time during execution, a program plays around with values. These values could be in form of numbers representing the count of a real-world entity or event, a string[[glossary-string-of-letters][[/43/]]] of letters representing the name of an object or a person, a binary value denoting the presence or absence of something within something, or even something else.
+
+
+\newpage
+
+
+#+LATEX: \section{Values}
+
+Values, be they numeric and alphanumeric[[glossary-alphanumeric][[/44/]]], or else, could be accepted into a program from a user, get passed around from one part of the program to another, often getting changed into a different form, and even displayed as a part of output back to the outside world.
+
+In order to be "remembered" or passed around during the life-cycle of a program, these values need temporary placeholders[[glossary-placeholder][[/45/]]], which brings us to one of the most fundamental elements of a computer program: variables.
+
+#+LATEX: \section{Variables}
+
+Variables are placeholders for values that a program works with. These variables act as temporary containers and also identities for these values so that they could be referred to either in order to read their value, or otherwise to change the value they hold.
+
+There could be practically an unlimited number of variables within a program. These variables are at times local to a particular part of a program and are only recognizable by its neighboring elements, and are otherwise made global to the program so that they could be accessed from any element within the entire program.
+
+Provided that appropriate rules are followed, a variable can be named pretty much anything by the developer. However, with this "great" power comes "great" responsibility, and naming them something that makes sense is often a good idea as mentioned in the previous section. There are a lot of rules around the use of variables, but discussing all that detail is way beyond the scope here.
+
+#+LATEX: \chapter{Operators, Expressions, and Statements}
+
+[[./assets/math-1547018_1920.jpg]]
+
+A value is not useful at by itself, unless it gets used in a calculation. This is the reason, as we have mentioned before, values are passed between parts of a program through variables, often getting modified in the process. Most part of a typical program deals with manipulation of values, and following are a few tools that are available to us in order to process, modify, and do much more.
+
+
+\newpage
+
+
+#+LATEX: \section{Operators}
+
+Operators can be used to perform calculations on values. These could sometimes be arbitrary values, or otherwise ones stored in variables.
+
+Most operators work with two values and hence are called binary operators. A few examples are: addition (~+~), subtraction (~-~), multiplication (~*~), division (~/~), etc.
+
+Some operators work on a single value and are called unary operators. A few examples are: increment (~++~), decrement (~--~), logical NOT (~!~), etc.
+
+And, then there are very few operators that work with three values too. For the sake of simplicity, we will not get into the details. Operators themselves are not any useful until applied over a value or a variable, giving the result that is meaningful.
+
+#+LATEX: \section{Expressions}
+
+The meaningful result we obtain on combining operators with values or variables is called an expressions. Consider the following example where we are trying to add two numbers using the addition (~+~) operator. 
+
+#+NAME: code_sample_expression_js
+#+BEGIN_SRC js
+  2 + 3
+#+END_SRC
+
+This may appear very familiar, in fact exactly the same as what we think of when a summation of two numbers is mentioned. This will only be true for those programming languages that use such a familiar syntax, mostly ALGOL-type[[glossary-algol][[/46/]]] languages. If we were to write the same expression in a language like Lisp[[glossary-lisp][[/47/]]], it would appear very different.
+
+#+NAME: code_sample_expression_lisp
+#+BEGIN_SRC lisp
+  (+ 2 3)
+#+END_SRC
+
+Differences between the two language syntax aside, now we at least know what an expression in a program looks like. A regular program is full of expressions and they are often a part of something bigger, which we call as a statement.
+
+#+LATEX: \section{Statements}
+
+A typical program is formed by a set of statements. One can think of these statements as instructions given to the compiler or interpreter for the sequence of steps to be executed to perform a certain task.
+
+The following code snippet can be called a statement.
+
+#+NAME: code_sample_statement_js
+#+BEGIN_SRC js
+  const sum = a + b;
+#+END_SRC
+
+Though the statement does not seem to achieve anything complex, it can help perform a granular task in a program, which is to add values in the two variables ~a~ and ~b~, and use the assignment operator (~=~) to store it into a new variable named ~sum~.
+
+Now that we have established some basics, the upcoming sections will be full of statements, expressions, and operators.
+
+#+LATEX: \chapter{Code Blocks}
+
+[[./assets/blueberries-1326154_1920.jpg]]
+
+A program that comprises complex logic and a lot of steps involved in its execution can get unreasonably long. Imagine reading a code file that has a hundred, a few hundred, or even more lines of code one after the other. It would not only be tedious to read or review such code, but also pretty error prone where one would miss important details or logic.
+
+One way to organize such a lengthy piece of code into logical groups of statements working together to achieve one purpose is to create code blocks. These code blocks often do not exist in programming languages by themselves, but instead, form one of the basic building blocks for some advanced programming constructs[[glossary-construct][[/48/]]] we will look at in future sections. Having said that, they can very well be used in many programming languages to achieve a few small things sometimes due to a requirement, or otherwise as a means of one's preference to group chunks of code together.
+
+Before we get into those programming constructs that build up on code blocks, let us have a look at a few basic advantages and features of a simple code block.
+
+
+\newpage
+
+
+#+LATEX: \section{Organizing code}
+
+Regardless of the syntax, a code block can help create a subsection of code, grouping a few related statements together.
+
+#+NAME: code_sample_block
+#+BEGIN_SRC js
+  <statement-1>;
+  <statement-2>;
+  {
+    <statement-3>;
+    <statement-4>;
+  }
+  <statement-5>
+#+END_SRC
+
+The example shows a part of code with five statements, out of which, statements 3 and 4 are grouped together in a separate code block. Very rarely would you see an unnamed code block like this in a program, but it is essential to realize the importance of such a construct as a potential building block of something bigger in nature.
+
+#+LATEX: \section{Creating scopes with blocks}
+
+In some programming languages, creating a code block like the one we saw in the last example also creates something called a scope. We briefly talked about scope back in the section where we differentiated between global and local variables, for how the latter is only accessible in a particular section of code. Creating code blocks is one way to limit access to a local variable from outside its bounds. One can create a code block as shown in the following example, in most programming languages.
+
+#+NAME: code_sample_block_scope
+#+BEGIN_SRC js
+  <statement-1>;
+  <statement-2>;
+  {
+    const count = 0;
+    count++;
+  }
+  <statement-5>
+#+END_SRC
+
+In the example, the variable ~count~ will only be available within the code block, meaning it is local to the scope inside. An arrangement like this can help in several ways, one of them being that it could help prevent making changes to the inner variables from the other parts of the code accidentally. I know that at this point, making changes to the value stored in a variable may not sound like something to be prevented, but as you write more and more programs and get into trouble when things get confusing and error-prone, things like these suddenly prove to be very important.
+
+Speaking of scopes, there are several things that can happen as a result of an inner scope residing within an outer scope:
+
+1. The outer scope cannot access the variables defined inside the inner scope
+2. The inner scope can still access the variables defined inside the outer scope
+3. In most cases, it may be possible to use variables inside the inner scope, having the same name as ones from the outer scope and yet hold their own respective values
+
+#+LATEX: \chapter{Conditionals and Branching}
+
+[[./assets/olive-tree-3579922_1920.jpg]]
+
+When delegating a real-world task to a computer program, you do not want it to keep following instructions endlessly. Instead, would it not be better if the program could have a brain of its own and take decisions based on internal or external factors?
+
+Conditionals are another kind of basic building block of a program that helps the code take decisions about whether to perform an action or the other depending on a supplied condition. With conditionals, we will see code blocks being used for a special purpose.
+
+
+\newpage
+
+
+#+LATEX: \section{if, else, etc.}
+
+An ~if~ statement is the most basic conditional you will find in a program. It helps skip a statement or a group of statements based on a condition.
+
+#+NAME: code_sample_if
+#+BEGIN_SRC js
+  if (count > 5) {
+    <statement-1>;
+    <statement-2>;
+  }
+#+END_SRC
+
+The example shows an implementation where statements 1 and 2 are only executed when the value of variable ~count~ is greater than 5. So as you can see, the condition supplied to an ~if~ block needs to be an expression that evaluates to a boolean value that could be either true or false.
+
+A lot of times, you may also need to handle the other case where a condition is not true. For such cases, there is the ~else~ block.
+
+#+NAME: code_sample_if_else
+#+BEGIN_SRC js
+  if (count > 5) {
+    <statement-1>;
+    <statement-2>;
+  } else {
+    <statement-3>;
+    <statement-4>;
+  }
+#+END_SRC
+
+The example remains largely the same as the previous one, with the exception that when statements 1 and 2 are not executed due to ~count~ being less than 5, another group of statements 3 and 4 is executed.
+
+The conditionals that you will come across in real-world programs may be as simple as the ones we just saw, or otherwise, be very complex, all depending on the requirement they are trying to fulfill.
+
+#+LATEX: \section{switch case}
+
+You can either have a bunch of ~if~ and ~else~ blocks nested together to create a multi-conditional code logic, or replace the entire bunch with a single construct often called as a ~switch-case~, ~select~, or something else depending on which programming language you are talking about.
+
+When there are several different possibilities and one of them needs to be executed depending on the value of a variable, a simple ~switch~ can help do the branching[[glossary-branching][[/49/]]].
+
+#+NAME: code_sample_switch_case
+#+BEGIN_SRC js
+  switch (count) {
+    case 0:
+      result = 'No';
+      break;
+    case 1:
+      result = 'Yes';
+      break;
+    default:
+      result = 'Not sure';
+  }
+#+END_SRC
+
+In the example, if ~count~ happens to be 0, the value for ~result~ is set to "No", if it is 1, it is set to "Yes", and for all other cases, the ~result~ is set to "Not sure". The example only shows a very basic ~switch~ block and the real ones out there can do much more.
+
+#+LATEX: \chapter{Loops and Repetition}
+
+[[./assets/stormtrooper-1343772_1920.jpg]]
+
+There are often situations when a code needs to perform a particular task repeatedly for a particular number of times. If we go by the principle of how statements in a program are executed one after the other, we would need to place identical statements repeated in a row for the intended number of times. Though this may work at times, it may not be the most optimal solution, along with a few reasons why such a code will not work at all. One such case could be when the number of times the code needs to be repeated is not known in advance. To solve this problem, we have loops.
+
+
+\newpage
+
+
+#+LATEX: \section{while loops}
+
+So we have a set of statements that need to be repeated, and we also have a condition that can help us determine how many times those steps are to be repeated, all that we need is a looping construct. The resulting code is very similar to an ~if~ block, but uses a different keyword to mark that it is not a conditional, but instead a looping structure. Looping constructs vary across programming languages, but one of the very basic loops is the ~while~ loop that almost all programming languages have.
+
+#+NAME: code_sample_loop_while
+#+BEGIN_SRC js
+  while (count < 5) {
+    <statement-1>;
+    count++;
+  }
+#+END_SRC
+
+In the example, the statement that needs to be repeated a certain number of times is enclosed in a code block. Then we use the ~while~ keyword to create a looping structure and provide it with a condition that determines whether there have to be more repetitions. The execution starts with the evaluation of the expression in the brackets, and if it evaluates to be true, the following code block is executed once. The statement "<statement-1>" could be a statement or a group of statements that are intended to be looped. After one successful execution of the code block, the flow goes back to the condition in the brackets to check whether the expression yields true. This routine is repeated until the expression finally returns false and the loop is then terminated[[glossary-terminate][[/50/]]].
+
+One thing to note is that it is not necessary that the loop will always end. In order to make sure it does end, we need to create a situation where the expression for the ~while~ loop evaluates to false sooner or later. If this does not happen, the loop will keep going forever until the program is forcefully stopped by the user.
+
+There are a few more variants of a ~while~ loop in almost all languages, but we will not cover them here. Though the example we used has been designed with JavaScript as the language in mind, it also almost certainly would also work in many other languages with little to no change at all.
+
+#+LATEX: \section{for loops}
+
+Another popular looping structure in many programming languages is the ~for~ loop. It helps the developer implement the same thing as the ~while~ loop does, but tries to do so in a cleaner way.
+
+As we saw in the previous example with the ~while~ loop, the three essential elements of our loop were the looping condition, a code block to be repeated, and also a way to make sure the looping condition ends up being false after a said number of repetitions. In that example, we kept incrementing the value of ~count~ such that it went beyond 5, effectively making the conditional false.
+
+What ~for~ loop does is that it streamlines all those additional details inline within itself, so you do not have to pollute the code block to be repeated with any logic related to the looping. The three things it accepts is the starting value of a variable (or variables) being iterated[[glossary-iteration][[/51/]]] for the loop, the condition check for looping, and then an expression to increment or decrement the looping variable. The rest remains the same with a code block following the ~for~ construct.
+
+If we were to write the previous example using a ~for~ loop, this is how it will appear.
+
+#+NAME: code_sample_block
+#+BEGIN_SRC js
+  for (let count = 0; count < 5; count++) {
+    <statement-1>;
+  }
+#+END_SRC
+
+You may read more about how a ~for~ loop works over the web if you would like to know more.
+
+#+LATEX: \chapter{Values vs References}
+
+[[./assets/folder-385530_1920.jpg]]
+
+By this point we already know how values or variables holding values can be used interchangeably in an expression. This only works as expected when a variable holds a value itself. However, a variable can also hold a reference to a value which is stored somewhere in memory.
+
+Working with references is very different than working with values and depending on the programming language being used, your code may need to be different.
+
+
+\newpage
+
+
+#+LATEX: \section{What are References?}
+
+As mentioned in one of the previous sections, a simple value that we work with in a program can be either a number, a string of alphanumeric characters, a boolean, etc. However, there are other compound types that are either a combination of several simple values or simply a reference to a memory location where a value is stored. When a variable stores such an entity, it exhibits certain special characteristics that we otherwise do not see. Using this difference in behavior, we can do complex operations with relative ease.
+
+#+NAME: code_sample_compound_type
+#+BEGIN_SRC js
+  const order = { items: 5 };
+  const anotherOrder = order;
+
+  anotherOrder.items++;
+#+END_SRC
+
+In the example, we are looking at something we have not talked about till this point. The variable ~order~ holds an object of a compound type that contains a numeric property called ~items~. In real code, you will see a lot of such objects whereas variables that hold more than one piece of information that can be accessed using a period (~.~). Do note that like everything else, the way you represent, construct and access properties of an object will be different across programming languages. As the example is for JavaScript, and it follows one of the few ways one can represent an object in JavaScript. With the code as shown, ~accessing ~order.items~ would give you the count of items, which in the case of the example would be 5. The example also shows that when a second variable has been assigned with the reference of the first, changes made to its sub-properties are also reflected in the other. This is not how it works with our regular variables. Consider the following example:
+
+#+NAME: code_sample_values
+#+BEGIN_SRC js
+  const items1 = 5;
+  const items2 = items1;
+
+  items2 = 7;
+#+END_SRC
+
+With the change to ~items2~, only the value of that particular variable changes from 5 to 7, and the value of ~items1~ stays what it was originally set, that is 5.
+
+Simple data-types are also called as primitive types whereas compound types are called as reference types as instead of holding the value itself, they hold a reference to the value.
+
+#+LATEX: \chapter{Procedures and Functions}
+
+[[./assets/label-3150731_1920.jpg]]
+
+The code blocks that we talked about in one of the previous sections do not hold much meaning by themselves. They mostly just form basic building blocks of something much more useful. You might have seen them in the section on conditionals and even in the one on loops. Those code-blocks were unnamed, but the real interesting stuff is yet to come.
+
+
+\newpage
+
+
+#+LATEX: \section{Named code-blocks}
+
+Imagine being able to name a code-block and then being able to execute that entire block from other parts of the program and as many times as you need. That is what you call a function.
+
+The following example demonstrates a function that can be called repeatedly when needed.
+
+#+NAME: code_sample_function
+#+BEGIN_SRC js
+  const remind = () => {
+    // Place some logic here to remind the user to drink water
+  };
+#+END_SRC
+
+The function in the example is called ~remind~ and can be executed using a pair of brackets after the name like ~remind()~. This will not only help us write shorter code by placing a set of seemingly re-usable lines into the function and simply call the function from several parts of the program instead of duplicating those lines all over the program.
+
+One thing to note is that just like everything else, the syntax to create a function differs between programming languages. Also, some languages like JavaScript have multiple ways to define a function. Sometimes these provide different results and otherwise it is more or less simply ~syntactic sugar~.
+
+#+LATEX: \section{Differnt kinds of functions}
+
+Functions can be of several types and you can do a lot of different things using them. Instead of being just a named code-block, some functions can also accept parameters such that they can adapt their behavior depending on the values being passed to them. Some functions can also return values back to the part of code that calls them. Before getting into a lot of details, let us have a look at a few examples:
+
+#+NAME: code_sample_function_arguments
+#+BEGIN_SRC js
+  const printSum = (a, b) => {
+    console.log(a + b);
+  };
+#+END_SRC
+
+In the example, the function ~printSum~ is capable of accepting two values ~a~ and ~b~ and when called from another part of the program, prints the sum of the two values. ~console.log~ is just another function that comes by default with most implementations of JavaScript. This also shows how you can use a function within another and you call the readily available function ~console.log~ within the our own custom function ~printSum~. 
+
+#+NAME: code_sample_function_return
+#+BEGIN_SRC js
+  const add = (a, b) => {
+    return a + b;
+  };
+#+END_SRC
+
+There are at least three different ways to write the function shown in the example. Regardless of which way you adopt, the function ~add~ is clearly capable of accepting two values ~a~ and ~b~ and all it does is that it returns the sum of the two values to the code that calls it.
+
+Needless to say, the functions you will see in the real world programs will definitely be capable of doing much more, and will have a combination of features that we discussed, all at once.
+
+#+LATEX: \chapter{Iteration vs Recursion}
+
+[[./assets/hd-wallpaper-3112405_1920.jpg]]
+
+We have already talked about how we can implement repetitive behavior in our code. There should be no surprise that there is more than one way of doing so. Some means are more suited in one case than the other, and otherwise there are a few that are just better in general.
+
+
+\newpage
+
+
+#+LATEX: \section{Iterative code}
+
+Iterative code is probably the simplest form of code repetition among the two that we will talk about. It simply involves placing a few lines of code within a construct that keeps repeating the execution of the said lines until a certain exit condition is fulfilled. A clear advantage of this method is that it is arguably easier to visualize without advanced programming skills.
+
+#+NAME: code_sample_iterative_code
+#+BEGIN_SRC js
+  for (let count = 1; count <= 5; count++) {
+    console.log(count);
+  }
+#+END_SRC
+
+The code snippet in the example does not do anything exciting, but instead simply prints incremental numbers from 1 to 5. It is easy enough to understand how we start with 1, print it to the console, increment it, and repeat. We do stop when the number is not less than or equal to 5 anymore. Of course, this is just an example of an iterative code and may not be the best one to represent it.
+
+#+LATEX: \section{Recursive code}
+
+The other method of implementing repetition in code is recursion. Do not worry if the following section may appear tricky first, but simply put, instead of executing a specific groups of lines of code repeatedly, recursion involves a piece of code (often a function) calling itself until it is not needed to call itself anymore. You still have the end condition, the one that is needed to decide if we need to keep repeating the execution, but instead of residing outside the repeated code, in case of recursion if stays within the function being recursed.
+
+#+NAME: code_sample_recursive_code
+#+BEGIN_SRC js
+  const printIncrement = (num) => {
+    if (num > 5) {
+      return;
+    }
+    console.log(num);
+    printIncrement(num + 1);
+  };
+  printIncrement(1);
+#+END_SRC
+
+You can see that this code does pretty much the same thing as the last one, but the function in question itself has all the implementation details including printing of the number, checking for the upper bound 5, and making sure there are repetitions. It also does one more thing: accepting a starting number which in our case is 1.
+
+#+LATEX: \section{Iteration vs Recursion}
+
+The choice between iterative and recursive code is controversial. Both approaches have their own pros and cons, and in most cases, the right answer is not just one of them. It is often up to the programmer themselves to choose one of the two. There are a few ways to generalize though, one of them is that you will see more examples of iterative code written in languages like JavaScript and more of recursive code written in languages like Lisp. Of course, this is not a rule of thumb, but simply patterns that often happen to exist in real code.
+
+#+LATEX: \chapter{Interaction with the World}
+
+[[./assets/sparrows-2759978_1920.jpg]]
+
+A program can either be designed for a very specific task, or sometimes for a bunch of different tasks in the same context. Regardless, there are often times when the program needs to interact with the outside world either to ask for values as inputs or to show the results as an output. The form of input and output can depend on the platform and there are means to do so in pretty much all programming languages you will ever come across.
+
+
+\newpage
+
+
+#+LATEX: \section{Printing output}
+
+Out of the many ways to interact with the outside world, printing output to the screen is the easiest and the most common. The output being shown could be a graphical result in case of an application with a graphical user interface, where as in case of a command-line based program, it could be just in the form of lines of text being printed from top to bottom. Below are a few examples of how you would show a value to the user in several different programming languages.
+
+#+NAME: code_sample_print_js
+#+BEGIN_SRC js
+  console.log('And the count is: ', count);
+#+END_SRC
+
+We have already seen something like this before.
+
+#+NAME: code_sample_print_lisp
+#+BEGIN_SRC lisp
+  princ("And the count is: ")
+  princ(count)
+#+END_SRC
+
+As you can see, the syntax may be a little different across languages, but the concept is more or less the same.
+
+#+LATEX: \section{Accepting input}
+
+A value accepted from the user could be an input field on a web-page, or a dialog prompt from the application in case of a graphical application. In case of a command-line based program, it could just be a console prompt that waits for the user to enter a value before the program can proceed further. Accepting inputs from the user is at times not something that is straightforward as printing values.
+
+Some languages provide a symmetrical means to accept values from the user the way it lets us print values, whereas other languages need more code than the others, often relying on libraries written by other developers.
+
+#+NAME: code_sample_read_lisp
+#+BEGIN_SRC lisp
+  read("What's your name?")
+#+END_SRC
+
+The example shows how you can prompt for values from the user in Common Lisp[[glossary-common-lisp][[/52/]]].
+
+#+LATEX: \chapter{Solving Real Problems with Computer Programs}
+
+[[./assets/knowledge-3255140_1920.jpg]]
+
+The purpose of computer programs is to solve real-world problems. Though many programming languages are designed to be for general purposes, certain languages are better suited for certain problems. Furthermore, there also are a few programming languages that are created for a very particular type of problem and are called domain-specific languages.
+
+
+\newpage
+
+
+#+LATEX: \section{Programming Paradigms}
+
+Throughout the history of computer programming, languages have introduced us to different programming paradigms. Some languages only came with a single paradigm while others supported multiple. Out of the many terms, you will often come across, a few most popular ones are procedural, object-oriented, functional, and reactive.
+
+These paradigms dictate how we structure and write our code, represent real-world entities in our program, and solve problems.
+
+#+LATEX: \section{Design Patterns}
+
+For different problems, there are also several known patterns that developers often suggest be used. These are merely guidelines on how one can tackle problems of a certain nature. At a high level, design patterns can be classified into three broad categories. Creational design patterns are ideas on how one can handle the creation of objects with a program. Structural design patterns suggest how those objects within a program can be structured. Behavioral design patterns suggest how those objects can interact with one another.
+
+You do not need to memorize all design patterns out there, but at least some familiarity with those tried and tested patterns can help a developer quickly devise an efficient solution.
+
+#+LATEX: \chapter{Glossary}
+
+1. <<glossary-debugging>>*Debugging*
+
+   In computer programming and software development, debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems. Read more at [[https://en.wikipedia.org/wiki/Debugging]].
+
+2. <<glossary-paradigm>>*Paradigm*
+
+   In science and philosophy, a paradigm is a distinct set of concepts or thought patterns, including theories, research methods, postulates, and standards for what constitute legitimate contributions to a field. Read more at https://en.wikipedia.org/wiki/Paradigm.
+
+3. <<glossary-the-it-crowd>>*The IT Crowd*
+
+   The IT Crowd is a British sitcom originally broadcast by Channel 4, written and directed by Graham Linehan, produced by Ash Atalla and starring Chris O'Dowd, Richard Ayoade, Katherine Parkinson, and Matt Berry. Read more at https://en.wikipedia.org/wiki/The_IT_Crowd.
+
+4. <<glossary-exponentiation>>*Exponentiation*
+
+   Exponentiation is a mathematical operation involving two numbers, the base and the exponent or power, and pronounced as "b (raised) to the (power of) n. Read more at https://en.wikipedia.org/wiki/Exponentiation.
+
+5. <<glossary-logarithms>>*Logarithms*
+
+   In mathematics, the logarithm is the inverse function to exponentiation. Read more at https://en.wikipedia.org/wiki/Logarithm.
+
+6. <<glossary-boolean>>*Boolean*
+
+   In computer science, the Boolean (sometimes shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra. Read more at https://en.wikipedia.org/wiki/Boolean_data_type.
+
+7. <<glossary-boolean-algebra>>*Boolean Algebra*
+
+   Boolean algebra is a branch of algebra that deals with only two values: true and false, and only uses logical operators such as AND, OR, NOT, etc. Read more at https://en.wikipedia.org/wiki/Boolean_algebra.
+
+8. <<glossary-operating-system>>*Operating System*
+
+   An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. Read more at https://en.wikipedia.org/wiki/Operating_system.
+
+9. <<glossary-windows>>*Windows*
+
+   Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry, for example, Windows NT for consumers, Windows Server for servers, and Windows IoT for embedded systems. Read more at https://en.wikipedia.org/wiki/Microsoft_Windows.
+
+10. <<glossary-macos>>*macOS*
+
+    macOS (previously OS X and originally Mac OS X) is a Unix operating system developed and marketed by Apple Inc. since 2001. Read more at https://en.wikipedia.org/wiki/MacOS.
+
+11. <<glossary-linux>>*Linux*
+
+    Linux is an open-source Unix-like operating system based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Read more at https://en.wikipedia.org/wiki/Linux.
+
+12. <<glossary-unix-like>>*UNIX-like*
+
+    A Unix-like operating system is one that behaves in a manner similar to a Unix system, although not necessarily conforming to or being certified to any version of the Single UNIX Specification. Read more at https://en.wikipedia.org/wiki/Unix-like.
+
+13. <<glossary-clr>>*CLR*
+
+    The Common Language Runtime (CLR), the virtual machine component of Microsoft .NET Framework, manages the execution of .NET programs. Just-in-time compilation converts the managed code (compiled intermediate language code) into machine instructions which are then executed on the CPU of the computer. Read more at https://en.wikipedia.org/wiki/Common_Language_Runtime.
+
+14. <<glossary-jvm>>*JVM*
+
+    A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode. Read more at https://en.wikipedia.org/wiki/Java_virtual_machine.
+
+15. <<glossary-node>>*Node*
+
+    Node.js is an open-source server environment. Node.js is cross-platform and runs on Windows, Linux, Unix, and macOS. Read more at https://en.wikipedia.org/wiki/Node.js.
+
+16. <<glossary-sbcl>>*SBCL*
+
+    Steel Bank Common Lisp (SBCL) is a free Common Lisp implementation that features a high-performance native compiler, Unicode support and threading. Read more at https://en.wikipedia.org/wiki/Steel_Bank_Common_Lisp.
+
+17. <<glossary-robustness>>*Robustness*
+
+    Robust programming, also called bomb-proof programming, is a style of programming that prevents abnormal termination or unexpected actions. Read more at http://nob.cs.ucdavis.edu/bishop/secprog/robust.html.
+
+18. <<glossary-concurrency>>*Concurrency*
+
+    In computer science, concurrency is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome. Read more at https://en.wikipedia.org/wiki/Concurrency_(computer_science).
+
+19. <<glossary-text-files>>*Text files*
+
+    A text file is a kind of computer file that is structured as a sequence of lines of electronic text. Read more at https://en.wikipedia.org/wiki/Text_file.
+
+20. <<glossary-ide>>*IDE*
+
+    An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. Read more at https://en.wikipedia.org/wiki/Integrated_development_environment.
+
+21. <<glossary-terminal>>*Terminal*
+
+    A terminal emulator, or terminal application, is a computer program that emulates a video terminal within some other display architecture. Read more at https://en.wikipedia.org/wiki/Terminal_emulator.
+
+22. <<glossary-logs>>*Logs*
+
+    In computing, a log file is a file that records either events that occur in an operating system or other software runs, or messages between different users of communication software. Read more at https://en.wikipedia.org/wiki/Logging_(software).
+
+23. <<glossary-redirection>>*Redirection*
+
+    Input and out redirection is a technique used in order to pass and retrieve input and output of a program or between programs. Read more at https://devconnected.com/input-output-redirection-on-linux-explained.
+
+24. <<glossary-compiler>>*Compiler*
+
+    In computing, a compiler is a computer program that translates computer code written in one programming language (the source language) into another language (the target language). Read more at https://en.wikipedia.org/wiki/Compiler.
+
+25. <<glossary-interpreter>>*Interpreter*
+
+    In computer science, an interpreter is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program. Read more at https://en.wikipedia.org/wiki/Interpreter_(computing).
+
+26. <<glossary-binary-file>>*Binary file*
+
+    A binary file is a computer file that is not a text file. Read more at https://en.wikipedia.org/wiki/Binary_file.
+
+27. <<glossary-library>>*Library*
+
+    In computer science, a library is a collection of non-volatile resources used by computer programs, often for software development. Read more at https://en.wikipedia.org/wiki/Library_(computing).
+
+28. <<glossary-repl>>*REPL*
+
+    A read–eval–print loop (REPL), also termed an interactive toplevel or language shell, is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user; a program written in a REPL environment is executed piecewise. Read more at https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop.
+
+29. <<glossary-snippet>>*Snippet*
+
+    Snippet is a programming term for a small region of re-usable source code, machine code, or text. Read more at https://en.wikipedia.org/wiki/Snippet_(programming).
+
+30. <<glossary-algorithm>>*Algorithm*
+
+    In mathematics and computer science, an algorithm is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation. Read more at https://en.wikipedia.org/wiki/Algorithm.
+
+31. <<glossary-uncle-bob>>*Uncle Bob*
+
+    Robert Cecil Martin (born 5 December 1952), colloquially called "Uncle Bob", is an American software engineer, instructor, and best-selling author. Read more about him at https://en.wikipedia.org/wiki/Robert_C._Martin.
+
+32. <<glossary-assignment>>*Assignment*
+
+    In computer programming, an assignment statement sets and/or re-sets the value stored in the storage location(s) denoted by a variable name; in other words, it copies a value into the variable. Read more at https://en.wikipedia.org/wiki/Assignment_(computer_science).
+
+33. <<glossary-javascript>>*JavaScript*
+
+    JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Read more at https://en.wikipedia.org/wiki/JavaScript.
+
+34. <<glossary-vbscript>>*VBScript*
+
+    VBScript ("Microsoft Visual Basic Scripting Edition") is an Active Scripting language developed by Microsoft that is modeled on Visual Basic. Read more at https://en.wikipedia.org/wiki/VBScript.
+
+35. <<glossary-python>>*Python*
+
+    Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Read more at https://en.wikipedia.org/wiki/Python_(programming_language).
+
+36. <<glossary-rust>>*Rust*
+
+    Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. Read more at https://www.rust-lang.org.
+
+37. <<glossary-c>>*C*
+
+    C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. Read more at https://en.wikipedia.org/wiki/C_(programming_language).
+
+38. <<glossary-C++>>*C++*
+
+    C++ is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". Read more at https://en.wikipedia.org/wiki/C%2B%2B.
+
+39. <<glossary-c#>>*C#*
+
+    C# is a general-purpose, high-level multi-paradigm programming language. Read more at https://en.wikipedia.org/wiki/C_Sharp_(programming_language).
+
+40. <<glossary-java>>*Java*
+
+    Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. Read more at https://en.wikipedia.org/wiki/Java_(programming_language).
+
+41. <<glossary-syntax>>*Syntax*
+
+    In computer science, the syntax of a computer language is the rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language. Read more at https://en.wikipedia.org/wiki/Syntax_(programming_languages).
+
+42. <<glossary-recursion>>*Recursion*
+
+    In computer science, recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem. Read more at https://en.wikipedia.org/wiki/Recursion_(computer_science).
+
+43. <<glossary-string-of-letters>>*String of letters*
+
+    In computer programming, a string is traditionally a sequence of characters, either as a literal constant or as some kind of variable. Read more at https://en.wikipedia.org/wiki/String_(computer_science).
+
+44. <<glossary-alphanumeric>>*Alphanumeric*
+
+    Alphanumericals or alphanumeric characters are a combination of alphabetical and numerical characters. Read more at https://en.wikipedia.org/wiki/Alphanumericals.
+
+45. <<glossary-placeholder>>*Placeholder*
+
+    In a mathematical or logical expression, a placeholder is a symbol that may be replaced by the name of any element of a set.
+
+46. <<glossary-algol>>*ALGOL*
+
+    ALGOL is a family of imperative computer programming languages originally developed in 1958. Read more at https://en.wikipedia.org/wiki/ALGOL.
+
+47. <<glossary-lisp>>*Lisp*
+
+    Lisp is a family of programming languages with a long history and a distinctive, fully parenthesized prefix notation. Read more at https://en.wikipedia.org/wiki/Lisp_(programming_language).
+
+48. <<glossary-construct>>*Construct*
+
+    In computer programming, a language construct is a syntactically allowable part of a program that may be formed from one or more lexical tokens in accordance with the rules of the programming language. Read more at https://en.wikipedia.org/wiki/Language_construct.
+
+49. <<glossary-branching>>*Branching*
+
+    A branch is an instruction in a computer program that can cause a computer to begin executing a different instruction sequence and thus deviate from its default behavior of executing instructions in order. Read more at https://en.wikipedia.org/wiki/Branch_(computer_science).
+
+50. <<glossary-terminate>>*Terminate*
+
+    Termination of a program means either automatic or forcefully stopping of a running program.
+
+51. <<glossary-iteration>>*Iteration*
+
+    Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. Read more at https://en.wikipedia.org/wiki/Iteration.
+
+52. <<glossary-common-lisp>>*Common Lisp*
+
+    Common Lisp (CL) is a dialect of the Lisp programming language. Read more at https://lisp-lang.org.
+
+#+LATEX: \chapter{Bibliography}
+
+1. [[https://pixabay.com/users/pawel86-4538278][Pawel86]] (2017) /UFO, Alien, Guy./ Available at: https://pixabay.com/photos/ufo-alien-guy-pozaziemianin-2413965 (Accessed: November 20 2022)
+
+2. [[https://pixabay.com/users/doki7-646987][doki7]] (2014) /Programming, Code, Development./ Available at: https://pixabay.com/photos/programming-code-development-web-583923 (Accessed: November 20 2022)
+
+3. [[https://pixabay.com/users/blendertimer-9538909][Daniel Roberts]] (2021) /Questions./ Available at: https://pixabay.com/photos/question-questions-question-marks-6387294 (Accessed: November 20 2022)
+
+4. [[https://pixabay.com/users/fietzfotos-6795508][Albrecht Fietz]] (2021) /Two way, Road, Direction./ Available at: https://pixabay.com/photos/two-way-road-direction-junction-6367854 (Accessed: November 20 2022)
+
+5. [[https://pixabay.com/users/milesl-4827402][Milesi]] (2017) /Colors, Game, Logic./ Available at: https://pixabay.com/photos/colours-game-play-child-colorful-2163526 (Accessed: November 20 2022)
+
+6. [[https://pixabay.com/users/picjumbo_com-2130229][picjumbo_com]] (2015) /Tools, Repair, Equipment./ Available at: https://pixabay.com/photos/tools-construct-craft-repair-864983 (Accessed: November 20 2022)
+
+7. [[https://pixabay.com/users/biker_becca-27863][Rebecca Moninghoff]] (2013) /Meter, Antique, Cog./ Available at: https://pixabay.com/photos/meter-kilo-watt-hours-amps-antique-96512 (Accessed: November 20 2022)
+
+8. [[https://pixabay.com/users/qimono-1962238][Arek Socha]] (2016) /Doors, Choices, Choose./ Available at: https://pixabay.com/photos/doors-choices-choose-decision-1767562 (Accessed: November 20 2022)
+
+9. [[https://pixabay.com/users/lukasbieri-4664461][Lukas Bieri]] (2017) /Laptop, Mockup, Graphics Tablet./ Available at: https://pixabay.com/photos/laptop-mockup-graphics-tablet-2838921 (Accessed: November 20 2022)
+
+10. [[https://pixabay.com/users/tookapic-1386459][tookapic]] (2015) /Monitor, Programming./ Available at: https://pixabay.com/photos/monitor-programming-933392 (Accessed: November 20 2022)
+
+11. [[https://pixabay.com/users/geralt-9301][Gerd Altmann]] (2018) /Board, Empty Rule./ Available at: https://pixabay.com/photos/board-empty-rule-regulation-3772063 (Accessed: November 20 2022)
+
+12. [[https://pixabay.com/users/hans-2][Hans]] (2014) /Glasses, Read, Learn./ Available at: https://pixabay.com/photos/glasses-read-learn-book-text-272399 (Accessed: November 20 2022)
+
+13. [[https://pixabay.com/users/bossnigga-1276569][BossNigga]] (2015) /Mathematics, Algebra, Homework./ Available at: https://pixabay.com/photos/mathematics-algebra-homework-school-878124 (Accessed: November 20 2022)
+
+14. [[https://pixabay.com/users/pixapopz-2873171][Chuk Yong]] (2016) /Math, Blackboard, Classroom./ Available at: https://pixabay.com/photos/math-blackboard-education-classroom-1547018 (Accessed: November 20 2022)
+
+15. [[https://pixabay.com/users/elizadean-2384498][elizadean]] (2016) /Blueberries, Bunch./ Available at: https://pixabay.com/photos/blueberries-bunch-berries-fruits-1326154 (Accessed: November 20 2022)
+
+16. [[https://pixabay.com/users/liggraphy-7165278][liggraphy]] (2018) /Olive Tree, Branches./ Available at: https://pixabay.com/photos/olive-tree-old-tree-tree-branches-3579922 (Accessed: November 20 2022)
+
+17. [[https://pixabay.com/users/aitoff-388338][altoff]] (2016) /Stormtrooper, Star Wars, Lego./ Available at: https://pixabay.com/photos/stormtrooper-star-wars-lego-storm-1343772 (Accessed: November 20 2022)
+
+18. [[https://pixabay.com/users/fill-8988][fill]] (2014) /Folder, Briefcase, Brown./ Available at: https://pixabay.com/photos/folder-briefcase-brown-blue-paper-385530 (Accessed: November 20 2022)
+
+19. [[https://pixabay.com/users/brrt-122519][BRRT]] (2018) /Label, Craft, Blank./ Available at: https://pixabay.com/photos/label-kraft-blank-design-paper-3150731 (Accessed: November 20 2022)
+
+20. [[https://pixabay.com/users/jplenio-7645255][jplenio]] (2018) /Spiral, Staircase./ Available at: https://pixabay.com/photos/spiral-staircase-stairs-pink-3112405 (Accessed: November 20 2022)
+
+21. [[https://pixabay.com/users/suju-foto-165106][sujo-foto]] (2017) /Sparrows, Family, Chats./ Available at: https://pixabay.com/photos/sparrows-sparrows-family-birds-2759978 (Accessed: November 20 2022)
+
+22. [[https://pixabay.com/users/qimono-1962238][qimono]] (2018) /Knowledge, Curiosity, Confusion./ Available at: https://pixabay.com/photos/knowledge-curiosity-confusion-ocean-3255140 (Accessed: November 20 2022)
+
+# Local Variables:
+# eval: (visual-line-mode)
+# End:

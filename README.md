@@ -12,6 +12,7 @@ This repository contains the source for a few books I have written. Each book co
 ## Books
 
 1. [How to Stay Sane with Your Tasks](01_how_to_stay_sane_with_your_tasks)
+2. [Computer Programming for Aliens](02_computer_programming_for_aliens)
 
 ## How you can support me
 
