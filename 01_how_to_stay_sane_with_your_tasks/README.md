@@ -8,35 +8,40 @@ Otherwise, this book can be found on the following platforms at this point:
 
 1. [Google Play](https://play.google.com/store/books/details?id=hOU3EAAAQBAJ)
 
-## Building from source
-
-### Book
+## Building the book
 
 The book can be built using either of the two methods:
 
-1. **Building with Pandoc**
+### Manual method
 
-    Install [Pandoc](https://pandoc.org) either from your operating system's package manager or follow [this guide](https://github.com/jgm/pandoc/blob/master/INSTALL.md).
+#### Contents of the book using Pandoc
 
-    Run the below command in the root directory containing the book's source:
+Install [Pandoc](https://pandoc.org) either from your operating system's package manager or follow [this guide](https://github.com/jgm/pandoc/blob/master/INSTALL.md).
 
-        pandoc ./book.org -o ./dist/book.pdf
+Run the below command in the root directory containing the book's source:
 
-    *Note: The directory `./dist` needs to exist. If it isn't already present, you'll need to create the directory first.*
+    pandoc ./book.org -o ./dist/book.pdf
 
-2.  **Building with Make**
+*Note: The directory `./dist` needs to exist. If it isn't already present, you'll need to create the directory first.*
 
-    Assuming you have [GNU Make](https://www.gnu.org/software/make) installed on your system, run the below command at the root of the book's source:
-
-        make build
-
-    A directory `./dist` will be created (if it doesn't exist) and the book will be placed inside it as "book.pdf".
-
-    *Note: You still need to have Pandoc installed on the system.*
-
-### Cover
+#### Cover using [Gimp](https://www.gimp.org)
 
 The cover image can be exported from `cover.xcf` using [Gimp](https://www.gimp.org).
+
+### Using **[Make](https://www.gnu.org/software/make)**
+
+You need the following dependencies installed on the system:
+
+1. [Pandoc](https://pandoc.org)
+2. [xcftools](http://henning.makholm.net/software)
+3. [ImageMagick](https://imagemagick.org)
+4. [Ghostscript](https://www.ghostscript.com)
+
+Once you have all the dependencies, run the following command at the root of the book's source:
+
+    make build
+
+A directory `./dist` will be created (if it doesn't exist) and the book will be placed inside it as "book.pdf".
 
 ## Note about image assets
 
