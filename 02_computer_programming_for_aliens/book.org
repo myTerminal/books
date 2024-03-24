@@ -8,7 +8,7 @@
 
 \pagenumbering{roman}
 
-<<Copyight>>
+<<Copyright>>
 \vspace*{\fill}
 
 \begin{center}
