@@ -1,0 +1,355 @@
+#+TITLE: Beyond Bullet Points
+#+SUBTITLE: Maximizing Your Productivity with Lists
+#+AUTHOR: Mohammed Ismail Ansari
+#+DESCRIPTION: Maximizing Your Productivity with Lists
+#+KEYWORDS: to-do, lists, planning
+#+LATEX_CLASS: book
+#+LATEX_CLASS_OPTIONS: [a4paper,12pt,oneside]
+
+\pagenumbering{roman}
+
+<<Copyright>>
+\vspace*{\fill}
+
+\begin{center}
+https://myterminal.me
+
+Copyright $\copyright$ 2024 Mohammed Ismail Ansari
+
+All rights reserved.
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<AboutTheAuthor>>
+\vspace*{\fill}
+
+\begin{center}
+\section{About The Author}
+\end{center}
+
+| [[./assets/me.jpg]] |
+
+\textbf{Mohammed Ismail Ansari} is a computer and technology enthusiast with an academic degree in Electronics Engineering, over a decade of professional experience with computer software development, and even more so working/playing with programming languages out of curiosity.
+
+He likes to work with computer software & hardware, consumer electronics, automobiles, and almost every other mechanical thing that can be tinkered with. He is a [[https://github.com/myTerminal][regular contributor to open-source software]], has a decent reputation in software-development communities across the web, and also shares his ideas and learning on several topics around computer software and more in form of [[https://www.youtube.com/myTerminal][YouTube videos]].
+
+In his free time, he likes to plan and visualize, delete digital data, re-arrange lines of computer code, check items off his To-Do list, and re-organize items on his desk. Being the nerd he is, he is also scientific, methodical, and a little over-organized, such that he cannot seem to stop looking for ways to organize his life and assets a little better. Also, he simply loves talking about them.
+
+You can visit him at [[https://myterminal.me][https://myterminal.me]] where you can learn more about his work and other ways to reach him. You can also message him {NERD ALERT!} especially if you would like to get bored for hours.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Dedication>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{In the memory of my mother, Ruqaiya Ansari.}
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Acknowledgements>>
+\vspace*{\fill}
+
+\begin{center}
+\section{Acknowledgements}
+\end{center}
+
+I would like to thank my parents and family for helping me see the world the way I do.
+
+Thanks to the other people I did not mention here, who have helped me over the years in some way or the other to become what I am today. If you are reading this and remember helping me, you know this is about you.
+
+Last but not the least, all thanks to the Almighty for making me human and also enabling me to share and be grateful for his gifts.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Epigraph>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{"Your time is precious. Spend it wisely and with those who care for you."} - Samara the Justicar
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Contents>>
+\tableofcontents
+
+
+\newpage
+
+
+<<Preface>>
+\begin{center}
+\section{Preface}
+\end{center}
+
+Many know me as someone who is more organized than an average they may have interacted with, someone often obsessed about mundane details. However, those who know me even more closely would also attest to my deep-seated obsession with lists. I have always found help with lists, whether they be practical To-Do lists, or any other form of list that records items, events, or numbers. My affinity for lists runs so deep that I have dedicated a considerable amount of time to exploring their utility, even going so far as to author a handful of posts on the subject.
+
+While lists undeniably serve a purpose in the lives of most people, I may harbor an almost irrational compulsion to jot down even the most trivial of details of my future, present, or sometimes even past life. Perhaps it is a testament to the inherent usefulness of lists, even for those who do not readily recognize them as indispensable tools – particularly for those who prefer to keep their minds uncluttered.
+
+My journey with lists began in the form of handwritten notes during my middle school years, evolving in several forms and being passed through various digital platforms, until they reached the refined state they occupy today. Now they reside as plain text documents that are accessible on virtually every single digital device I interact with every single day.
+
+In my last writing[[[previous-writing][/1/]]], I focused primarily on daily tasks, and how one can organize their life to work on those tasks without losing sanity. Lists, planning and productivity are very closely interconnected. This book is a follow-up to my first book with a more generic look at how I think one can utilize lists in their day-to-day lives.
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+<<Introduction>>
+
+#+LATEX: \chapter{Introduction}
+
+[[./assets/notepad-3693309_1920.jpg]]
+
+Lists are seemingly mundane collections of items that hold within them the power to organize thoughts, actions, and aspirations. From simple to-do lists to complex project plans, lists serve as indispensable tools in various facets of life. In this chapter, we'll talk about a few most common uses of lists in our daily lives.
+
+
+\newpage
+
+
+Given the versatile nature of lists, they can be used for a range of different purposes.
+
+1. *Planning*: Lists provide a structured framework for planning, which is the foundation of accomplishment. Whether it's outlining daily tasks, setting long-term goals, or orchestrating intricate projects, lists serve as blueprints for success. By breaking down larger objectives into smaller, manageable tasks, lists facilitate clarity and focus. To illustrate, consider the example of planning a vacation. A list can start with overarching goals such as destinations to visit, activities to experience, and accommodations to book. Subsequently, these goals can be further detailed into tasks like researching travel options, creating an itinerary, and making reservations. Each item on the list represents a step towards realizing the ultimate goal, guiding the planning process with precision and efficiency.
+
+2. *Recording*: Lists also function as repositories of information, capturing data, ideas, and observations for future reference. Whether it's cataloging expenses, compiling research findings, or documenting meeting minutes, lists offer a systematic approach to record-keeping. Their organized structure enables easy retrieval and review, fostering accountability and informed decision-making. For instance, in academic research, a literature review often involves synthesizing numerous sources of information. By creating a list of key findings, researchers can succinctly summarize each source's relevance, methodology, and conclusions. This not only streamlines the writing process but also ensures coherence and accuracy in citing sources.
+
+3. *Brainstorming*: Brainstorming is a creative process that thrives on spontaneity and exploration, and lists serve as catalysts for generating ideas. Whether it's generating solutions to a problem, exploring potential business ventures, or conceptualizing artistic projects, lists encourage divergent thinking and innovation. Their non-linear format allows for the free-flowing exchange of ideas, sparking inspiration and collaboration. Take, for example, a marketing team brainstorming campaign ideas. Instead of relying solely on unstructured discussions, they can leverage lists to capture and categorize various concepts, ranging from slogans and taglines to promotional strategies and target demographics. By visually mapping out different possibilities, team members can build upon each other's contributions, leading to more comprehensive and creative solutions.
+
+Lists are indispensable tools for planning, recording, and brainstorming, serving as pillars of organization and productivity. Whether used to map out objectives, document information, or spark creativity, lists offer a versatile framework for structuring thoughts and actions. By harnessing the power of lists, individuals and organizations can navigate complexity with clarity, turning aspirations into achievements. In the upcoming sections, we will look at how one can utilize them at their best.
+   
+#+LATEX: \chapter{The Daily Lists}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+Lists permeate our daily lives, serving as essential tools for organization, productivity, and decision-making. Some of these lists are obvious, such that you are aware of their existence and role in your life, while others are deceptively more so, without you having to look at them the way you look at regular lists. While obvious lists are readily recognized for their explicit purpose, non-obvious lists operate more subtly, often without conscious acknowledgment. Both types play crucial roles in shaping our routines, managing our tasks, and navigating the complexities of modern life.
+
+
+\newpage
+
+
+#+LATEX: \section{Obvious Lists}
+
+These encompass those that fulfill explicit functions and are consciously created for specific purposes. Some of them include:
+
+1. *To-Do Lists*: Perhaps the most ubiquitous of all lists, to-do lists catalog tasks and activities that need to be accomplished within a certain time frame. Whether handwritten or digital, to-do lists serve as roadmaps for daily, weekly, or long-term productivity.
+
+2. *Grocery Lists*: Designed to streamline shopping expeditions, grocery lists itemize essential supplies and groceries needed for household consumption. By organizing items by category or location in the store, grocery lists optimize efficiency and minimize forgetfulness.
+
+3. *Emails*: In the digital age, emails act as lists of sorts, cataloging incoming messages, conversations, and tasks. Inbox management strategies often involve prioritizing, categorizing, and archiving emails to maintain order amidst the deluge of electronic communication.
+
+4. *Other Records*: From financial statements and inventory logs to attendance records and project timelines, various forms of records serve as structured lists for tracking and documenting information essential for business operations, academic pursuits, and personal affairs.
+
+#+LATEX: \section{Non-Obvious Lists}
+
+These in contrast operate more subtly, often blending into the fabric of everyday life without explicit recognition. These include:
+
+1. *Photos & Videos on a Digital Device*: Digital photo libraries and video collections function as implicit lists, cataloging memories, events, and moments captured over time. Algorithms and metadata organize these visual archives, enabling swift retrieval and exploration of cherished memories.
+
+2. *Bookmarks in a Web Browser*: As repositories of online content, web bookmarks compile websites, articles, and resources of interest for future reference. By categorizing bookmarks into folders or tags, users curate personalized lists tailored to their interests and pursuits.
+
+3. *Icons in the App Drawer of a Smartphone or Computer*: The app drawer on smartphones and computers displays icons representing installed applications, effectively serving as a visual list of available software and utilities. Users navigate these lists to access tools and services that facilitate communication, productivity, and entertainment.
+
+4. *Outfits in the Wardrobe*: Within the confines of a wardrobe, clothing items are arranged in a manner akin to a curated list, reflecting personal style preferences, seasonal considerations, and occasions. By organizing garments by type, color, or occasion, individuals assemble outfits effortlessly, projecting desired aesthetics and meeting practical needs.
+
+5. *Items on the Wishlist*: Whether handwritten or digital, wishlists compile desired items, experiences, or aspirations awaiting fulfillment. From books and gadgets to travel destinations and life goals, wishlists serve as aspirational lists that inspire motivation and intentionality.
+
+6. *Items Arranged in an Aisle within a Grocery Store*: Grocery stores strategically arrange items within aisles, effectively curating lists of products based on categories such as food, beverages, household goods, and personal care items. This deliberate organization facilitates navigation and enhances the shopping experience for consumers.
+
+#+LATEX: \section{And There Could Be More...}
+
+The two lists that we talked about aren’t exhaustive. Different people have different lives and hence could have workflows that are widely apart from the others, thus making them interact with very different forms of lists.
+
+#+LATEX: \chapter{An Ideal List}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+A well-constructed list is more than just a collection of items; it's a tool that enhances organization, efficiency, and clarity.
+
+
+\newpage
+
+
+Here's an elaboration on some of the characteristics that define how a list should be:
+
+1. *Available When Needed*: Accessibility is paramount for any effective list. Whether it's a digital document stored in the cloud or a handwritten note tucked in a pocket, a list should be readily accessible whenever and wherever it's required. This ensures that tasks can be referenced, updated, or completed on the go, maximizing productivity and responsiveness.
+
+2. *Searchable*: In today's digital age, the ability to search within lists is invaluable. Whether it's a feature within a note-taking app or a function in a document editor, searchability enables users to quickly locate specific items within extensive lists, saving time and reducing frustration. This functionality enhances the utility of lists, especially as they grow in size and complexity.
+
+3. *Descriptive*: Clarity is key when it comes to list items. Each entry should be descriptive enough to convey its meaning and context without ambiguity. Clear and concise descriptions help users understand the purpose or significance of each task, facilitating prioritization and decision-making.
+
+4. *Short but Relevant*: Lists should prioritize brevity and relevance to remain effective. Regular cleanups or reviews ensure that lists remain up-to-date and clutter-free, removing completed tasks, revising priorities, and discarding irrelevant items. This practice prevents lists from becoming overwhelming or unwieldy, maintaining their utility and focus.
+
+5. *Nested*: Nested lists offer a hierarchical structure that organizes information into tiers of importance or categories. By nesting items within broader topics or subheadings, lists become more intuitive to navigate and comprehend. This hierarchical arrangement facilitates prioritization, planning, and delegation, enhancing overall productivity and clarity.
+
+6. *As Many of Them as There Need to Be*: The versatility of lists lies in their ability to adapt to diverse needs and contexts. Whether it's a daily to-do list, a project roadmap, or a collection of creative ideas, lists can be tailored to accommodate various purposes and preferences. Having multiple lists allows users to compartmentalize tasks, projects, or interests, preventing overwhelm and promoting focus. While having multiple lists can enhance organization and specificity, an excessive proliferation of lists can lead to fragmentation and confusion. When managing numerous lists, it's essential to strike a balance between granularity and coherence. Consolidating related lists, utilizing tags or labels, or employing overarching frameworks can help mitigate the challenges posed by an abundance of lists.
+
+In essence, how a list should be is defined by its accessibility, clarity, relevance, and adaptability. By embodying these characteristics, lists serve as indispensable tools for organization, productivity, and decision-making, empowering users to effectively manage tasks, projects, and aspirations in various facets of life.
+
+These are just a few characteristics that I make sure of in my lists. This is another of those things that would differ depending on who you are and how your brain works.
+   
+#+LATEX: \chapter{Giving Your Lists Some Attention}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+Spending time on lists is a practice that embodies the adage "less is more" or the concept of "traveling light" in the realm of organization and productivity.
+
+
+\newpage
+
+
+While it may seem counterintuitive to invest time in trimming down lists, this proactive approach yields significant benefits in the long run, saving time and enhancing efficiency.
+
+#+LATEX: \section{Less is More}
+
+The principle of "less is more" suggests that simplicity and minimalism often lead to greater effectiveness. Similarly, "traveling light" refers to the practice of carrying only essential items to minimize burden and maximize mobility. Applied to lists, this philosophy emphasizes the importance of prioritization and focus. Instead of inundating lists with unnecessary tasks or information, investing time in curating and refining them ensures that only the most relevant and actionable items remain. By streamlining lists, users reduce cognitive load, enhance clarity, and optimize resource allocation, enabling them to navigate tasks and projects with agility and purpose.
+
+#+LATEX: \section{Spend Time Now, Save Much More Time Later}
+
+Although it may seem counterproductive to allocate time to trim down lists initially, this upfront investment yields significant time savings and efficiency gains in the future. By proactively reviewing and refining lists, users identify redundancies, eliminate distractions, and clarify priorities, thereby streamlining workflows and decision-making processes. Moreover, by removing non-essential tasks or information, users reduce the likelihood of procrastination, analysis paralysis, or task switching, enabling them to focus their time and energy on high-impact activities. In essence, spending time now to trim down lists serves as a strategic investment in productivity and effectiveness, paying dividends in terms of time saved, stress reduced, and outcomes improved over the long term.
+
+#+LATEX: \section{Clear Your Mind, and Lists Too}
+
+Lists can be used to clear up your mind so that instead of remembering the individual items on the list, the mind can focus on what has to be done with those items. Having said that, These lists often tend to become clouded, effectively moving the load out of the mind into those lists. A list that is crowded or complex starts to become less effective, limiting productivity. So while you’d want to have a clear mind, having clear lists is equally important as well.
+
+#+LATEX: \section{Conclusion}
+
+So, with the above ideas, it’s clear how lists need to be groomed as well to make sure they stay effective and efficient in the purpose they’re meant to serve.
+   
+#+LATEX: \chapter{My Other Lists}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+In addition to the lists that we talked about in the previous sections, I find myself spending time on a few more lists, most of them are pretty non-obvious unless you look at them from a little closely. These lists serve an even diverse variety of purposes ranging from organizing digital assets and subscriptions to maintaining physical possessions and software tools.
+
+
+\newpage
+
+
+Here's an elaboration on each category:
+
+1. *Contents within High-Traffic File Directories Across Computers*: In the digital realm, managing files and directories is essential for efficient information retrieval and storage. Spending time organizing high-traffic file directories across computers involves categorizing documents, images, videos, and other digital assets into logical folders and subfolders. This practice enhances accessibility, facilitates collaboration, and minimizes clutter, ensuring that relevant files are easily locatable when needed.
+
+2. *Channel Subscriptions on Web Platforms*: With the proliferation of online content, managing subscriptions to channels, blogs, newsletters, and streaming services is crucial for staying informed and entertained. Spending time on this list entails subscribing to relevant channels, unsubscribing from inactive or irrelevant ones, and organizing subscriptions into categories or playlists. This optimizes content consumption, reduces information overload, and fosters a curated digital experience tailored to individual interests and preferences.
+
+3. *Conversation Threads on Collaboration Platforms*: Collaboration platforms such as Slack, Microsoft Teams, or Discord facilitate communication and collaboration among teams and communities. Managing conversation threads involves participating in relevant discussions, archiving or deleting obsolete threads, and organizing conversations into channels or categories. This ensures effective communication, knowledge sharing, and project coordination within distributed teams or communities.
+
+4. *Platform-Specific Saved Items*: Many web platforms allow users to save or bookmark content for later reference, such as saved posts on Reddit, favorited tweets on Twitter, or bookmarked articles on web browsers. Spending time on this list entails saving relevant content, revisiting saved items periodically, and organizing them into folders or tags. This practice enables users to curate a personalized repository of valuable resources, ideas, and inspirations for future consumption or reference.
+
+5. *Games in Steam Library*: For gaming enthusiasts, managing a library of digital games on platforms like Steam is akin to curating a collection of entertainment experiences. Spending time on this list involves purchasing, installing, categorizing, and curating games based on preferences, genres, or playability. This ensures an enjoyable gaming experience, facilitates discovery of new titles, and maximizes utilization of gaming assets.
+
+6. *Gadgets and Gears Maintenance*: Physical possessions such as gadgets, gears, and equipment require regular maintenance to ensure optimal performance and longevity. Spending time on this list involves scheduling maintenance tasks, such as cleaning, updating, or repairing devices, and organizing maintenance records or manuals for quick reference. This practice prolongs the lifespan of gadgets, minimizes downtime, and preserves their value over time.
+
+7. *Software Tools in Setup*: Professionals often rely on a suite of software tools to support their workflows and productivity. Spending time on this list entails evaluating, selecting, installing, and configuring software tools based on specific needs and preferences. Additionally, it involves staying updated on software updates, exploring new tools, and optimizing workflows through integration or automation. This ensures an efficient and effective digital workspace tailored to individual requirements and workflows.
+
+By investing time in curating and organizing these lists, I have an enhanced accessibility, and efficiency across these various areas of my life.
+   
+#+LATEX: \chapter{Few Secret Recipes of Mine}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+Over the years working with numerous lists, I've come up with a few "secret" recipes of my own. Let me share a few of them with you today.
+
+
+\newpage
+
+
+#+LATEX: \section{Shortening the To-Do List for the Day}
+
+There are often days when I wake up to a list of about a hundred tasks waiting for me to jump on. Even though some of these tasks are as simple as a chore that could be completed in less than a minute, others either involves hours of works or sometimes even involve stepping out of the house, driving to a particular place and back.
+
+The natural way of shortening such a list of tasks is to complete them. However, given how myself, just like the rest of us have a limited time available to myself, especially when you factor in the time lost sleeping, there’s barely a few hours of productivity per day. To help me focus on the tasks that either are most important for the day, including ones that are mission-critical, I have to drop the rest, which is where I start my day. By dropping down the items that can be tackled another day, it helps with two things at once:
+
+1. It helps me see what matters the most even clearly
+2. It reduces stress of my mind that would otherwise be around not being able to deliver for the day
+
+#+LATEX: \section{Fighting the Fear of Not Making the End of a List}
+
+When a list is too long such that it spans across several pages or screens, the fear of not being able to make it to the end of the list starts to bother me. One remedy I adopt is to instead to traverse the list in reverse, starting from the bottom. This calms my inner self with the fact that I’ve already taken care of the end of the list and all that remains now it to make it to the top.
+
+I know how silly it sounds, but often looking at the same problem from two different perspectives and approaches can yield very different results. Similarly, fooling myself into thinking that I’ve got a particular seemingly impossible task does wonders, at least for me.
+
+#+LATEX: \section{Using My OCD to My Advantage}
+
+With so much going on on a regular day, tens (and sometimes a hundred) tasks flying all around, that one thing that doesn’t get looked at never gets handled. There are things I’d really like to do but never get prioritized or picked up in between the other seemingly more (or sometimes lesser) important items. My OCD forces me to keep my home screens, computer desktops, and other views clean, so I can go beyond my regular reach to make sure there’s nothing on there. Using this as an advantage, I often keep things at such places to bug me every time I look at them and eventually take care of them to be able to have a cleaner view.
+   
+#+LATEX: \chapter{Your Character Map}
+
+[[./assets/shopping-list-2044706_1920.jpg]]
+
+One of the most important tools I’ve been keeping in my inventory is a character map. I’m not an expert in any particular area that I know of. However, my curious mind wants to learn all that it can across domains (at least within reason), create all the projects I can, etc. When a new exciting thing shows up, the ones that have been on my radar often take a back seat, often shifting so much out of the spotlight that they get forgotten for a while.
+
+
+\newpage
+
+
+In order to make sure I remember my past, current and future plans, projects, learning, and other things that I’d like to spend time on, this character map serves as a quick reminder of the things I should be spending time on during any particular week.
+
+#+LATEX: \section{A List of Lists}
+
+This character map in general comprises of many of my non-repetitive tasks, and helps me see a better picture of my short-term and relatively longer-term objectives. Needless to say, this map changes with time, and is another of those things that I have to spend time on regularly in order to make sure things are going in the right direction.
+
+#+LATEX: \section{Longer-Term Objectives}
+
+Most items in the character map are there for only a while until they help me achieve an objective. items are from different areas of life, but often require learning, reading, creating, and even more documenting. Each of these items contain smaller action items or tasks that can be used to complete a bigger objective, which means, it adds to more items that have to be showing in my daily To-Do list.
+
+#+LATEX: \section{Iterative Approach}
+
+My character map keeps shifting in an iterative fashion, and I've tried several different ways to try to make the most of it and make sure things were moving forward.
+
+#+LATEX: \subsection{Multiple Items Per Day}
+
+I’ve tried with scheduling multiple items per day, but have often found that these eventually never get picked up among the daily chores. If missing a task today doesn’t cause any failure, why would I even pick it up instead of mundane and boring activities like taking the trash out?
+
+#+LATEX: \subsection{Theming Days of the Week}
+
+I divided the days of the week into categories and allocated them for only a particular kind of task. This did seem to work for while, or at least I wanted to believe it did, until I realized the biggest flaw with this approach, which was rather an obvious one. My mind wanders all over the place, trying to thinking about a random thing that needs to be figured out. Usually these problems being deciphered aren’t in the context of my current task. This makes it impossible to only think about a particular thing for a day, or rather not think about anything else. These ideas flow randomly, and thankfully I realized it soon enough that limiting these ideas would only hurt my objectives.
+
+#+LATEX: \subsection{Serializing Tasks}
+
+This approach was based on a belief that my mind was capable of doing only one “new” thing at a time. However, often this one thing is blocked by an external factor that’s beyond my control. This itself is a flaw of this approach, causing loss of valuable time that could have otherwise been utilized for something else in the list of objectives until the one that was planned could finally take off.
+
+#+LATEX: \subsection{Combining All of the Above}
+
+So, the problem of time allocation isn’t a simple one to solve. My current approach at the time of this writing is a mix of all the approaches by avoiding overloading the mind with more activities than it can handle, while also making sure things are flowing along in case of an external blockage or dependency. Maybe this is the answer, or otherwise, I’ll figure out something else once more.
+   
+#+LATEX: \chapter{Glossary}
+
+1. <<previous-writing>>*How to Stay Sane with Your Tasks*
+
+   This was my first book that I wrote to share a few of my experiences around planning and productivity and I hope to be able to enlighten you such that your workflow gains at least a thing or two and help you navigate your life a little better. You may find the book here: [[https://books2read.com/how-to-stay-sane-with-your-tasks]].
+
+#+LATEX: \chapter{Bibliography}
+
+1. [[https://pixabay.com/users/roonznl-17511][roonznl-17511]] (2018) /Notepad, Pencil, To write image./ Available at:
+   [[https://pixabay.com/photos/notepad-pencil-to-write-notes-3693309]] (Accessed: March 24 2024)
+
+2. [[https://pixabay.com/users/tumisu-148124][Tumisu]] (2017) /Shopping List Grocery List Grocery Shopping./ Available at: https://pixabay.com/illustrations/shopping-list-grocery-list-grocery-2044706 (Accessed: March 24 2024)
+
+# Local Variables:
+# eval: (visual-line-mode)
+# End:
