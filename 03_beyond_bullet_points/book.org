@@ -186,7 +186,7 @@ The two lists that we talked about aren’t exhaustive. Different people have di
 
 #+LATEX: \chapter{An Ideal List}
 
-[[./assets/shopping-list-2044706_1920.jpg]]
+[[./assets/lightbulb-2692247_1920.jpg]]
 
 A well-constructed list is more than just a collection of items; it's a tool that enhances organization, efficiency, and clarity.
 
@@ -214,7 +214,7 @@ These are just a few characteristics that I make sure of in my lists. This is an
    
 #+LATEX: \chapter{Giving Your Lists Some Attention}
 
-[[./assets/shopping-list-2044706_1920.jpg]]
+[[./assets/philatelist-1844080_1920.jpg]]
 
 Spending time on lists is a practice that embodies the adage "less is more" or the concept of "traveling light" in the realm of organization and productivity.
 
@@ -242,7 +242,7 @@ So, with the above ideas, it’s clear how lists need to be groomed as well to m
    
 #+LATEX: \chapter{My Other Lists}
 
-[[./assets/shopping-list-2044706_1920.jpg]]
+[[./assets/office-3198716_1920.jpg]]
 
 In addition to the lists that we talked about in the previous sections, I find myself spending time on a few more lists, most of them are pretty non-obvious unless you look at them from a little closely. These lists serve an even diverse variety of purposes ranging from organizing digital assets and subscriptions to maintaining physical possessions and software tools.
 
@@ -270,7 +270,7 @@ By investing time in curating and organizing these lists, I have an enhanced acc
    
 #+LATEX: \chapter{Few Secret Recipes of Mine}
 
-[[./assets/shopping-list-2044706_1920.jpg]]
+[[./assets/food-3270461_1920.jpg]]
 
 Over the years working with numerous lists, I've come up with a few "secret" recipes of my own. Let me share a few of them with you today.
 
@@ -299,7 +299,7 @@ With so much going on on a regular day, tens (and sometimes a hundred) tasks fly
    
 #+LATEX: \chapter{Your Character Map}
 
-[[./assets/shopping-list-2044706_1920.jpg]]
+[[./assets/journey-1130732_1920.jpg]]
 
 One of the most important tools I’ve been keeping in my inventory is a character map. I’m not an expert in any particular area that I know of. However, my curious mind wants to learn all that it can across domains (at least within reason), create all the projects I can, etc. When a new exciting thing shows up, the ones that have been on my radar often take a back seat, often shifting so much out of the spotlight that they get forgotten for a while.
 
@@ -349,6 +349,21 @@ So, the problem of time allocation isn’t a simple one to solve. My current app
    [[https://pixabay.com/photos/notepad-pencil-to-write-notes-3693309]] (Accessed: March 24 2024)
 
 2. [[https://pixabay.com/users/tumisu-148124][Tumisu]] (2017) /Shopping List Grocery List Grocery Shopping./ Available at: https://pixabay.com/illustrations/shopping-list-grocery-list-grocery-2044706 (Accessed: March 24 2024)
+
+3. [[https://pixabay.com/users/absolutvision-6158753/][Gino Crescoli]] (2017) /Lightbulb, Concept, Cork image./ Available at:
+   https://pixabay.com/photos/lightbulb-concept-cork-bulletin-2692247 (Accessed: March 24 2024)
+
+4. [[https://pixabay.com/users/qimono-1962238][Arek Socha]] (2016) /Philatelist, Stamp collection, Stamp image./ Available at:
+   https://pixabay.com/photos/philatelist-stamp-collection-stamp-1844080 (Accessed: March 24 2024)
+
+5. [[https://pixabay.com/users/analogicus-8164369][Tom]] (2018) /Office, Paper, Write image./ Available at:
+   https://pixabay.com/photos/office-paper-write-ballpoint-pen-3198716 (Accessed: March 24 2024)
+
+6. [[https://pixabay.com/users/sansoja-8524640][sansoja]] (2018) /Food, Vegetable, Healthy image./ Available at:
+   https://pixabay.com/photos/food-vegetable-healthy-meal-onion-3270461 (Accessed: March 24 2024)
+
+7. [[https://pixabay.com/users/dariuszsankowski-1441456][DariuszSankowski]] (2016) /Journey, Adventure, Photo image./ Available at:
+   https://pixabay.com/photos/journey-adventure-photo-map-old-1130732 (Accessed: March 24 2024)
 
 # Local Variables:
 # eval: (visual-line-mode)
