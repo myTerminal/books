@@ -1,4 +1,4 @@
-#+TITLE: Beyond Bullet Points
+#+TITLE: The List Whisperer
 #+SUBTITLE: Maximizing Your Productivity with Lists
 #+AUTHOR: Mohammed Ismail Ansari
 #+DESCRIPTION: Maximizing Your Productivity with Lists

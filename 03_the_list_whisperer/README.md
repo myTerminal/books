@@ -1,8 +1,8 @@
-# Beyond Bullet Points
+# The List Whisperer
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-To learn about the platforms you can find this book on, use one of these universal links: [beyond-bullet-points](https://books2read.com/beyond-bullet-points).
+To learn about the platforms you can find this book on, use one of these universal links: [the-list-whisperer](https://books2read.com/the-list-whisperer).
 
 Otherwise, this book can be found on the following platforms at this point:
 
