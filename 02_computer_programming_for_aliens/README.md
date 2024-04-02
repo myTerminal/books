@@ -2,7 +2,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-To learn about the platforms you can find this book on, use one of these universal links: [computer-programming-for-aliens](https://books2read.com/computer-programming-for-aliens) or [u/mB2QaA](https://books2read.com/u/3LVM5J).
+To learn about the platforms you can find this book on, use one of these universal links: [computer-programming-for-aliens](https://books2read.com/computer-programming-for-aliens).
 
 Otherwise, this book can be found on the following platforms at this point:
 
