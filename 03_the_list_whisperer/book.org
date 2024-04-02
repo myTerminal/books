@@ -74,7 +74,7 @@ Thanks to the other people I did not mention here (because there are a lot of th
 
 Last but not least, all thanks to the Almighty for making me human and enabling me to share and be grateful for his gifts.
 
-Also, I would like to remind you and myself about the millions of people being oppressed[[palestine][[/1/]​]] right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
+Also, I would like to remind you and myself about the millions of people being oppressed[[palestine][[/1/]]] right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
 
 \vspace*{\fill}
 
@@ -113,7 +113,7 @@ While lists undeniably serve a purpose for most people, I may harbor an almost i
 
 My journey with lists began in the form of handwritten notes during my middle school years, evolving in several forms. They passed through several digital platforms until they reached the refined state they occupy today. At the time of this writing, they reside as plain text documents and are accessible on virtually every digital device I interact with daily.
 
-In my last writing[[previous-writing][[/2/]​]], I focused primarily on daily tasks, and how one can organize their life to work on those tasks without losing sanity. As lists, planning, and productivity are very closely interconnected, I wrote this book as a follow-up to my first one with a more generic look at how I think one can utilize lists in their day-to-day life.
+In my last writing[[previous-writing][[/2/]]], I focused primarily on daily tasks, and how one can organize their life to work on those tasks without losing sanity. As lists, planning, and productivity are very closely interconnected, I wrote this book as a follow-up to my first one with a more generic look at how I think one can utilize lists in their day-to-day life.
 
 
 \newpage
@@ -258,11 +258,11 @@ Here is an elaboration on each category:
 
 2. *Channel Subscriptions on Web Platforms*: With the proliferation of online content, managing subscriptions to channels, blogs, newsletters, and streaming services is crucial for staying informed and entertained. Spending time on this list entails subscribing to relevant channels, unsubscribing from inactive or irrelevant ones, and organizing subscriptions into categories or playlists. This optimizes content consumption, reduces information overload, and fosters a curated digital experience tailored to individual interests and preferences.
 
-3. *Conversation Threads on Collaboration Platforms*: Collaboration platforms such as Slack[[slack][[/3/]​]], Microsoft Teams[[microsoft-teams][[/4/]​]], or Discord[[discord][[/5/]​]] facilitate communication and collaboration among teams and communities. Managing conversation threads involves participating in relevant discussions, archiving or deleting obsolete threads, and organizing conversations into channels or categories. This ensures effective communication, knowledge sharing, and project coordination within distributed teams or communities.
+3. *Conversation Threads on Collaboration Platforms*: Collaboration platforms such as Slack[[slack][[/3/]]], Microsoft Teams[[microsoft-teams][[/4/]]], or Discord[[discord][[/5/]]] facilitate communication and collaboration among teams and communities. Managing conversation threads involves participating in relevant discussions, archiving or deleting obsolete threads, and organizing conversations into channels or categories. This ensures effective communication, knowledge sharing, and project coordination within distributed teams or communities.
 
-4. *Platform-Specific Saved Items*: Many web platforms allow users to save or bookmark content for later reference, such as saved posts on Reddit[[reddit][[/6/]​]], favorited tweets on Twitter[[twitter][[/7/]​]], or bookmarked articles on web browsers. Spending time on this list entails saving relevant content, revisiting saved items periodically, and organizing them into folders or tags. This practice enables users to curate a personalized repository of valuable resources, ideas, and inspirations for future consumption or reference.
+4. *Platform-Specific Saved Items*: Many web platforms allow users to save or bookmark content for later reference, such as saved posts on Reddit[[reddit][[/6/]]], favorited tweets on Twitter[[twitter][[/7/]]], or bookmarked articles on web browsers. Spending time on this list entails saving relevant content, revisiting saved items periodically, and organizing them into folders or tags. This practice enables users to curate a personalized repository of valuable resources, ideas, and inspirations for future consumption or reference.
 
-5. *Games in Steam[[steam][[/8/]​]] Library*: For gaming enthusiasts, managing a library of digital games on platforms like Steam is akin to curating a collection of entertainment experiences. Spending time on this list involves purchasing, installing, categorizing, and curating games based on preferences, genres, or playability. This ensures an enjoyable gaming experience, facilitates the discovery of new titles, and maximizes the utilization of gaming assets.
+5. *Games in Steam[[steam][[/8/]]] Library*: For gaming enthusiasts, managing a library of digital games on platforms like Steam is akin to curating a collection of entertainment experiences. Spending time on this list involves purchasing, installing, categorizing, and curating games based on preferences, genres, or playability. This ensures an enjoyable gaming experience, facilitates the discovery of new titles, and maximizes the utilization of gaming assets.
 
 6. *Gadgets and Gears Maintenance*: Physical possessions such as gadgets, gears, and equipment require regular maintenance to ensure optimal performance and longevity. Spending time on this list involves scheduling maintenance tasks, such as cleaning, updating, or repairing devices, and organizing maintenance records or manuals for quick reference. This practice prolongs the lifespan of gadgets, minimizes downtime, and preserves their value over time.
 
@@ -295,9 +295,9 @@ When a list is too long such that it spans several pages or screens, the fear of
 
 I know how silly it sounds, but often looking at the same problem from two different perspectives and approaches can yield very different results. Similarly, fooling myself into thinking that I’ve got a particular seemingly impossible task does wonders, at least for me.
 
-#+LATEX: \section{Using My OCD[[ocd][[/9/]]] to My Advantage}
+#+LATEX: \section{Using My OCD to My Advantage}
 
-With so much going on on a regular day, tens (and sometimes a hundred) tasks flying all around, that one thing that doesn’t get looked at never gets handled. There are things I’d like to do but never get prioritized or picked up in between the other seemingly more (or sometimes lesser) important items. My OCD forces me to keep my home screens, computer desktops, and other views clean, so I can go beyond my regular reach to make sure there’s nothing on there. Using this as an advantage, I often keep things in such places to bug me every time I look at them and eventually take care of them to be able to have a clearer view.
+With so much going on on a regular day, tens (and sometimes a hundred) tasks flying all around, that one thing that doesn’t get looked at never gets handled. There are things I’d like to do but never get prioritized or picked up in between the other seemingly more (or sometimes lesser) important items. My OCD[[ocd][[/10/]]] forces me to keep my home screens, computer desktops, and other views clean, so I can go beyond my regular reach to make sure there’s nothing on there. Using this as an advantage, I often keep things in such places to bug me every time I look at them and eventually take care of them to be able to have a clearer view.
    
 #+LATEX: \chapter{Your Character Map}
 
