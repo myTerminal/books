@@ -297,7 +297,7 @@ I know how silly it sounds, but often looking at the same problem from two diffe
 
 #+LATEX: \section{Using My OCD to My Advantage}
 
-With so much going on on a regular day, tens (and sometimes a hundred) tasks flying all around, that one thing that doesn’t get looked at never gets handled. There are things I’d like to do but never get prioritized or picked up in between the other seemingly more (or sometimes lesser) important items. My OCD[[ocd][[/10/]]] forces me to keep my home screens, computer desktops, and other views clean, so I can go beyond my regular reach to make sure there’s nothing on there. Using this as an advantage, I often keep things in such places to bug me every time I look at them and eventually take care of them to be able to have a clearer view.
+With so much going on on a regular day, tens (and sometimes a hundred) tasks flying all around, that one thing that doesn’t get looked at never gets handled. There are things I’d like to do but never get prioritized or picked up in between the other seemingly more (or sometimes lesser) important items. My OCD[[ocd][[/9/]]] forces me to keep my home screens, computer desktops, and other views clean, so I can go beyond my regular reach to make sure there’s nothing on there. Using this as an advantage, I often keep things in such places to bug me every time I look at them and eventually take care of them to be able to have a clearer view.
    
 #+LATEX: \chapter{Your Character Map}
 
