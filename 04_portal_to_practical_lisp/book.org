@@ -1,0 +1,1784 @@
+#+TITLE: Portal to Practical Lisp
+#+SUBTITLE: Small Projects from Another Dimension
+#+AUTHOR: Mohammed Ismail Ansari
+#+DESCRIPTION: Portal to Practical Lisp
+#+KEYWORDS: programming, coding, software-development, lisp, common-lisp
+#+LATEX_CLASS: book
+#+LATEX_CLASS_OPTIONS: [a4paper,12pt,oneside]
+
+\pagenumbering{roman}
+
+<<Copyight>>
+\vspace*{\fill}
+
+\begin{center}
+https://myterminal.me
+
+Copyright $\copyright$ 2024 Mohammed Ismail Ansari
+
+All rights reserved.
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<AboutTheAuthor>>
+\vspace*{\fill}
+
+\begin{center}
+\section{About The Author}
+\end{center}
+
+| [[./assets/me.jpg]] |
+
+\textbf{Mohammed Ismail Ansari} is a computer and technology enthusiast with an academic degree in Electronics Engineering, over a decade of professional experience with computer software, and even more so working/playing with programming languages and platforms out of curiosity.
+
+Beyond computer software, he loves working with electronics hardware, consumer electronics, automobiles, and almost every other mechanical thing that can be tinkered with. He is a [[https://github.com/myTerminal][regular contributor to open-source software]], and he also shares his ideas and learning on several topics around computer software and more in the form of [[https://www.youtube.com/myTerminal][YouTube videos]].
+
+In his spare time, he likes to plan and visualize, delete digital data, re-arrange lines of computer code, check items off his To-Do list, and re-organize items on his desk. Being a nerd, he is also scientific, systematic, and a little over-organized, pulling him to continuous improvement and finding ways to organize his life and assets even better. Unsurprisingly, he loves talking about them.
+
+You can visit him at [[https://myterminal.me][https://myterminal.me]] where you can learn more about his work and other ways to reach him. You can also message him {NERD ALERT!} if you love to indulge in a super-technical or philosophical talk and do not mind getting bored for hours.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Dedication>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{In the memory of my mother, Ruqaiya Ansari.}
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Acknowledgements>>
+\vspace*{\fill}
+
+\begin{center}
+\section{Acknowledgements}
+\end{center}
+
+I would like to thank my parents and family for helping me see the world the way I do.
+
+Thanks to the other people I did not mention here (because there are a lot of them), who have helped me over the years in some way or the other to be what I am today. If you are reading this and remember helping me, you know this is about you.
+
+Last but not least, all thanks to the Almighty for making me human and enabling me to share and be grateful for his gifts.
+
+Also, I would like to remind you and myself about the millions of people being oppressed[[palestine][[/1/]]] right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Epigraph>>
+\vspace*{\fill}
+
+\begin{center}
+\emph{"Human history is written in a litany of blood shed over differing opinions of government and afterlife."} - Legion
+\end{center}
+
+\vspace*{\fill}
+
+
+\newpage
+
+
+<<Contents>>
+\tableofcontents
+
+
+\newpage
+
+
+<<Preface>>
+\begin{center}
+\section{Preface}
+\end{center}
+
+If you are someone like me, you find it enjoyable to learn new things, and in the context of this course, that would mean new programming languages. By "new", I do not necessarily mean the newly emerging ones, but it may also include those that may be some of the oldest ones out there but not familiar to you. Most programming concepts are somewhat similar across all programming languages, but there are a few of them that are either unique to only a few specific languages, or exist in an obscure way in the others.
+
+It often does not matter whether you would need a particular programming concept or paradigm while working on a piece of code that is being used in the real world, but simply being aware of those rarely discussed ideas can potentially make you a better programmer, or at least help you get familiar with a totally different perspective on programming.
+
+One other fun thing to do for a person like myself is to be able to create something useful out of the less popular programming languages out there. I mean surely you can create a re-usable artifact and share it with the rest of the world using mainstream languages like JavaScript[[javascript][[/2/]]] or Python[[python][[/3/]]], but being able to use a language as obscure and forgotten as Lisp[[lisp][[/4/]]] would give you a feeling of accomplishment unlike any other.
+
+Over my last couple of decades of hopping through different programming languages and platforms, and trying to use them to create something for myself, I finally revisited Lisp in its purest form. If I look back, the form of Lisp I have been the most familiar with is Elisp[[elisp][[/5/]]], but all that I create with it only stays within Emacs[[emacs][[/6/]]], and though that is mostly within where I spend my time on computers, being able to take Lisp outside of Emacs opened up a whole new dimension for me.
+
+Now I could replace the automation scripts that I wrote in JavaScript and Bash[[bash][[/7/]]] with that written in Lisp. The only problem with this is that to use Lisp for creating something useful, there is not as much help available on the web as there is for the other programming languages that I have experimented with, at least in the form a newbie would find helpful, which forms a reason I came up with this idea of hopefully helping new Lispers get around this initial hurdle of not being able to create small (or medium) applications with Lisp.
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+<<Introduction>>
+
+#+LATEX: \chapter{Introduction}
+
+[[./assets/mathematics-2640219_1920.jpg]]
+
+In this book, we will talk about a few things that we need to create real-life applications using Lisp. We will skim through a few language basics, take a look at how one can create and share artifacts written using Lisp, and hopefully some other things in between.
+
+The ideas I present may not be the most academically precise, and will often skip a few topics that can be studied from more accurate sources of reference. We will also create a small application at the end, and though the application will not be a very useful one, it should be enough to demonstrate how one can create a small useful application using Common Lisp[[common-lisp][[/7/]]].
+
+
+\newpage
+
+
+#+LATEX: \section{What makes Lisp such a special programming language?}
+
+- Lisp is a mathematical language that lets you imagine everything you write as a mathematical expression.
+- There are so many things that make Lisp such a great programming language even decades after it was first introduced, many modern programming languages have adopted something or the other from it, and they continue to do so today.
+- Lisp is rich and yet extensible, such that you can easily add to the language features without much effort.
+- Lisp is not only a functional programming language, but it's multi-paradigm, supporting object-oriented programming[[object-oriented][[/9/]]], structured programming[[structured-programming][[/10/]]], and more.
+- The way Lisp treats data and boolean values, it provides has implicit null handling and that makes it easier to work with iterations, predicate functions[[predicate-function][[/11/]]], and more, so the program logic isn't obfuscated with handling every single possible edge case, and yet everything works as it should.
+- Lisp encourages good programming practices like how there's always a single return statement from a function and how all data that you work with is immutable[[immutable][[/12/]]] unless you really need to change it otherwise.
+- Lisp treats code and data as equal, so you can not only have data in code but also the other way around. This opens up a lot of possibilities, one of which is how your Lisp code can generate code.
+- If you ever wanted to return multiple values from a function, Lisp lets you do that too!
+
+The above few statements do not do justice to the greatness Lisp brings to the table, but they at least give you a few reasons to dive into this beautiful language and improve as a programmer yourself.
+
+#+LATEX: \chapter{Platform and Tools}
+
+[[./assets/keyboard-6853391_1920.jpg]]
+
+In the upcoming sections, we will get into some absolute language basics, and talk about some interesting programming concepts in Lisp, but before we do all that interesting stuff, we need to have a set of tools to be able to work with Lisp. As it goes without saying, the tools or choices that you will soon learn about, are not the only ones you can go with, but are only meant to provide you with a starting point. If you are familiar enough with Lisp yourself, you may choose what you like or the tools that work better for you.
+
+
+\newpage
+
+
+#+LATEX: \section{Lisp implementation}
+
+Lisp is one of the oldest languages in its class, and has several dialects to choose from. As we have decided to limit the scope down to only Common Lisp, this does make it a little narrow, but it still leaves us with more than one Lisp implementations to choose from, which though provide you with something that is very similar, they all come with their own quirks and features. The two most popular Lisp implementations people often use are GNU Clisp[[clisp][[/13/]]] and SBCL[[sbcl][[/14/]]]. The former does provide several cool features to help a new Lisper get started quickly, but it has not been as actively developed as the latter. With that being said, SBCL is the Lisp implementation we will use for our purpose.
+
+Installing SBCL on Windows[[windows][[/15/]]] may involve downloading an executable setup from the official website and making your way through the installation process, following through the easy to understand steps. If you use one of the Linux[[linux][[/16/]]] distributions or a UNIX-like[[unix-like][[/17/]]] operating system like macOS[[macos][[/18/]]], you will most probably be knowing how to do it yourself, which would mostly involve running a simple command in order to fetch it using a package manager[[package-manager][[/19/]]].
+
+#+LATEX: \section{Operating platform}
+
+When choosing an operating platform for working with computer software, there is almost never a single objectively correct answer. Most experts will recommend using UNIX-like operating systems like Linux or macOS, as these feel the most natural for use-cases like these. Having said that, you should also have no trouble following through the rest of this with Windows either. As a plus, you will be able to take long enough breaks while your Windows restarts to install software updates, or otherwise you can watch cat videos over TikTok too if you need.
+
+In short, you may choose whatever you want, and there isn't a wrong answer here.
+
+#+LATEX: \section{Text-editor or IDE}
+
+When writing computer code, most platforms and programming languages simply need a tool to be able to type your programs or scripts in, and a compiler[[compiler][[/20/]]] or interpreter[[interpreter][[/21/]]] that can help you turn code into action. Sometimes all of this comes as a single package in form of an IDE[[ide][[/22/]]] that is dedicated for the technology you are working on.
+
+For Lisp, you can use pretty much any text-editing tool, and then run your code using the Lisp implementation of your choice. There is one text-editor[[text-editor][[/23/]]] however, that is often recommended by Lispers, and that is Emacs. One of the reasons that makes it so suitable for languages like Lisp is that a huge part of its own self comprises of a runtime that is based on a special dialect of Lisp, called the Elisp or Emacs Lisp.
+
+If you happen to choose Emacs for this, you may also go ahead and install SLIME mode so that Emacs is also aware of the dialect of Lisp you are working with, along with its own native Elisp. If you are an Emacs user, you would very well know how to install SLIME, just the way you do for other packages. If you don't, I would recommend staying away from Emacs for the rest of this course, as you would rather focus on Lisp right now instead of losing your life lost in the rabbit hole that comes with Emacs, especially for an Emacs newbie. The ones experienced enough with Emacs have learned how to control ourselves and not go a little too overboard, or have we?
+
+For other text-editors, you'll only need to create text-files with an extension that may look like ~.lsp~ or ~.lisp~, and work with them as you would usually for any other programming language.
+
+#+LATEX: \section{Terminal Emulator}
+
+You would also need a terminal emulator[[terminal-emulator][[/24/]]] in order to run SBCL to either quickly evaluate small snippets of Lisp, compile your Lisp into an executable binary[[binary][[/25/]]], or much more. On Windows, the infamous Windows Command Prompt can also do the trick, but if you need to be able to focus on Lisp more than fighting with the terminal interface, you might as well get a third-party terminal emulator. As it goes without saying, pretty much any inbuilt terminal emulator on Linux or macOS would do, and yes, whether you choose Bash, Zsh[[zsh-shell][[/26/]]], Fish[[fish-shell][[/27/]]] or otherwise, it does not change much about what we'll do.
+
+#+LATEX: \chapter{The Lisp Language: Absolute Basics}
+
+[[./assets/acrylic-paints-174638_1920.jpg]]
+
+As you would expect, Lisp (or Common Lisp in our context) has all the tools that one would expect from a programming language. In fact, it even has those other tools that most developers that work on other (mainstream) programming languages are not aware of.  Soon, we will talk about most (if not all of those) tools Lisp provides to enable you to express your solution, and we'll try to take them in a sequence in what I think is the most reasonable for a language as unique and magical as Lisp.
+
+
+\newpage
+
+
+#+LATEX: \section{Comments}
+
+Let's start with the most useless (and yet a very useful) element of a Lisp program: comments. As with most other languages, there are a variety of ways one can write a comment in Lisp.
+
+The simplest form of a comment is a descriptive text that follows after the first occurrence of a semi-colon (~;~) on a line. It is a convention that these comments are only to be used to annotate a single line of Lisp, placed at the end of the line.
+
+The other most commonly used type of a comment is one that starts with two semi-colons (~;;~). This type of a comment is used to describe a line or a couple of lines of a program and is usually placed before the line or group of lines it belongs to.
+
+Comments starting with three semi-colons (~;;;~) are usually placed to mark a region or a section in a code file, while those with four semi-colons (~;;;;~) are used for file headers that are placed at the beginning of a file and describe the purpose of the entire code file.
+
+Lastly, we also have multi-line comments, and with that, anything between a set of ~#|~ and ~|#~ is considered a comment.
+
+As it goes without saying, comments are just for humans, and make no functional impact on the program they make their appearances in.
+
+#+LATEX: \section{Data-types}
+
+Lisp is not a type-safe[[type-safe][[/28/]]] language like C[[c][[/29/]]], C++[[c++][[/30/]]], and the likes, but it still contains several data-types that can be used in a program.
+
+No programming language is complete without having types that can store numbers. Lisp has integers that can be expressed in literal numerals like ~87~ and ~91~, and also floating point numbers that can contain decimals, for example ~3.14~ and ~9.83~.
+
+There are character literals that are expressed in an unusual way, very different than most programming languages. A character "a" can be expressed as ~#\a~, while a string, just as in other programming languages, is expressed in between a pair of double-quotes, like "Commander" and "Shepard".
+
+For boolean, Lisp follows a very similar approach as JavaScript, which is technically an offspring of the former. Everything that is not ~null~ is treated as ~true~. However, the true is written as ~t~ and a false as ~nil~.
+
+One of the most used data-types in Lisp is symbols. A symbol is not a regular data-type, and can be used when working with "things" in a program especially when the type of data either is not finalized or is not important. Any group of letters that is not a known keyword in Lisp can be treated as a symbol. However, while using symbols, you'll often see them being prepended with a tick (~'~). We will learn more about this soon. One more thing to note is that these symbols are not case-sensitive, such that a ~tree~ is the same as ~Tree~, which in turn is the same as ~TREE~. In order to make symbols case-sensitive, one may need to surround them with pipes (~|~), like ~|Tree|~.
+
+These are the only data-types we need to know till this point, and we shall learn about more later, as we need.
+
+#+LATEX: \section{Lists}
+
+Everything in Lisp is a list, and a list can be written as elements surrounded by brackets ~(~ and ~)~, with individual elements separated by spaces. You can relate lists in Lisp to arrays or collections in other programming languages, but the way we work with lists in Lisp not only makes them efficient and easy to work with, but also helps you make your code more expressive and fun. Below is an example of a simple list containing three symbols:
+
+#+NAME: simple_list
+#+BEGIN_SRC lisp
+  (Shepard Joker Vakarian)
+#+END_SRC
+
+If you would evaluate the above expression in a Lisp environment, it won't be treated as a list, but instead would be looked as a "form". To explain what that means, usually, when the Lisp interpreter comes across a list with a few values, it treats the first value of the list as a function[[function][[/31/]]], while the rest as the parameters[[parameters][[/32/]]] being passed to the function. This expression in Lisp is called a "form". You don't need to worry about this behavior at this point, as we will talk about it in just a bit. For now, just think of the expression as a list containing three elements.
+
+Though the list we just saw may appear like a simple list with three elements, internally, it's stored as a linked-list[[linked-list][[/33/]]]. If you are familiar with the concept of a linked-list, you know how each element in a linked-list stores two things: a value at the current index, and a pointer to the next. Though Lisp internally stores all lists as linked-lists, it simplifies them into a regular list when it needs to interact with an external entity like the user. Having said that, the list we previously saw can also be represented as this:
+
+#+NAME: simple_linked_list_null
+#+BEGIN_SRC
+Shepard -> Joker -> Vakarian -> null
+#+END_SRC
+
+This is obviously a pseudo-code[[psuedo-code][[/34/]]]. So there are three elements in the linked-list, pointing to each other starting from the first element, with the last element pointing to a "null". If you remember, a null in Lisp is represented by ~nil~. So that makes the list appear like:
+
+#+NAME: simple_linked_list_nil
+#+BEGIN_SRC
+Shepard -> Joker -> Vakarian -> nil
+#+END_SRC
+
+Now, in order for us to be able to point to the immediate next element in the list from the current one, we need a way to represent pairs of elements. The first one will be the current element in the linked-list, and the second will be a pointer to the next element. Lisp provides us a way to create a pair using ~cons~.
+
+#+NAME: pair_of_symbols_cons
+#+BEGIN_SRC lisp
+  (cons Shepard nil)
+#+END_SRC
+
+The ~cons~ keyword in the list is a function, and it tends to make a pair of the next two elements in the list. The expression that we are looking at creates a pair of ~Shepard~ and ~nil~. This expression can also be written in the following concise way:
+
+#+NAME: pair_of_symbols_dotted
+#+BEGIN_SRC lisp
+  (Shepard . nil)
+#+END_SRC
+
+No matter which of the two ways we write the expression in, it means the same: a pair of ~Shepard~ and ~nil~. In order to start turning this simple pair into a linked-list, we need to replace the "tail" holding ~nil~ with another pair. So now, it can be written as either of the following:
+
+#+NAME: smaller_linked_list_cons
+#+BEGIN_SRC lisp
+  (cons Shepard (cons Joker nil))
+#+END_SRC
+
+OR
+
+#+NAME: smaller_linked_list_dotted
+#+BEGIN_SRC lisp
+  (Shepard . (Joker . nil))
+#+END_SRC
+
+As mentioned before, both the means of representing pairs yields us the same result. Now the expression has turned into a linked-list containing two elements. The first one is ~Shepard~, which points to the second one, ~Joker~. The next pointer is a ~nil~, representing the end of a linked-list. If we were to add another symbol to the list, we could write it as:
+
+#+NAME: small_linked_list_cons
+#+BEGIN_SRC lisp
+  (cons Shepard (cons Joker (cons Vakarian nil)))
+#+END_SRC
+
+OR
+
+#+NAME: small_linked_list_dotted
+#+BEGIN_SRC lisp
+  (Shepard . (Joker . (Vakarian . nil)))
+#+END_SRC
+
+Both of these expressions evaluate to the first list of three symbols that we were originally looking at:
+
+#+NAME: linked_list_eventual
+#+BEGIN_SRC lisp
+  (Shepard Joker Vakarian)
+#+END_SRC
+
+#+LATEX: \section{Code vs Data}
+
+Remember how a list is often interpreted as a "form" containing a function and its parameters? That is one of the interesting characteristics of Lisp that lets you treat code the same way as you would treat data.
+
+Imagine the following list of three elements:
+
+#+NAME: expression_sum_of_two_numbers
+#+BEGIN_SRC lisp
+  (+ 1 2)
+#+END_SRC
+
+The list does appear as a "form" with ~+~ being a function, and ~1~ and ~2~ being the function arguments. If you were to evaluate this expression inside a Lisp environment, it would yield you the value ~3~. This is because Lisp treats the expression as code. In order to force Lisp to treat an expression as data, all that we need to do is to prepend the expression with a tick (~'~). So the expression now becomes:
+
+#+NAME: expression_sum_of_two_numbers_list
+#+BEGIN_SRC lisp
+  '(+ 1 2)
+#+END_SRC
+
+Now if you evaluate the expression, Lisp treats it as a small list of three elements, the elements being symbols ~+~, ~1~, and ~2~. The other way to create a list in Lisp is to use the function ~list~. So the list can also be written as:
+
+#+NAME: list_of_three_elements
+#+BEGIN_SRC lisp
+  (list '+ 1 2)
+#+END_SRC
+
+The thing to note here is how we prepended the ~+~ with a ~'~ in order to treat it as data instead of code. So now that we saw how we can turn code into data, what about the other way around? Can you imagine a way to turn the list we created into code, such that we use the first element as a function and the rest as function arguments? That is pretty simple too:
+
+#+NAME: list_of_three_elements_evaluated
+#+BEGIN_SRC lisp
+  (eval (list '+ 1 2))
+#+END_SRC
+
+Simply using the ~eval~ function over a list can help us make Lisp treat it as code. As it goes without saying, the expression would now yield ~3~.
+
+So we have learned how using a ~'~ helps us use data within our code, and we can also evaluate that data using a function like ~eval~. There is something even more interesting that can be done when working with code and data interchangeably. How about a situation when we have a list and a part of the list needs to be treated as code? Consider the following example where we need to create a list of three numbers, where the first two numbers are known and the third number comes from the result of a calculation.
+
+#+NAME: list_of_three_elements_with_code
+#+BEGIN_SRC lisp
+  '(1 2 (+ 1 2))
+#+END_SRC
+
+The expression doesn't give us what we want, which is ~(1 2 3)~, but instead evaluates to the same expression as it appears to be. Just as a tick (~'~) lets us switch from code to data, a back-tick (~`~) lets us do the exact opposite. It only needs to be accompanied with a comma (~,~):
+
+#+NAME: list_of_three_elements_back_tick
+#+BEGIN_SRC lisp
+  `(1 2 ,(+ 1 2))
+#+END_SRC
+
+By placing a back-tick (~`~) before the entire expression and just leaving a comma (~,~) right before the expression to be evaluated, we achieve exactly what we need, which is a list containing ~1~, ~2~, and ~3~.
+
+#+LATEX: \section{Booleans and False values}
+
+When working with Boolean values in Lisp, all of the following four values are treated as false:
+
+1. ~nil~: which by default is false
+2. ~'nil~: which is a symbol that points to the value ~nil~ (which is false)
+3. ~'()~: which is an empty list
+4. ~()~: which is an empty form (no function with no arguments)
+
+This enables us to write our code without having to worry about null conditions as you would need to in other programming languages that do not have this feature.
+
+#+LATEX: \section{Printing values}
+
+There are a lot of different ways one can print values to the environment:
+
+#+NAME: printing_values_1
+#+BEGIN_SRC lisp
+  (print "Shepard") ; Prints "Shepard" with the quotes and a carriage return
+  (prin1 "Shepard") ; Prints "Shepard" with the quotes but without a carriage return
+#+END_SRC
+
+In order to print to the environment in a human-friendly way, one can use ~princ~:
+
+#+NAME: printing_values_2
+#+BEGIN_SRC lisp
+  (princ "Shepard") ; Prints 'Shepard' without double-quotes
+  (princ #\newline) ; Prints a new line character only
+#+END_SRC
+
+There are a lot of other ways to print values to the screen or even into other steams like strings. However, these are the only two functions we'll be using here, and you may read about the others in official documentation[[official-documentation][[/35/]]].
+
+#+LATEX: \section{Reading values}
+
+In Lisp, you can also read from different kind of streams, including from user input, which can also be ~stdin~[[stdin][[/36/]]].
+
+In order to read a value from the user, one can use ~read~. The object that is read from the user can be used in the program as regular data.
+
+#+NAME: reading_values_1
+#+BEGIN_SRC lisp
+  (read)
+#+END_SRC
+
+This just prompts the user to enter a value and hit the carriage return[[carriage-return][[/37/]]]. The expression evaluates to the value entered. This is not very useful, so we can use it in a useful way.
+
+#+NAME: reading_values_2
+#+BEGIN_SRC lisp
+  (princ (concatenate 'string
+                      "The entered name is "
+                      (read)))
+#+END_SRC
+
+In the example, the value that is read from the user is concatenated with another string and eventually printed back to the user. One thing needs to be taken care though is that the value entered should be encapsulated with double quotes (~"~) to make it a string.
+
+#+NAME: reading_values_3
+#+BEGIN_SRC lisp
+  (princ (concatenate 'string
+                      "You entered a list of "
+                      (write-to-string (length (read)))
+                      " items."))
+#+END_SRC
+
+In the example, a value is read from the user and temporarily stored in the variable[[variable][[/38/]]] named ~collection~. The length of the collection is determined and printed back to the user. So yes, the value entered this time needs to be a list (or any other sequence type like a string).
+
+When reading a simple string from the user, one can use ~read-line~.
+
+#+NAME: reading_values_4
+#+BEGIN_SRC lisp
+  (princ (concatenate 'string
+                      "You entered "
+                      (read-line)))
+#+END_SRC
+
+In the example, a string is read from the user, concatenated with another string and printed back to the user. There are no double-quotes involved here.
+
+#+LATEX: \chapter{The Lisp Language: Some More Basics}
+
+[[./assets/go-1218797_1920.jpg]]
+
+Now that we have talked about some absolute basics of Lisp, we know more than just the fact that there are too many brackets in a typical Lisp code snippet. We have talked about those brackets for how they let us create lists, turn those lists into "forms" and hence call functions and pass them arguments, evaluating them as values.
+
+Now we will look at how one can store values in variables, work with operators and functions, and much more.
+
+
+\newpage
+
+
+#+LATEX: \section{Variables}
+
+Variables can be used to hold values for all data-types, just as you would do in any other programming language. These variables can either be global to the entire program, or be passed around between sections of code.
+
+#+LATEX: \subsection{Global variables}
+
+In Lisp, global variables are often referred to as *dynamic variables*. These can be defined using the following keywords:
+
+#+NAME: global_variables
+#+BEGIN_SRC lisp
+  (defparameter *crew-members* 3)
+  (defvar *cargo* 5)
+#+END_SRC
+
+The keywords ~defparameter~ and ~defvar~ are different in the way that the former lets you redefine a variable with the same name again, while the latter does not. One convention to follow is that dynamic (global) variables are usually surrounded by ear-muffs (~*~) to make them stand out among the other variables in the program. In a "purely functional" code, there are no global variables, and hence it is usually discouraged to create dynamic bindings.
+
+#+LATEX: \subsection{Local variables}
+
+Lisp also provides a way to create lexically scoped[[lexical-scope][[/39/]]] variables that are local to their own containing code structures. We still have not talked about code-structures and code-blocks, but for now, you can think of them as blocks of code having their own scope. One can create one or more local variables using the ~let~ keyword:
+
+#+NAME: local_variables_with_let
+#+BEGIN_SRC lisp
+  (let ((a 1)
+        (b 2))
+    ;; You may access 'a' and 'b' here
+    ;; This could be a statement
+    ;; This could be another statement
+    )
+#+END_SRC
+
+You may notice that the number of brackets may seem to be a lot initially, but if you look at it closely, it all starts to make sense. Besides, it is all a set of nested lists! The outer-most list is a ~form~ that starts with the ~let~ function, the first argument to the function being another list. The list also happens to be a collection of smaller lists (rather pairs), each having a name-value pair corresponding to each local variable we intend to define. Once we are done defining the variables, the rest of the elements in the outer-most list are statements that can access the newly defined local variables. Now don't take my word that ~let~ is a function, as it is actually something that we call a "macro". Let's not go into more details at this point, and rather just think of ~let~ as a means to create local variables. We'll briefly talk about macros soon.
+
+There could be instances when one of the variables we are defining happens to depend on another. In such a case, we can use ~let*~ instead. Everything else remains the same, but the variables can now depend on each other, in a sequence of course.
+
+#+NAME: local_variables_with_let*
+#+BEGIN_SRC lisp
+  (let* ((a 1)
+         (b 2)
+         (c (+ a b)))
+    ;; You may access 'a', 'b' and 'c' here
+    ;; This could be a statement
+    ;; This could be another statement
+    )
+#+END_SRC
+
+As you can see in the example, we do define variables ~a~ and ~b~ the same way as we did the last time, but we can now also define the third variable ~c~ and make it depend on the values of the first two.
+
+There is one more thing to talk about here. Till this point, we have seen single expressions that get evaluated by treating the first element as a function and the rest of them (if any) as the function arguments. We have also seen structures like ~let~ and ~let*~ and compared them to regular, simpler *forms*. So, when we have a form containing several expressions inside, the entire form evaluates to the value of the last expression in the list. Following is an example:
+
+#+NAME: let_with_a_resultant_value
+#+BEGIN_SRC lisp
+  (let ((a 1)
+         (b 2))
+    (+ a b))
+#+END_SRC
+
+As useless as the example may appear to be, all that happens here is that we define two variables ~a~ and ~b~, and return the sum of the two as the result of the entire expression. In other words, evaluating the snippet in a Lisp environment will get you nothing but the sum of ~1~ and ~2~, which is ~3~.
+
+You must be thinking that declaring variables is all good, but what about changing their values? Out of the many ways one can alter the value stored in a variable, the following are a few:
+
+#+NAME: setf
+#+BEGIN_SRC lisp
+  (setf *count* 3)
+#+END_SRC
+
+The ~setf~ function changes the value of a variable.
+
+In order to increment or decrement the value of a variable holding a number, you can also use ~incf~ and ~decf~ as a shortcut.
+
+#+NAME: incf, decf
+#+BEGIN_SRC lisp
+  (incf *count*) ; Increments the value stored under *count*
+  (decf *count*) ; Decrements the value stored under *count*
+#+END_SRC
+
+Needless to say, these two functions only operate on numbers.
+
+#+LATEX: \section{Functions}
+
+Functions are a way to group a set of statements and/or expressions and name them, such that they could be used from another part of a program. They can often accept arguments that can potentially alter their behavior, how much though, that can get a little controversial. Lastly functions can also optionally return a value. If you've written programs in other languages, this is nothing new to you.
+
+We have already seen a few functions in Lisp that are already available to the programmer. You might have also seen that even simple mathematical operators are implemented as functions in Lisp. There is not much difference for what all a function can be used for in Lisp, except for a few smaller ones like pretty much all functions get evaluated as an expression, and they always return a value, whether or not the programmer intends to use the return value.
+
+#+LATEX: \subsection{Global functions}
+
+Defining a global function is as simple as using the keyword ~defun~ with a few required and optional details.
+
+#+LATEX: \subsubsection{Simple functions}
+
+#+NAME: function_returning_nothing
+#+BEGIN_SRC lisp
+  (defun say-hello ()
+    "Says hello."
+    (princ "Hello!"))
+#+END_SRC
+
+The example shows the definition of a simple function ~say-hello~ that does not accept any argument, and simply prints the word "Hello!" to the environment. The function ~princ~ of course does the job of printing the string value supplied to it. The documentation string right above the actual line that prints the string is optional, but is highly encouraged as a good practice while writing functions. An expression ~(say-hello)~ is treated as a function call, and the value "Hello!" gets printed.
+
+#+LATEX: \subsubsection{Functions that accept arguments}
+
+In case you need to accept arguments for a function, the function signature changes a little bit, by actually making use the empty brackets that you saw in the previous example:
+
+#+NAME: function_accepting_variable_and_returning_nothing
+#+BEGIN_SRC lisp
+  (defun say-hello-to (user-name)
+    "Says hello to the specified user."
+    (princ "Hello, ")
+    (princ user-name)
+    (princ "!"))
+#+END_SRC
+
+As you can see in the example, ~user-name~ is the name of the argument that is used to accept a value that holds the name of the user. As it goes without saying, using a set of three separate ~princ~ calls is intentional, though the entire string could be combined and passed to a single ~princ~ call. This is so that we do not get into looking at more functions than we need at this point. Anyway, an expression ~(say-hello "Shepard")~ would take the string value "Shepard" and use it to print the greeting to the user as, "Hello, Shepard!".
+
+We could have also returned the value out of the function instead of printing it to the environment. As a matter of fact, the function does return a string that happens to be a ~"!"~, which is what the last statement of the function returns. As I have mentioned before, the value of the last expression is always returned from a function, whether or not you use it.
+
+#+LATEX: \subsubsection{Functions that return values}
+
+Let us imagine now that there is a function that only needs to return a value, or rather evaluate into a value, a value that depends on the arguments being passed to it.
+
+#+NAME: function_accepting_variable_returning_a_value
+#+BEGIN_SRC lisp
+  (defun add (a b)
+    "Returns the sum of two numbers."
+    (+ a b))
+#+END_SRC
+
+The function that we see is a simple one that accepts two arguments and simply returns a sum of the two. As it goes without saying you will need to pass in numeric values, without which the code will result in an error.
+
+#+LATEX: \subsection{Local functions}
+
+So just as variables could be local or global, functions could be too, maybe not in a literal sense, but you get the idea. By local functions I mean those temporary functions whose definition (and existence) only makes sense for a very small part of code, which is often inside a very specific function. Just as we use ~let~ for variables, we can use ~flet~ for local functions.
+
+#+NAME: local_functions_with_flet
+#+BEGIN_SRC lisp
+  (flet ((add (a b)
+           (+ a b)))
+    ;; The function 'add' only exists inside this 'flet'
+    )
+#+END_SRC
+
+As you can see from the example, we can define local functions without using the keyword ~defun~. Now you may be thinking, just like there is a ~let*~ for variables depending on each other, is there an ~flet*~? Actually no, and for whatever reasons, the keyword for interdependent local functions is ~labels~.
+
+#+NAME: local_functions_with_labels
+#+BEGIN_SRC lisp
+  (flet ((add (a b)
+           (+ a b))
+         (average (a b)
+           (/ (add a b) 2)))
+    ;; The function 'add' and 'average' only exist inside this 'labels
+    )
+#+END_SRC
+
+In the example, the local function ~average~ depends on the local function ~add~. ~flet~ and ~labels~ behave very similar to ~let~ and ~let*~ respectively.
+
+#+LATEX: \subsection{Lambda functions}
+
+Functions can also be stored into variables, passed around between functions, and even returned from within functions. This is a known thing in functional programming languages where they treat functions as first-class objects, pretty much the same way as variables that hold data. Lisp is not any less of a functional language, in fact is the first ever functional programming language to have been introduced to human mankind. A function that does not have a name can be called a lambda.
+
+#+NAME: lambda_function
+#+BEGIN_SRC lisp
+  (lambda (a b) (+ a b))
+#+END_SRC
+
+The expression is a lambda function that accepts two arguments and returns a sum of the two. This may appear pretty similar to the ~add~ function that we have defined several times now. However, the major difference here is that the function does not have a name anymore, and can be treated as a regular value.
+
+#+LATEX: \subsection{Passing around functions}
+
+Even though a function stored in a variable can be passed around the different sections of a program, there is one additional thing to do before the exchange happens. You need to specifically point to the function that is stored in the variable. This can be done in at least two ways:
+
+#+NAME: referring_to_a_function_1
+#+BEGIN_SRC lisp
+  (function add)
+#+END_SRC
+
+We need to apply the ~function~ operator over the variable name to access the function stored inside. The other way you can do that is with a bit of syntactic sugar for convenience:
+
+#+NAME: referring_to_a_function_2
+#+BEGIN_SRC lisp
+  #'add
+#+END_SRC
+
+If this looks weird to you, don't worry about it now, as you will soon get used to it with the many examples we'll soon be looking at.
+
+#+LATEX: \section{Operators}
+
+Just passing around values across the program is useless unless you perform operations on those values. These operators can help you run calculations, make decisions, and use those values in some meaningful manner.
+
+We have already used quite a few operators in the previous code snippets and examples, and seen them in form of functions. It will not be incorrect to say that pretty much all operators we apply on values in Common Lisp are functions, and that means using each and every operator will mean a function call. Also, as this is not the most technical programmer's reference for Lisp, we will not be discussing about each and every possible operator that is available to us. Instead, we will only look at a few most commonly used ones and the rest can be referred to from better sources available elsewhere.
+
+#+LATEX: \subsection{Arithmetic operators}
+
+As one would expect, arithmetic operators are one of the most useful category of operators in any programming language, and we have quite a lot of them available to us in Lisp. Some of them are:
+
+#+NAME: arithmetic_operators
+#+BEGIN_SRC lisp
+  (+ 2 3) ; Returns 5 as the sum of 2 and 3
+  (- 3 2) ; Returns 1 as the difference between 3 and 2
+  (* 2 3) ; Returns 6 as the product of 2 and 3
+  (/ 6 3) ; Returns 2 as the quotient
+  (/ 5 3) ; Returns 5/3 as the quotient
+  (/ 5.0 3) ; Returns 0.6 as the quotient
+  (1+ 3) ; Returns 4 as the increment to 3
+  (1- 3) ; Returns 2 as the decrement to 3
+  (expt 2 3) ; Returns 8 (2^3)
+  (round 3.14) ; Returns two values: 3 and 0.14
+#+END_SRC
+
+#+LATEX: \subsection{Comparison operators}
+
+Comparison forms the basis for most decisions a program makes. Some comparison operators are as follows:
+
+#+NAME: comparison_operators
+#+BEGIN_SRC lisp
+  (= 1 2) ; Returns nil the two numbers are not equal
+  (> 2 1) ; Returns t as 2 is greater than 1
+  (>= 2 1) ; Returns t
+  (< 2 1) ; Returns nil as 2 is not less than 1
+  (<= 2 1) ; Returns nil
+#+END_SRC
+
+Comparing numbers is relatively simpler than comparing other data-types. There are quite a lot of overlapping comparison operators in Lisp and for a particular use-case, you may use any of the ones that get you the result you would expect. You just need to be careful of their differences. However, following are the suggested ones as per more experienced Lispers:
+
+#+LATEX: \subsubsection{For symbols}
+
+Symbols in Lisp are unlike any other data-type. So for comparing two symbols for equality, many Lispers use ~eq~:
+
+#+NAME: comparison_eq
+#+BEGIN_SRC lisp
+  (eq 'Shepard 'Vakarian) ; Returns nil
+  (eq 'Shepard 'Shepard) ; Returns t
+  (eq (cons 1 2) (cons 1 2)) ; Returns nil, as the two are separate conses
+#+END_SRC
+
+#+LATEX: \subsubsection{For symbols, numbers and characters}
+
+One could also use ~eql~ for symbols, and even for numbers and characters:
+
+#+NAME: comparison_eql
+#+BEGIN_SRC lisp
+  (eql 'Shepard 'Shepard) ; returns t
+  (eql 2 2) ; returns t
+  (eql #\a #\a) ; returns t
+#+END_SRC
+
+#+LATEX: \subsubsection{For isomporphic values}
+
+There are some values that are technically different, but yet look similar to the human eye. For such comparisons, you may use ~equal~:
+
+#+NAME: comparison_equal
+#+BEGIN_SRC lisp
+  (equal 'Shepard 'Shepard) ; Returns t
+  (equal 7 7) ; Returns t
+  (equal '(1 2 3) '(1 2 3)) ; Returns t
+  (equal "Shepard" "Shepard") ; Returns t
+  (equal '(1 2 3) (cons 1 (cons 2 cons (3 ())))) ; Returns t
+#+END_SRC
+
+#+LATEX: \subsubsection{For fuzzy comparison}
+
+If you are looking for a smarter (and less "technical" comparison), there is ~equalp~. If you are wondering about the "p" at the end of the function name, that is a short form of a "predicate". You will see plenty of predicate functions in Lisp that end with such a suffix, that are meant to generate a binary (or boolean) return value. Think of this as an alternate way of naming variables and functions, instead of prepending "is" or "does" to the name like ~isEqual~ or ~doesExist~, which is something that we often see in other programming languages.
+
+#+NAME: comparison_equalp
+#+BEGIN_SRC lisp
+  (equalp "Shepard" "shepard") ; Returns t
+  (equalp 0 0.0) ; Returns t
+#+END_SRC
+
+#+LATEX: \subsubsection{For strings}
+
+If you need to compare two strings and do not care about the casing, you can also use ~string-equal~:
+
+#+NAME: comparison_string-equal
+#+BEGIN_SRC lisp
+  (string-equal "Shepard" "Shepard") ; Returns t
+  (string-equal "Shepard" "shepard") ; Returns t
+#+END_SRC
+
+#+LATEX: \subsubsection{For characters}
+
+For something very similar to ~string-equal~ but for characters, you have ~char-equal~:
+
+#+NAME: comparison_char-equal
+#+BEGIN_SRC lisp
+  (char-equal #\a #\a) ; Returns t
+  (char-equal #\a #\A) ; Returns t
+#+END_SRC
+
+#+LATEX: \subsection{Logical operators}
+
+Can you ever imagine a program logic complete without a logical operator? Following are a few that you can use:
+
+#+NAME: logical_operators
+#+BEGIN_SRC lisp
+  (or (= 2 3) (= 4 5)) ; Logical OR
+  (and (= 2 2) (= 3 4)) ; Logical AND
+  (not nil) ; Logical NOT
+#+END_SRC
+
+One can also use these logical operators in a "short-circuited" fashion such that the second argument is "looked at" only when necessary.
+
+#+NAME: logical_operators_short_circuited
+#+BEGIN_SRC lisp
+  (or (= 2 3) (princ "Nice!"))
+  (and (= 2 3) (princ "Great!"))
+#+END_SRC
+
+#+LATEX: \subsection{Other operators}
+
+We will not be able to cover all the operators out there, but apart from the ones that we did, following are a few:
+
+#+NAME: other_operators_binary
+#+BEGIN_SRC lisp
+  (ash 11 1) ; Turns 11 into 22 by shifting bits once to the left
+  (ash 11 -1) ; Turns 11 into 5 by shifting bits once to the right
+#+END_SRC
+
+There are binary operations you can perform on numbers using operators like ~ash~. The first argument is the number that needs to be operated on, and the second argument does two things at once. The value of the number is by how much we shift the binary number, while the sign controls the direction: a positive sign meaning a left shift while a negative sign means a right shift.
+
+Just like the predicate ~equalp~ that we saw before, there are a lot of type-predicates, some of which are:
+
+#+NAME: other_operators_type_predicates
+#+BEGIN_SRC lisp
+  (oddp 1) ; Returns t as "1" is an odd value
+  (evenp 3) ; Returns nil as "3" is an odd value
+  (zerop 1) ; Gets a nil as 1 isn't a zero
+  (numberp 4) ; Returns whether 4 is a number)
+  (listp '(1 2 3)) ; Returns whether the supplied argument is a list
+#+END_SRC
+
+These are not exactly operators, but are worth mentioning as you can apply these to simple values.
+
+How about this ~complement~ operator that lets you invert a predicate function, or the ~type-of~ function that gets you the type of a symbol passed to it?
+
+#+NAME: other_operators_more
+#+BEGIN_SRC lisp
+  (complement #'oddp) ; Gives you a function that behaves exactly like the 'evenp' function
+  (type-of '(1 2 3)) ; Lets you know that the supplied value happens to be a list
+#+END_SRC
+
+#+LATEX: \section{Working with lists}
+
+Working with lists is as fun as it is useful. In the previous sections we merely scratched the surface for lists and given the fact that the entire language of Lisp is based on lists, one cannot know enough about dealing with them. Let us have a look at a few different ways we can work with lists. And yes, as you would have already guessed, this would be just a tiny part of what you can do with lists in Lisp.
+
+#+LATEX: \subsection{Accessing a part of a list}
+
+Accessing an element of a pair in a ~cons~ can be done using special functions named ~car~ and ~cdr~.
+
+#+NAME: conses_car_and_cdr
+#+BEGIN_SRC lisp
+  (car '(1 . 2)) ; Gives you 1
+  (cdr '(1 . 2)) ; Gives you 2
+#+END_SRC
+
+We have talked about how lists in Lisp are actually linked-lists consisting of pairs like the ones we just saw, ~car~ and ~cdr~ can also be used on lists. The only problem is that though ~car~ gets you the same result as you expect, ~cdr~ returns something different.
+
+#+NAME: lists_car_and_cdr
+#+BEGIN_SRC lisp
+  (car '(1 2 3)) ; Gives you 1, as expected
+  (cdr '(1 2 3)) ; Gives you (2 3), which is a sub-list
+#+END_SRC
+
+Just like ~cdr~ gets you the second element of a pair, it gets the pointer to the remainder of the list. But what if you would need only the second element of the list?
+
+#+NAME: lists_cadr
+#+BEGIN_SRC lisp
+  (car (cdr '(1 2 3))) ; Gives you 2
+  (cadr '(1 2 3)) ; Gives you 2
+#+END_SRC
+
+~cadr~ is the short form of ~car~ over ~cdr~, so it gets you the second element of the list instead of the entire list starting from the second element. Now you would probably ask, what if you would need to get the third element in the list?
+
+#+NAME: lists_caddr
+#+BEGIN_SRC lisp
+  (cdr (cdr '(1 2 3))) ; Gives you (3), a list with a single element
+  (car (cdr (cdr '(1 2 3)))) ; Gives you 3
+  (caddr '(1 2 3)) ; Gives you 3
+#+END_SRC
+
+The example shows how ~caddr~ is a short form of ~car~ over ~cdr~ over ~cdr~.
+
+Lisp has plenty of such functions that can get you a particular element of a list. Even better, there is another set of convenience functions to make your code more readable:
+
+#+NAME: lists_first_second_third
+#+BEGIN_SRC lisp
+  (first '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (second '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (third '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (fourth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (fifth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (sixth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (seventh '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (eighth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (ninth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+  (tenth '(1 2 3 4 5 6 7 8 9 0)) ; Gives you 1
+#+END_SRC
+
+These are the ten convenience functions you could use on list that I have seen in the Lisp implementation I use, which is SBCL. If you use a different implementation, your experience may be different.
+
+You might also ask, what if you would need to access the eleventh element of a list? I am happy to say that Lisp is "never gonna give you up, never gonna let you down, never gonna run around, or desert you". Well, you just got Rickrolled[[rickrolling][[/40/]]], didn't you? But yeah, I am serious here and talking about a function named ~nth~:
+
+#+NAME: lists_car_and_cdr
+#+BEGIN_SRC lisp
+  (nth 3 '(1 2 3 4 5)) ; Gives you 4
+#+END_SRC
+
+~nth~ lets you point to the nth element in a list in a zero-indexed way, which in the above example means 4.
+
+#+LATEX: \subsection{Adding elements to a list}
+
+To push an element to the start of a list, you can use the ~push~ function.
+
+#+NAME: lists_push
+#+BEGIN_SRC lisp
+  (defvar *squad* '(Garrus Liara))
+  (push 'Shepard *squad*)
+#+END_SRC
+
+In the example, the list originally contains two symbols, and using ~push~, the list gets mutated to contain three: ~(Shepard Garrus Liara)~.
+
+#+LATEX: \subsection{Concatenating lists}
+
+Two lists can be joined to form a new one using the ~append~ function.
+
+#+NAME: lists_append
+#+BEGIN_SRC lisp
+  (append '(1 2 3) '(4 5))
+#+END_SRC
+
+The expression returns a list that contains five numbers.
+
+#+LATEX: \subsection{Iterating through a list}
+
+One can iterate though the elements of a list and execute a particular function over them.
+
+#+NAME: lists_mapc
+#+BEGIN_SRC lisp
+  (mapc #'print '(1 2 3))
+#+END_SRC
+
+The example prints each element of the list. However, there is a function which is very similar to ~mapc~ but does something a little different. Instead of just applying a specified function over each element of the list, it also returns the result of the expression. The function is named ~mapcar~.
+
+#+NAME: lists_mapc
+#+BEGIN_SRC lisp
+  (mapcar #'1+ '(1 2 3))
+#+END_SRC
+
+The example generates a new list by incrementing each element from the original list by 1.
+
+#+LATEX: \section{Sequence functions}
+
+Till now, we have talked about functions and operators that are meant for a very specific type of input. There are certain functions that can accept any sequence types. What are sequences you ask? Basically, sequences are data-types that hold a collection of values, for example strings, lists, etc.
+
+~length~ is probably the simplest of all sequence functions:
+
+#+NAME: sequence_function_length
+#+BEGIN_SRC lisp
+  (length '(1 2 3)) ; Returns '3' as the length of the list
+  (length "Shepard") ; Returns '7' as the length of the string
+#+END_SRC
+
+~count~ gives you the number of occurrences of a value in the supplied sequence:
+
+#+NAME: sequence_function_count
+#+BEGIN_SRC lisp
+  (count 1 '(1 2 3)) ; Returns '1' as there's only one occurrence of '1' in the list
+  (count #\e "Commander Shepard") ; Returns '2' as there are two 'e's in the string
+#+END_SRC
+
+~position~ gets you the position of a particular value in the supplied sequence:
+
+#+NAME: sequence_function_position
+#+BEGIN_SRC lisp
+  (position 1 '(1 2 3)) ; Returns '0' as the first zero-based occurrence of '1'
+  (position #\e "Commander Shepard") ; Returns '7' as the first zero-based occurrence of #\e
+#+END_SRC
+
+Following are a few more sequence functions:
+
+#+NAME: sequence_functions_more
+#+BEGIN_SRC lisp
+  (find-if #'oddp '(1 2 3)) ; Returns the first odd number in the sequence, otherwise returns a nil
+  (some #'oddp '(1 2 3)) ; Returns whether there's at least one odd number in the sequence
+  (every #'oddp '(1 2 3)) ; Returns whether or not all elements in the sequence are odd
+  (reduce #'+ '(1 2 3) :initial-value 0) ; Folds a sequence using '+'
+  (map 'list #'1+ '(1 2 3)) ; Returns a list with scaled values, as we asked for a list in return
+#+END_SRC
+
+You can also sort a sequence in a specified way:
+
+#+NAME: sequence_function_count
+#+BEGIN_SRC lisp
+  (sort '(3 1 2) #'>) ; Returns a sorted sequence in a descending order
+  (sort '(3 1 2) #'<) ; Returns a sorted sequence in an ascending order
+#+END_SRC
+
+You can also ~concatenate~ sequences:
+
+#+NAME: sequence_function_count
+#+BEGIN_SRC lisp
+  (concatenate 'string "Commander" "Shepard") ; Gives "Commander Shepard"
+  (concatenate 'list '(1 2) '(3 4)) ; Gives '(1 2 3 4)
+#+END_SRC
+
+There are way more sequence functions that we did not talk about.
+
+#+LATEX: \chapter{The Lisp Language: Even More Basics}
+
+[[./assets/king-2095834_1920.jpg]]
+
+At this point we know at least some part of several aspects of programming with Lisp, like working with lists, differentiating between code and data, printing and reading values, working with variables, functions and operators. Let us now have a look at a few more basic concepts that helps us enable our program to do more practical things.
+
+
+\newpage
+
+
+#+LATEX: \section{Code blocks}
+
+A code block is a convenient way to group a set of statements and expression that can be logically treated as a single unit. We have seen similar structures in at least three different cases before. The first was a function definition, which creates a code block, gives it a name (unless it is a lambda function), and also enables it to accept arguments. The other two were the groups of statements formed while declaring local variables with ~let~ and ~let*~, or local functions with ~flet~ and ~labels~.
+
+The code blocks we are referring to at this point are not meant to be only used once. These do not get assigned a name and hence cannot be referred to from more than one location in the code. The following is an example of a code block:
+
+#+NAME: code_blocks
+#+BEGIN_SRC lisp
+  (progn
+    (princ "Please enter a value: ")
+    (read-line))
+#+END_SRC
+
+The example does not achieve anything out of the ordinary, but instead just combines two statements together. The first statement prints the prompt text to the environment, while the other reads a line from the environment as string.
+
+Does the ~progn~ return any value you might ask? Actually, it follows the same rule as the other blocks we have seen before: the return value of the last statement in the list gets returned to the outside entity. In the example, as the last statement is ~(read-line)~, and it usually returns the string that was entered by the user, that is indeed what is returned from the entire code block.
+
+One more thing to note here is that ~progn~ blocks can be nested within themselves or function blocks, or vice-versa. This is very obvious, but thinking about it in this way helps to change the way you write code.
+
+#+LATEX: \section{Macros}
+
+Apart from lists, pretty much the only other thing Lisp has is macros. While functions can be used to make your code re-usable and organized, macros let you extend the language syntax effectively adding new features to the language.
+
+Macros are constructs that may often look like a function but behave very differently. The most important difference between the two is that in a function, all the statements are executed in a sequence, while this is not true for a Macro.
+
+Take for example the ~defun~ macro, that does take the name of the function, optionally one or more arguments, and the implementation of the function itself. It does not get treated as a regular code block where every single statement gets literally executed from top to bottom.
+
+We will not be looking at macros much in this course, but will get to use quite a lot of them in our code snippets.
+
+#+LATEX: \section{Conditionals}
+
+In a program, not every line of code gets executed every single time. There are certain parts of the code that need to be only executed if a certain condition is true (or false), which brings us to conditionals. If you would have worked with any other programming language, you must already be aware of how ~if~-~else~ blocks work, and this isn't much different in Lisp either.
+
+#+LATEX: \subsection{The classic "if"}
+
+A simple ~if~ block looks like the following:
+
+#+NAME: conditionals_simple_if
+#+BEGIN_SRC lisp
+  (if existp
+      (princ "It does exist!")
+      (princ "It does not exist!"))
+#+END_SRC
+
+The example assumed the presence of a variable ~existp~ in the current scope. When the value is truthy (~t~ or anything that is not null), the first ~princ~ is executed. If the value of ~existp~ happens to be falsy (~nil~, empty list, or anything that can be treated as null), the second ~princ~ is executed. As it goes without saying, the last argument to an ~if~ is completely optional, so you may also implement an "if" case without an "else".
+
+This all looks good, but what about the case when there are multiple statements to be executed for either of the cases? The answer is simple: the statements can be replaced with a group of statements, either by calling a function that contains the logic, or by using a ~progn~ code block.
+
+#+NAME: conditionals_if_with_progn
+#+BEGIN_SRC lisp
+  (if existp
+      (progn
+        (princ "It does exist!")
+        (princ "Looks like this actually works!"))
+      (princ "It does not exist!"))
+#+END_SRC
+
+In the example, we have two statements for the "if" case, grouped together with a ~progn~.
+
+If you have not yet realized, ~if~ is a macro, and not a function, as not all the statements are executed.
+
+#+LATEX: \subsection{The smart "when" and "unless"}
+
+A more readable ~if~ block can be written as a ~when~ block. So instead of the following,
+
+#+NAME: conditionals_if
+#+BEGIN_SRC lisp
+  (if existp
+    (princ "It does exist!"))
+#+END_SRC
+
+one can write:
+
+#+NAME: conditionals_when
+#+BEGIN_SRC lisp
+  (when existp
+    (princ "It does exist!"))
+#+END_SRC
+
+A more readable "if-not" block (when there is only the else condition) can be written as an ~unless~ block. So instead of the following,
+
+#+NAME: conditionals_if_not
+#+BEGIN_SRC lisp
+  (if (not existp)
+    (princ "It does not exist!"))
+#+END_SRC
+
+one can write:
+
+#+NAME: conditionals_unless
+#+BEGIN_SRC lisp
+  (unless existp
+    (princ "It does not exist!"))
+#+END_SRC
+
+#+LATEX: \subsection{The convenient "cond"}
+
+Using constructs like ~if~, ~when~, ~unless~, etc. could only get you so far. When the number of conditional checks get out of hand, these "if-else" ladders can become unreasonably large. For such cases, we have the ~cond~ macro:
+
+#+NAME: conditionals_cond
+#+BEGIN_SRC lisp
+  (cond ((= input-value 3) (princ "The value is equal to 3"))
+        ((> input-value 3) (princ "The value is greater than 3"))
+        (t (princ "The value is less than 3")))
+#+END_SRC
+
+As seen in the example, the ~cond~ macro accepts practically unlimited pairs of conditions and the code to be run corresponding to those conditions. You can see how a three-way if-else block can be re-written using ~cond~.
+
+One thing to note is the usage of ~t~ as the last condition, which always evaluates to true (which is itself), making sure the corresponding code is always executed. The evaluation starts from the condition in the first pair, which if is true, the corresponding code is run. The execution goes down the list until one true condition has been found, and the rest of the pairs are ignored. Placing ~t~ as the condition in the last pair makes it behave like the ~else~ block you would have otherwise used in an "if-else" ladder.
+
+Another noteworthy thing here is that these expressions next to each conditions can also be something like a ~progn~ grouping together several statements, instead of being just one. Also, needless to say, a ~cond~ returns the value returned by the branch that was chosen for execution.
+
+#+LATEX: \subsection{The terrific "case"}
+
+If you are not impressed by ~cond~, we also have the classic switch-case macro. With a ~case~, you can place a list of conditions on a variable or a value:
+
+#+NAME: conditionals_switch
+#+BEGIN_SRC lisp
+  (case squad-mate
+    ((Miranda Jacob Jack Zaeed Kasumi) (princ "Human"))
+    ((Garrus) (princ "Turian"))
+    ((Tali) (princ "Quarian"))
+    ((Grunt) (princ "Krogan"))
+    ((Mordin) (princ "Salarian"))
+    ((Legion) (princ "Geth"))
+    (otherwise (princ "Unknown")))
+#+END_SRC
+
+The example should be pretty self-explanatory, such that it assumes the presence of a variable named ~squad-mate~, and runs a switch over it to find the right set of statements to execute. If the value happens to be within the list of values corresponding to a particular branch, the associated code is run.
+
+What we see is a simplified usage of the ~case~ macro, and it supports many more features just like other programming languages.
+
+#+LATEX: \section{Loops}
+
+Repeating a set of instructions is a very common pattern in practical programs, and hence we have looping constructs in all programming languages. In Lisp, you could either loop over lists and data with functions or using the ~loop~ macro. We have already previously seen a few examples of looping when we talked about sequence functions, but let us now talk about them a tiny bit more. We will obviously not explore them in absolute detail, as that is not the focus here, but we can at least have a look at a few examples.
+
+#+LATEX: \subsection{Running something "n" times with "dotimes"}
+
+You can run a set of statements a certain number of times using ~dotimes~. You can pretty much compare it to the well-known ~for~ loop that we often use in other programming-languages, but is of course written differently.
+
+#+NAME: looping_dotimes
+#+BEGIN_SRC lisp
+  (dotimes (i 5)
+    (print i))
+#+END_SRC
+
+The example will simply run a loop from 0 to 4 (five times), and use ~i~ as the indexing variable, resulting in numbers 0 through 4 being printed, each on a new line.
+
+#+LATEX: \subsection{Looping with "loop" macro}
+
+Just wrapping an expression within a ~loop~ macro can make it run forever.
+
+#+NAME: looping_loop
+#+BEGIN_SRC lisp
+  (loop
+   (print "Shepard"))
+#+END_SRC
+
+The example will never quit printing "Shepard" until the program is explicitly stopped.
+
+Once can use ~(return)~ to break out of a ~loop~ though:
+
+#+NAME: looping_loop_with_return
+#+BEGIN_SRC lisp
+  (defparameter *count* 5)
+  (loop (progn
+          (print *count*)
+          (decf *count*)
+          (if (= *count* 0)
+              (return))))
+#+END_SRC
+
+In the example, we start with a ~*count*~ of 5, and a loop that keeps printing the value of ~*count*~ and decrementing it each time until it ends up being zero.
+
+The ~loop~ macro is not just this, but instead provides a million ways to iterate over numbers and else, some of which we will see in a few upcoming examples.
+
+#+NAME: looping_loop_repeat
+#+BEGIN_SRC lisp
+  (loop repeat 5
+        do (print "Hello!"))
+#+END_SRC
+
+The code in the example prints "Hello!" exactly five times, without us having to maintain a counter and checking for zero.
+
+#+NAME: looping_loop_from
+#+BEGIN_SRC lisp
+  (loop for i from 6 to 10
+        do (print i))
+#+END_SRC
+
+The code in the example prints numbers between 6 and 9, which is one less than the number 10.
+
+#+NAME: looping_loop_repeat
+#+BEGIN_SRC lisp
+  (loop repeat 10
+        collect (random 100))
+#+END_SRC
+
+The code in the example generates ten random numbers between 0 and 99.
+
+And, there are limitless possibilities with ~loop~, none of which we will talk about here.
+
+#+LATEX: \section{Advanced data-structures}
+
+Lisp also has several other data-structures, most of which we use in other programming languages. Some of them are arrays[[arrays][[/41/]]], hash-tables[[hash-tables][[/42/]]], structures[[structures][[/43/]]], etc. I have decided to keep them out of the scope as that is not the focus for us. Having said that, I might add a dedicated section covering those in detail in future revisions.
+
+#+LATEX: \chapter{Running Lisp as Small Scripts}
+
+[[./assets/hands-2178566_1920.jpg]]
+
+Running code inside a REPL[[repl][[/44/]]] is just good enough for small experiments or learning the language closely. However, if you intend to turn it into something useful, it needs to be accessible for execution when it's needed. One way to do that is to place it inside a code file and execute it to get work done. In the previous sections we have seen several different concepts of Lisp and now may be a good time to put it to use.
+
+
+\newpage
+
+
+#+LATEX: \section{Storing Lisp in text files}
+
+Code written in Common Lisp can be stored in plain text files just the way we do for other programming languages. There are several file extensions people use, but one of the most common ones is ~.lisp~.
+
+Also, not all Lisp code is thrown into a single code file. There are means and conventions to logically organize your code into multiple files, just as you would be doing for other platforms and programming languages. We will soon take a look at one.
+
+#+LATEX: \section{Running scripts the simple way}
+
+Once your code has been saved into a file, it can be executed by passing it over to your Lisp interpreter. Depending on the Lisp implementation you use, the exact command syntax may be different. For SBCL though, it looks something like this:
+
+#+NAME: running_scripts_sbcl
+#+BEGIN_SRC shell
+  sbcl --script <your-script-file-name>.lisp
+#+END_SRC
+
+In the example, the name of your code file is sent over to SBCL through a named argument ~--script~. When run this way, SBCL executes the file and quits right away, instead of waiting for you type further expressions.
+
+#+LATEX: \section{Running scripts the advanced way}
+
+Explicitly needing to use the name "SBCL" while running our Lisp code and passing our script file as an argument does seem to work, but what if you could run some Lisp by simply pointing to a file? In order to do something like that, you might need to use a shebang that can look something like this:
+
+#+NAME: running_scripts_shebang
+#+BEGIN_SRC
+  #!/usr/bin/env sbcl --script
+  (print "Hello")
+#+END_SRC
+
+When placed at the first line of a file, it helps declare that the file needs to be interpreted using SBCL. Notice the ~--script~ switch, without which executing the file would start the SBCL REPL instead of executing the file itself. The other thing that is not to be forgotten is that the file in question should also be marked as executable. Depending on what operating system you're running this on, the exact command may differ. On Linux, I'd do something like this:
+
+#+NAME: running_scripts_shebang
+#+BEGIN_SRC shell
+  chmod +x hello.lisp
+#+END_SRC
+
+With everything in place, simply running ~./say-hello~ at the terminal would print "Hello". And yes, we may now also optionally drop the file extension, so instead of naming it ~say-hello.lisp~, we can name it ~say-hello~ only.
+
+#+LATEX: \chapter{Using External Libraries}
+
+[[./assets/books-2253569_1280.jpg]]
+
+You may be the kind of developer that likes to write all their code by themselves. However, why would one waste their time and energy in re-inventing the wheel when there's already a sizable collection of free libraries that can help you solve a common problem that someone else has already come across? So you obtain a Lisp file containing some re-usable code from another developer, place it alongside your code, and import its functionality into your own? This is definitely not the most appropriate way to consume a library, and there are plenty of reasons for not doing all that manual work. Thankfully, like all other languages and platforms, Lisp too has a few standardized ways to do that.
+
+#+LATEX: \section{Quicklisp}
+
+Along with other few ways to share Lisp libraries, Quicklisp[[quicklisp][[/45/]]] is one of the more recent ones. It is very popular, and is also pretty easy to use, with a minimal one-time setup to the host environment.
+
+The creators of Quicklisp call it a library manager for Common Lisp, and they made it in such a way that it works with quite a lot of Lisp implementations and on all major operating platforms. Using Quicklisp, you can download, install and load over two thousand libraries for your code.
+
+#+LATEX: \section{Setting up Quicklisp}
+
+In order to use Quicklisp, you need to perform the following easy steps:
+
+#+LATEX: \subsection{Download Quicklisp}
+
+In order to download the Quicklisp script, simply run the following command within a terminal:
+
+#+NAME: quicklisp_downloading
+#+BEGIN_SRC shell
+  curl -O https://beta.quicklisp.org/quicklisp.lisp
+#+END_SRC
+
+If you are connected to the internet, a new Lisp code file will appear in the currently directory.
+
+#+LATEX: \subsection{Install Quicklisp on the current system}
+
+Now that we have the latest Quicklisp script with us, we need to start SBCL and load the script for the current session. Use a command like the this one:
+
+#+NAME: quicklisp_loading
+#+BEGIN_SRC shell
+  sbcl --load quicklisp.lisp
+#+END_SRC
+
+Now that we have Quicklisp in the current session, we can go ahead and install it to the system by evaluating a simple Lisp expression that looks like this:
+
+#+NAME: quicklisp_installing
+#+BEGIN_SRC shell
+  (quicklisp-quickstart:install)
+#+END_SRC
+
+With this, we now have Quicklisp available for the current SBCL session. However, this is not all we want, but instead, we want to be able to use Quicklisp also in the future and from other scripts. We can configure SBCL such that it automatically loads Quicklisp for every session. Even this is as simple as evaluating a Lisp expression in the REPL:
+
+#+NAME: quicklisp_add_to_init
+#+BEGIN_SRC shell
+  (ql:add-to-init-file)
+#+END_SRC
+
+This will make sure a call to load Quicklisp is stored in SBCL config file, which is usually stored as a file named ~.sbclrc~ at the home location for the current user.
+
+#+LATEX: \subsection{Loading Quicklisp post install}
+
+Had we not performed the last step, we would have needed to run the following at the start of all Lisp code files:
+
+#+NAME: quicklisp_load
+#+BEGIN_SRC shell
+  (load "~/quicklisp/setup.lisp")
+#+END_SRC
+
+With that being said, you will not be needing to worry about it in most cases if you ran the last step and Quicklisp will always be available to you.
+
+#+LATEX: \section{Loading libraies using Quicklisp}
+
+If you have some experience working with package managers for other systems, the ones that let you search for public packages, install them, and more, you would not be having trouble using Quicklisp.
+
+Basically, in order to search for a library using Quicklisp, you need to evaluate an expression that looks like this:
+
+#+NAME: quicklisp_search
+#+BEGIN_SRC shell
+  (ql:system-apropos "vecto")
+#+END_SRC
+
+When run inside an SBCL REPL, the expression lists down search results after searching for all available libraries that match the given string "vecto".
+
+In order to load a library, we have an even simpler function that looks like this:
+
+#+NAME: quicklisp_quickload
+#+BEGIN_SRC shell
+  (ql:quickload "vecto")
+#+END_SRC
+
+The expression, when evaluated at the start of a script, downloads the library named "vecto" to a central directory location under Quicklisp, and loads it to make it available for the current session.
+
+There is a similar function for uninstalling an installed library. Though we will not be needing it for any of the future sections here, it does not hurt to briefly mention it:
+
+#+NAME: quicklisp_uninstall
+#+BEGIN_SRC shell
+  (ql:uninstall "vecto")
+#+END_SRC
+
+This function does exactly what you would expect: remove it from the system.
+
+#+LATEX: \chapter{Working with Lisp Projects}
+
+[[./assets/arts-and-crafts-1846308_1920.jpg]]
+
+Manually passing around Lisp files in order to share your code may not be ideal, and so would be placing your entire project in a single text file. Thankfully, there are a few conventions for Lisp code that apply across implementations, and they let you structure, organize and share Lisp artifacts with others.
+
+
+\newpage
+
+
+#+LATEX: \section{Packages, System, Projects, etc.}
+
+In most platforms, applications and libraries are shared in form of packages. One good example would be NPM[[npm][[/46/]]], where your entire project is organized as a single package by a unique name, with all the code bundled into one. For Lisp, the term ~package~ means something very different, and here it instead refers to a namespace. This means that your reusable artifact may contain multiple packages, separated by a logical grouping that might be making sense to the author.
+
+In a previous section, we talked about Quicklisp and how it is one of the most popular ways of sharing Lisp code. The term that we use for re-usable public libraries is a ~system~. Each ~system~ that we create or consume can contain one or more packages.
+
+Finally, we have ~projects~ that can be individual code repositories that may hold one or more systems.
+
+These are a few terms that are different when compared to other languages and platforms, and hence they need to be mentioned before we work on Lisp projects.
+
+#+LATEX: \chapter{A Small Project}
+
+[[./assets/busy-1972169_1280.jpg]]
+
+Using all the concepts we talked about in the previous sections, let us create a small project together to experience what it is to make something useful out of Lisp code. In this tiny project we make, we may not be using Lisp in the most recommended way, but instead we'll only evaluate a small subset of capabilities of the language and the SBCL platform. We may also not be following all the best-practices out there, but that is not the focus here anyway.
+
+
+\newpage
+
+
+#+LATEX: \section{Choosing a use-case and gathering requirements}
+
+What could be smaller than a unit converter that converts values from a given unit to another? Let us try creating one that converts from degrees Celsius and Fahrenheit, and vice-versa.
+
+At a high-level, the following is what we need:
+
+1. A means to accept arguments into our program, specifically from the command-line, as a command-line program is what we intend do create as a part of this activity.
+2. A couple of functions to convert the accepted value into a specified unit of measure, which might as well be accepted from the user.
+3. A means to print the output of the conversion back to the user.
+
+#+LATEX: \section{Starting with a small script}
+
+We can start our tiny project in a single script and then slowly make our way to something that will have a hopefully more appropriate form and structure.
+
+Let us first start with a function that is capable of converting a temperature in degrees Celsius into one in Fahrenheit.
+
+#+NAME: project_1_simple_c_to_f
+#+BEGIN_SRC lisp
+  (defun convert-c-to-f (temp)
+    "Converts temperature entered as C into F."
+    (+ (* (/ 9 5)
+          temp)
+       32))
+#+END_SRC
+
+It is the same old formula that we use, multiplying the input temperature by ~9/5~ and then adding ~32~ to the result.
+
+Similarly, we can also create a function that is capable of doing the exact opposite: converting a temperature in degrees Fahrenheit into one in Celsius.
+
+#+NAME: project_1_simple_f_to_c
+#+BEGIN_SRC lisp
+  (defun convert-f-to-c (temp)
+    "Converts temperature entered as F into C."
+    (* (/ 5 9)
+       (- temp
+          32)))
+#+END_SRC
+
+With these two functions in place, we now need a way to accept the two values from the user: a temperature to convert from, and the unit to convert the temperature into. Accepting command-line arguments from the environment could be tricky, and may be different across Lisp implementations. As we have decided to go with SBCL, we should not have to worry about that.
+
+The variable ~*posix-argv*~ holds the command-line arguments passed to the program when it was executed. The only problem is that it may contain more than just the arguments, also including the name "SBCL". That should not be trouble either, as we can easily ignore the first element from the list and only look at the other two.
+
+#+NAME: project_1_arguments_and_operations
+#+BEGIN_SRC lisp
+  (let* ((arguments *posix-argv*)
+         (temp (parse-integer (second arguments)))
+         (target-unit (third arguments)))
+    (cond ((string-equal target-unit "f")
+           (princ (convert-c-to-f temp)))
+          ((string-equal target-unit "c")
+           (princ (convert-f-to-c temp)))
+          (t (princ "Error!"))))
+#+END_SRC
+
+If we placed all the three code snippets in a single text file and named it something like "converter.lisp", this should get us our first Lisp project. In order to run it at this point, we will need to use SBCL however:
+
+#+NAME: project_1_first_run
+#+BEGIN_SRC shell
+  sbcl --script ./converter.lisp 0 f
+#+END_SRC
+
+The example command invokes SBCL, runs our script file and passes the two arguments to it from the command-line. It converts 0 degrees Celsius to Fahrenheit and returns 32 as the result.
+
+#+LATEX: \section{Splitting code into multiple files}
+
+Though the code we just wrote works, usually it is not a great idea to place everything into a single file. You might also have noticed how we placed two function definitions right next to the script that runs as soon as we execute the script file. It is a convention to define an additional entry-point method, naming it ~main~, and call it in order to kick off the execution of a script. We can also take this opportunity to split our code into multiple files, moving all temperature-conversion related functions into a separate file of their own.
+
+After we do that, the following would be the contents of the new file, supposedly calling it "conv-temp.lisp":
+
+#+NAME: project_2: conv_temp.lisp
+#+BEGIN_SRC lisp
+  (defun convert-c-to-f (temp)
+    "Converts temperature entered as C into F."
+    (+ (* (/ 9 5)
+          temp)
+       32))
+
+  (defun convert-f-to-c (temp)
+    "Converts temperature entered as F into C."
+    (* (/ 5 9)
+       (- temp
+          32)))
+#+END_SRC
+
+And then we can have the entry-point file contain simply this:
+
+#+NAME: project_2: converter.lisp
+#+BEGIN_SRC lisp
+  (load "conv-temp")
+
+  (defun main ()
+    "The entry-point to our converter."
+    (let* ((arguments *posix-argv*)
+           (temp (parse-integer (second arguments)))
+           (target-unit (third arguments)))
+      (cond ((string-equal target-unit "f")
+             (princ (convert-c-to-f temp)))
+            ((string-equal target-unit "c")
+             (princ (convert-f-to-c temp)))
+            (t (princ "Error!")))))
+
+  (main)
+#+END_SRC
+
+Notice that all that we did is to place all our code into a new function named ~main~, and invoke it at the end of the file. The other most important thing to do here was to load the other file "conv-temp" before we did anything else. The program can still be run using the same command as we did before.
+
+#+LATEX: \section{Defining packages and creating a binary}
+
+Loading code from separate files does seem to work, but a better way could be to organize it into "packages", which as we talked about earlier, is a way to create namespaces to organize code into meaningful chunks.
+
+When you declare a package, you give it a name, declare what all it needs to import from other packages, and then also the elements that it exports such that other packages can import them. Let us create a new file named "package.lisp", and define a few logical packages for the code that we have till this point.
+
+#+NAME: project_3: package.lisp
+#+BEGIN_SRC lisp
+  (defpackage :conv-temp
+    (:use :cl)
+    (:export :convert-c-to-f
+             :convert-f-to-c))
+
+  (defpackage :main
+    (:use :cl)
+    (:import-from :conv-temp
+                  :convert-c-to-f
+                  :convert-f-to-c)
+    (:export :main))
+#+END_SRC
+
+Now that we have all the packages declared, we need to implement the two packages in their own files. So the file "conv-temp.lisp" now contains:
+
+#+NAME: project_3: conv-temp.lisp
+#+BEGIN_SRC lisp
+  (in-package :conv-temp)
+
+  (defun convert-c-to-f (temp)
+    "Converts temperature entered as C into F."
+    (+ (* (/ 9 5)
+          temp)
+       32))
+
+  (defun convert-f-to-c (temp)
+    "Converts temperature entered as F into C."
+    (* (/ 5 9)
+       (- temp
+          32)))
+#+END_SRC
+
+The file "converter.lisp" can now be renamed to "main.lisp" in a similar way, but with a slight change:
+
+#+NAME: project_3: main.lisp
+#+BEGIN_SRC lisp
+  (in-package :main)
+
+  (defun main ()
+    "The entry-point to our converter."
+    (let* ((arguments (uiop:command-line-arguments))
+           (temp (parse-integer (first arguments)))
+           (target-unit (second arguments)))
+      (cond ((string-equal target-unit "f")
+             (princ (convert-c-to-f temp)))
+            ((string-equal target-unit "c")
+             (princ (convert-f-to-c temp)))
+            (t (princ "Error!")))))
+#+END_SRC
+
+The other slight change in the file "main.lisp" is that we are accessing the command-line arguments in a different way, specifically by the use of an external library named "asdf". This is an implementation-independent way of accessing command-line arguments and it also only returns a list of arguments instead of the entire command including SBCL itself. So we make a couple of more changes in the way we access ~temp~ and ~target-unit~, and that completes our module ~main~. Notice that we do not invoke the ~main~ method anymore, as that will be taken care of from a different place now.
+
+There is one last step that remains now: joining all the elements that we designed as a single project. For that purpose, let us also create a file named "build.lisp" that load all other files from within it.
+
+#+NAME: project_3: build.lisp
+#+BEGIN_SRC lisp
+  (ql:quickload "asdf")
+
+  (load "package.lisp")
+  (load "src/conv-temp.lisp")
+  (load "src/main.lisp")
+
+  (sb-ext:save-lisp-and-die "converter"
+                            :toplevel 'main:main
+                            :executable t)
+#+END_SRC
+
+In the file, you can see that we start by declaring a dependency for ~asdf~, which is the external library we are using for accessing the command-line arguments. Once that is done, we start by loading our package definitions from "package.lisp" before we actually load any packages. Once the interpreter has knowledge of all the packages we have, it will be safe to finally load the rest of our files that implement the packages themselves.
+
+Note that we moved the two files we started the entire thing with, into a directory named "src". This helps us keep a separation between the actual source files and the other package and build related files.
+
+We still have to talk about the magical line at the end of the "build.lisp" file, which is in fact the most magical of all that we have done till this point. The function call ~save-lisp-and-die~ takes all that we loaded till that point, and creates an executable binary named "converter", with the function ~main~ from the package named ~main~ as the starting point of the binary. And yes, no one actually dies in the process.
+
+With all this in place, we simply need to run a command from the terminal, and we will have our binary ready for use!
+
+#+NAME: project_3_generating_the_binary
+#+BEGIN_SRC shell
+  sbcl --non-interactive --load ./build.lisp
+#+END_SRC
+
+This would create a binary with the name we specified in the file "build.lisp" at the current directory location. Let us run our binary now, shall we?
+
+#+NAME: project_3_running_the_binary
+#+BEGIN_SRC shell
+  ./converter 0 f
+#+END_SRC
+
+And as you can see, we can ask our converter for the Fahrenheit equivalent of 0 degrees Celsius. That is cool, isn't it?
+
+#+LATEX: \section{That's not all}
+
+As I mentioned earlier, all that we did in this section does not even remotely hold perfect in its own self. We just created a small, arguably useful project that may not scale well with growing requirements as well as a professional Lisp project would. Having said that, this is where we end the scope of our activity.
+
+#+LATEX: \chapter{Conclusion}
+
+[[./assets/waterfall-4297449_1920.jpg]]
+
+We utilized a fraction of Lisp capabilities, used it to create a binary package that can run run across platforms without the need of SBCL in the target environment. As mentioned several times before, there could be much more involved in a typical Lisp project. We also did not cover most of the other capabilities of Lisp as a language, but barely defined a couple of functions, grouped them together into packages and published them as a system.
+
+
+\newpage
+
+
+#+LATEX: \section{What's next?}
+
+Further from here, you may refer to the official language documentation, or The Common Lisp Cookbook[[cl-cookbook][[/47/]]], which is a great resource to know more about the language, and things that you would need in a practical implementation. There are advanced topics like working with other data-types like dates and times, external entities like files and directories, and other elements of the target operating environment. There is documentation around debugging, testing, web development, and much more.
+
+One other beautiful resource for learning Lisp is Land of Lisp[[land-of-lisp][[/48/]]], which is a comic-like book that teaches you Lisp by helping you realize it in form of practical mini-games.
+
+Hopefully, this book should have given you enough of an insight into the magic of Lisp, and if you feel you can keep going, you're free to choose a medium that suits your style and pace.
+
+#+LATEX: \chapter{Glossary}
+
+1. <<palestine>>*Israel-Palestine conflict*
+
+   The Israeli-Palestinian conflict has claimed tens of thousands of lives and displaced many millions of people and has its roots in a colonial act carried out more than a century ago. Read Al Jazeera's guide here: https://www.aljazeera.com/news/2023/10/9/whats-the-israel-palestine-conflict-about-a-simple-guide.
+
+2. <<javascript>>*JavaScript*
+
+   JavaScript is a versatile, high-level programming language widely used in web development. It enables dynamic and interactive elements on websites by allowing developers to create scripts that run in the user's web browser or on a server. JavaScript is integral to modern web applications, facilitating tasks such as form validation, content updates, and complex animations.
+
+3. <<python>>*Python*
+
+   Python is a high-level, interpreted programming language known for its readability and simplicity. It is widely used for web development, data analysis, artificial intelligence, and automation.
+
+4. <<lisp>>*Lisp*
+
+   Lisp is a family of programming languages known for its symbolic expression handling and its use of linked lists as a fundamental data structure. It is one of the oldest high-level languages, designed for processing symbolic information and used in artificial intelligence research.
+
+5. <<elisp>>*Elisp*
+
+   Elisp (Emacs Lisp) is a dialect of the Lisp programming language used primarily for scripting and extending the Emacs text editor. It allows users to customize and automate Emacs through functions, macros, and interactive commands.
+
+6. <<emacs>>*Emacs*
+
+   Emacs is a highly customizable, extensible text editor that provides a powerful environment for text editing, coding, and managing various tasks. Known for its rich feature set and extensibility, it can be tailored to fit a wide range of user needs through Emacs Lisp (Elisp) scripting.
+
+7. <<common-lisp>>*Common Lisp*
+
+   Common Lisp is a dialect of the Lisp programming language designed to provide a robust and standardized set of features for general-purpose programming. It is known for its powerful macro system, dynamic typing, and extensive standard library.
+
+8. <<bash>>*Bash*
+
+   Bash (Bourne Again Shell) is a Unix shell and command language used for scripting and command-line operations. It is widely employed for automating tasks, managing system processes, and executing commands in Unix-like operating systems.
+
+9. <<object-oriented>>*Object-oriented Programming*
+
+   Object-Oriented Programming (OOP) is a programming paradigm that organizes software design around data, or "objects," rather than functions and logic. Objects are instances of classes, which can encapsulate data and behavior, promoting modularity and reuse.
+
+10. <<structured-programming>>*Structured Programming*
+
+    Structured Programming is a programming paradigm aimed at improving code clarity and efficiency by using a set of principles and constructs to control the flow of execution. It emphasizes breaking down a program into smaller, manageable, and logically organized sections.
+
+11. <<predicate-function>>*Predicate Function*
+
+    A predicate function is a function that returns a Boolean value (~true~ or ~false~) based on a condition or test applied to its input. It is often used to evaluate whether a certain property holds or a condition is met.
+
+12. <<immutable>>*Immutable*
+
+    Immutable refers to an object whose state cannot be modified after it has been created. Once an immutable object is instantiated, its data cannot be changed, ensuring consistency and reliability in operations.
+
+13. <<clisp>>*Clisp*
+
+    CLISP is an implementation of the Common Lisp programming language. It is known for its portability, adherence to the Common Lisp standard, and its use as both an interactive programming environment and a compiler.
+
+14. <<sbcl>>*SBCL*
+
+    SBCL (Steel Bank Common Lisp) is an open-source implementation of the Common Lisp programming language. It is known for its performance, providing a highly optimized compiler, and a robust runtime environment.
+
+15. <<windows>>*Windows*
+
+    Windows is a series of operating systems developed by Microsoft. It provides a graphical user interface (GUI), multitasking capabilities, and support for a wide range of applications and hardware.
+
+16. <<linux>>*Linux*
+
+    Linux is an open-source operating system kernel that serves as the foundation for a wide range of operating systems known as Linux distributions. It is renowned for its stability, security, and flexibility.
+
+17. <<unix-like>>*UNIX-like*
+
+    UNIX-like refers to operating systems and software that are designed to behave similarly to the original UNIX operating system, adhering to its principles and providing similar functionalities, though they are not directly derived from the original UNIX source code.
+
+18. <<macos>>*macOS*
+
+    macOS is the operating system developed by Apple Inc. for Macintosh computers. It provides a graphical user interface (GUI) and is built on a UNIX-based foundation, offering stability, security, and a range of features tailored for Apple's hardware.
+
+19. <<package-manager>>*Package Manager*
+
+    A package manager is a software tool that automates the process of installing, updating, configuring, and removing software packages in an operating system or programming environment. It manages dependencies and ensures that software is installed correctly and consistently.
+
+20. <<compiler>>*Compiler*
+
+    A compiler is a software tool that translates source code written in a high-level programming language into machine code or an intermediate code that a computer's processor can execute directly. This translation process allows the program to run efficiently on the target hardware.
+
+21. <<interpreter>>*Interpreter*
+
+    An interpreter is a software tool that executes source code directly, translating it into machine code or an intermediate representation line-by-line or statement-by-statement, without producing a separate executable file. It processes and runs code in real-time.
+
+22. <<ide>>*IDE*
+
+    An Integrated Development Environment (IDE) is a comprehensive software application that provides a suite of tools and features to facilitate software development. It integrates various components needed for coding, such as a code editor, compiler or interpreter, debugger, and build automation tools, into a single interface.
+
+23. <<text-editor>>*Text-editor*
+
+    A text editor is a software application used for creating, editing, and managing plain text files. It provides a basic interface for inputting and manipulating text without the additional features of a full-fledged integrated development environment (IDE).
+
+24. <<terminal-emulator>>*Terminal Emulator*
+
+    A terminal emulator is a software application that emulates a video terminal within a graphical user interface (GUI) or as a standalone application. It allows users to interact with the operating system through a command-line interface (CLI), executing commands and running scripts.
+
+25. <<binary>>*Binary*
+
+    An executable binary is a file that contains machine code or bytecode capable of being directly executed by a computer's processor or a virtual machine. Unlike source code, which must be compiled or interpreted, an executable binary is in a format that the operating system can run without further translation.
+
+26. <<zsh-shell>>*Zsh*
+
+    Zsh (Z shell) is a powerful and highly configurable Unix shell that serves as both a command interpreter and a scripting language. It is known for its enhanced features, improved usability, and customization capabilities compared to other shells like Bash.
+
+27. <<fish-shell>>*Fish*
+
+    Fish (Friendly Interactive SHell) is a modern Unix shell designed for user-friendliness and ease of use. It provides features that enhance the command-line experience, including advanced autocompletion, syntax highlighting, and a user-friendly scripting language.
+
+28. <<type-safe>>*Type-safe*
+
+    A programming language or system is considered type-safe if it enforces strict rules to ensure that operations are performed on compatible data types, reducing the likelihood of type-related errors. Type safety helps prevent errors such as type mismatches, unintended type conversions, and operations on invalid types.
+
+29. <<c>>*C*
+
+    C is a high-level, general-purpose programming language that provides low-level access to memory and system resources. It was developed in the early 1970s by Dennis Ritchie at Bell Labs and is known for its efficiency and flexibility. C is widely used for system programming, developing operating systems, embedded systems, and applications requiring high performance.
+
+30. <<c++>>*C++*
+
+    C++ is a high-level, statically-typed programming language that extends C with object-oriented features, allowing for more complex data abstractions and code organization. Developed by Bjarne Stroustrup in the early 1980s, C++ combines the efficiency and low-level access of C with additional features such as classes, inheritance, and polymorphism.
+
+31. <<function>>*Function*
+
+    A function is a self-contained block of code designed to perform a specific task. It can take inputs (parameters), process them, and return an output (result). Functions help in organizing code, promoting reusability, and simplifying complex problems by breaking them down into smaller, manageable pieces.
+
+32. <<parameters>>*Parameters*
+
+    Parameters are variables defined in the function's declaration or definition that allow the function to accept inputs. They serve as placeholders for values that are passed to the function when it is called, enabling the function to operate on different data and produce varying results based on the inputs.
+
+33. <<linked-list>>*Linked-list*
+
+    A linked list is a data structure consisting of a sequence of elements called nodes, where each node contains a data value and a reference (or pointer) to the next node in the sequence. It provides a way to organize and store data in a linear order while allowing efficient insertion and deletion of elements.
+
+34. <<pseudo-code>>*Pseudo-code**
+
+    Pseudo code is a high-level, informal representation of an algorithm or program logic. It uses a simplified syntax that resembles programming languages but is designed to be easily understood by humans. Pseudo code focuses on the logic and flow of the algorithm rather than the specific syntax of any programming language.
+
+35. <<official-documentation>>*Official Documentation*
+
+    The official documentation for Common Lisp is provided by the ANSI (American National Standards Institute) and is detailed in the ANSI Common Lisp Standard. There are also several comprehensive online resources and books that provide extensive information about Common Lisp: https://common-lisp.net/documentation.
+
+36. <<stdin>>*Stdin*
+
+    stdin (standard input) is a default data stream in computing that receives input data from the user or other sources. It is one of the standard streams used for input/output operations in many programming environments.
+
+37. <<carriage-return>>*Carriage-return*
+
+    A carriage return (CR) is a control character used in computing to move the cursor or print head to the beginning of a line. It is typically represented by the ASCII code 13 (hexadecimal 0x0D) and is often used in conjunction with other control characters to manage text formatting and output.
+
+38. <<variable>>*Variable*
+
+    A variable is a symbolic name associated with a value or data that can change during the execution of a program. Variables are fundamental elements in programming that allow for the storage and manipulation of data.
+
+39. <<lexical-scope>>*Lexical scope*
+
+    Lexical scope (also known as static scope) is a scoping rule used in programming languages where the visibility of variables is determined by their physical location within the source code. In lexical scoping, the scope of a variable is determined at compile-time based on the program's structure, specifically where the variable is declared in relation to other blocks of code.
+
+40. <<rickrolling>>*Rickrolling*
+
+    Rickrolling is an Internet prank and meme involving an unexpected appearance of the music video for the 1987 Rick Astley song "Never Gonna Give You Up." The prank is a bait-and-switch: a person provides a hyperlink they claim is relevant to the topic at hand, but actually redirects the viewer to Astley's music video.
+
+41. <<arrays>>*Arrays*
+
+    An array is a data structure used to store a collection of elements, each identified by an index or key. Arrays can hold elements of the same type and provide a way to access these elements efficiently.
+
+42. <<hash-tables>>*Hash-tables*
+
+    A hash table (or hash map) is a data structure that stores key-value pairs and allows for efficient data retrieval based on keys. It uses a hash function to compute an index into an array of buckets or slots, where the value associated with the key is stored.
+
+43. <<structures>>*Structures*
+
+    A structure (often abbreviated as "struct") is a composite data type in programming that groups together variables (called members or fields) under a single name. Each member can be of a different data type. Structures are used to model and organize data that logically belongs together.
+
+44. <<repl>>*REPL*
+
+    REPL stands for Read-Eval-Print Loop. It is an interactive programming environment that reads user input, evaluates the input, prints the result, and then loops back to read the next input. REPLs are commonly used in development environments for rapid testing and debugging.
+
+45. <<quicklisp>>*Quicklisp*
+
+    Quicklisp is a package manager for Common Lisp, designed to simplify the process of installing, managing, and loading Common Lisp libraries and dependencies. It provides a streamlined way to handle libraries, making it easier for developers to use and distribute Lisp code.
+
+46. <<npm>>*NPM*
+
+    NPM (Node Package Manager) is the default package manager for the JavaScript runtime environment Node.js. It facilitates the installation, management, and sharing of JavaScript packages and modules, making it a crucial tool for modern JavaScript and Node.js development.
+
+47. <<cl-cookbook>>*CL Cookbook*
+
+    The CL Cookbook is a resource or collection of practical examples, recipes, and solutions for Common Lisp programming. It provides code snippets, tutorials, and best practices to help developers solve common problems and implement functionality efficiently in Common Lisp. You may can refer it here: https://lispcookbook.github.io/cl-cookbook.
+
+48. <<land-of-lisp>>*Land of Lisp*
+
+    "Land of Lisp" is a book by Conrad Barski that introduces readers to the Common Lisp programming language in a fun and engaging manner. It combines programming concepts with a unique narrative style and illustrations, aiming to make learning Lisp enjoyable and accessible. You may refer it here: http://landoflisp.com.
+
+#+LATEX: \chapter{Bibliography}
+
+1. [[https://pixabay.com/users/darkmoon_art-1664300][Dorothe]] (2019) /Trees, Path, Stars/. Available at:
+   https://pixabay.com/photos/trees-path-stars-galaxy-starry-sky-4291517 (Accessed: July 27 2024)
+
+2. [[https://pixabay.com/users/jackmac34-483877][jackmac34-483877]] (2017) /Mathematics, Schoolboy, Calculation/. Available at: [[https://pixabay.com/illustrations/man-head-arrows-multitasking-6340117]] (Accessed: July 27 2024)
+
+3. [[https://pixabay.com/users/lilo401-15501636][LIN LONG]] (2021) /Keyboard, Workbench, Desktop/. Available at:
+   https://pixabay.com/photos/keyboard-workbench-desktop-6853391 (Accessed: July 27 2024)
+
+4. [[https://pixabay.com/users/stux-12364][Stefan Schweihofer]] (2013) /Acrylic paints, To dye, Basic colors/. Available at:
+   https://pixabay.com/photos/acrylic-paints-to-dye-basic-colors-174638 (Accessed: July 27 2024)
+
+5. [[https://pixabay.com/users/fsbraun-1348994][fsbraun]] (2016) /Go, Strategy, Tactics/. Available at:
+   https://pixabay.com/photos/go-strategy-tactics-think-rules-1218797 (Accessed: July 27 2024)
+
+6. [[https://pixabay.com/users/digflavio-4547585][Flávio Digflavio]] (2017) /King, Chess, Game/. Available at:
+   https://pixabay.com/photos/king-chess-game-intelligence-2095834 (Accessed: July 27 2024)
+
+7. [[https://pixabay.com/users/pexels-2286921][Pexels]] (2017) /Hands, Laptop, Working/. Available at:
+   https://pixabay.com/photos/hands-laptop-working-businessman-2178566 (Accessed: July 27 2024)
+
+8. [[https://pixabay.com/users/jenikmichal-3299815][Michal Jeník]] (2017) /Books, Library, Alphabet/. Available at:
+   https://pixabay.com/photos/books-library-alphabet-reading-2253569 (Accessed: July 27 2024)
+
+9. [[https://pixabay.com/users/pexels-2286921][Pexels]] (2016) /Arts and crafts, Flower background, Blanket/. Available at:
+   https://pixabay.com/photos/arts-and-crafts-blanket-book-box-1846308 (Accessed: July 27 2024)
+
+10. [[https://pixabay.com/users/goumbik-3752482][Lukas]] (2017) /Busy, Home, Desk/. Available at:
+    https://pixabay.com/photos/busy-home-desk-paper-laptop-view-1972169 (Accessed: July 27 2024)
+
+11. [[https://pixabay.com/users/iqbalstock-12845379][Iqbal Nuril Anwar]] (2019) /Waterfall, Indonesia, Malang/. Available at:
+    https://pixabay.com/photos/waterfall-indonesia-malang-java-4297449 (Accessed: July 27 2024)
+
+# Local Variables:
+# eval: (visual-line-mode)
+# End:
