@@ -5,6 +5,9 @@ deps:
 ifeq ($(shell command -v pandoc),)
 	@echo "'Pandoc' is required!"
 endif
+ifeq ($(shell command -v pdflatex),)
+	@echo "'texlive' is required!"
+endif
 ifeq ($(shell command -v xcf2png),)
 	@echo "'xcftools' is required!"
 endif
