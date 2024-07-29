@@ -8,6 +8,7 @@ To learn about the platforms you can find this book on, use one of these univers
 Otherwise, this book can be found on the following platforms at this point:
 
 1. [Google Play](https://play.google.com/store/books/details?id=96j-EAAAQBAJ)
+2. [Gumroad](https://myterminal.gumroad.com/l/the-list-whisperer)
 
 ## Building the book
 
