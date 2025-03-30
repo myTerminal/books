@@ -74,7 +74,7 @@ Thanks to the other people I did not mention here (because there are a lot of th
 
 Last but not least, all thanks to the Almighty for making me human and enabling me to share and be grateful for his gifts.
 
-Also, I would like to remind you and myself about the millions of people being oppressed[[palestine][[/1/]]] right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
+Also, I would like to remind you and myself about the millions of people being oppressed right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
 
 \vspace*{\fill}
 
@@ -1553,195 +1553,191 @@ Hopefully, this book should have given you enough of an insight into the magic o
 
 #+LATEX: \chapter{Glossary}
 
-1. <<palestine>>*Israel-Palestine conflict*
-
-   The Israeli-Palestinian conflict has claimed tens of thousands of lives and displaced many millions of people and has its roots in a colonial act carried out more than a century ago. Read Al Jazeera's guide here: https://www.aljazeera.com/news/2023/10/9/whats-the-israel-palestine-conflict-about-a-simple-guide.
-
-2. <<javascript>>*JavaScript*
+1. <<javascript>>*JavaScript*
 
    JavaScript is a versatile, high-level programming language widely used in web development. It enables dynamic and interactive elements on websites by allowing developers to create scripts that run in the user's web browser or on a server. JavaScript is integral to modern web applications, facilitating tasks such as form validation, content updates, and complex animations.
 
-3. <<python>>*Python*
+2. <<python>>*Python*
 
    Python is a high-level, interpreted programming language known for its readability and simplicity. It is widely used for web development, data analysis, artificial intelligence, and automation.
 
-4. <<lisp>>*Lisp*
+3. <<lisp>>*Lisp*
 
    Lisp is a family of programming languages known for its symbolic expression handling and its use of linked lists as a fundamental data structure. It is one of the oldest high-level languages, designed for processing symbolic information and used in artificial intelligence research.
 
-5. <<elisp>>*Elisp*
+4. <<elisp>>*Elisp*
 
    Elisp (Emacs Lisp) is a dialect of the Lisp programming language used primarily for scripting and extending the Emacs text editor. It allows users to customize and automate Emacs through functions, macros, and interactive commands.
 
-6. <<emacs>>*Emacs*
+5. <<emacs>>*Emacs*
 
    Emacs is a highly customizable, extensible text editor that provides a powerful environment for text editing, coding, and managing various tasks. Known for its rich feature set and extensibility, it can be tailored to fit a wide range of user needs through Emacs Lisp (Elisp) scripting.
 
-7. <<common-lisp>>*Common Lisp*
+6. <<common-lisp>>*Common Lisp*
 
    Common Lisp is a dialect of the Lisp programming language designed to provide a robust and standardized set of features for general-purpose programming. It is known for its powerful macro system, dynamic typing, and extensive standard library.
 
-8. <<bash>>*Bash*
+7. <<bash>>*Bash*
 
    Bash (Bourne Again Shell) is a Unix shell and command language used for scripting and command-line operations. It is widely employed for automating tasks, managing system processes, and executing commands in Unix-like operating systems.
 
-9. <<object-oriented>>*Object-oriented Programming*
+8. <<object-oriented>>*Object-oriented Programming*
 
    Object-Oriented Programming (OOP) is a programming paradigm that organizes software design around data, or "objects," rather than functions and logic. Objects are instances of classes, which can encapsulate data and behavior, promoting modularity and reuse.
 
-10. <<structured-programming>>*Structured Programming*
+9. <<structured-programming>>*Structured Programming*
 
-    Structured Programming is a programming paradigm aimed at improving code clarity and efficiency by using a set of principles and constructs to control the flow of execution. It emphasizes breaking down a program into smaller, manageable, and logically organized sections.
+   Structured Programming is a programming paradigm aimed at improving code clarity and efficiency by using a set of principles and constructs to control the flow of execution. It emphasizes breaking down a program into smaller, manageable, and logically organized sections.
 
-11. <<predicate-function>>*Predicate Function*
+10. <<predicate-function>>*Predicate Function*
 
     A predicate function is a function that returns a Boolean value (~true~ or ~false~) based on a condition or test applied to its input. It is often used to evaluate whether a certain property holds or a condition is met.
 
-12. <<immutable>>*Immutable*
+11. <<immutable>>*Immutable*
 
     Immutable refers to an object whose state cannot be modified after it has been created. Once an immutable object is instantiated, its data cannot be changed, ensuring consistency and reliability in operations.
 
-13. <<clisp>>*Clisp*
+12. <<clisp>>*Clisp*
 
     CLISP is an implementation of the Common Lisp programming language. It is known for its portability, adherence to the Common Lisp standard, and its use as both an interactive programming environment and a compiler.
 
-14. <<sbcl>>*SBCL*
+13. <<sbcl>>*SBCL*
 
     SBCL (Steel Bank Common Lisp) is an open-source implementation of the Common Lisp programming language. It is known for its performance, providing a highly optimized compiler, and a robust runtime environment.
 
-15. <<windows>>*Windows*
+14. <<windows>>*Windows*
 
     Windows is a series of operating systems developed by Microsoft. It provides a graphical user interface (GUI), multitasking capabilities, and support for a wide range of applications and hardware.
 
-16. <<linux>>*Linux*
+15. <<linux>>*Linux*
 
     Linux is an open-source operating system kernel that serves as the foundation for a wide range of operating systems known as Linux distributions. It is renowned for its stability, security, and flexibility.
 
-17. <<unix-like>>*UNIX-like*
+16. <<unix-like>>*UNIX-like*
 
     UNIX-like refers to operating systems and software that are designed to behave similarly to the original UNIX operating system, adhering to its principles and providing similar functionalities, though they are not directly derived from the original UNIX source code.
 
-18. <<macos>>*macOS*
+17. <<macos>>*macOS*
 
     macOS is the operating system developed by Apple Inc. for Macintosh computers. It provides a graphical user interface (GUI) and is built on a UNIX-based foundation, offering stability, security, and a range of features tailored for Apple's hardware.
 
-19. <<package-manager>>*Package Manager*
+18. <<package-manager>>*Package Manager*
 
     A package manager is a software tool that automates the process of installing, updating, configuring, and removing software packages in an operating system or programming environment. It manages dependencies and ensures that software is installed correctly and consistently.
 
-20. <<compiler>>*Compiler*
+19. <<compiler>>*Compiler*
 
     A compiler is a software tool that translates source code written in a high-level programming language into machine code or an intermediate code that a computer's processor can execute directly. This translation process allows the program to run efficiently on the target hardware.
 
-21. <<interpreter>>*Interpreter*
+20. <<interpreter>>*Interpreter*
 
     An interpreter is a software tool that executes source code directly, translating it into machine code or an intermediate representation line-by-line or statement-by-statement, without producing a separate executable file. It processes and runs code in real-time.
 
-22. <<ide>>*IDE*
+21. <<ide>>*IDE*
 
     An Integrated Development Environment (IDE) is a comprehensive software application that provides a suite of tools and features to facilitate software development. It integrates various components needed for coding, such as a code editor, compiler or interpreter, debugger, and build automation tools, into a single interface.
 
-23. <<text-editor>>*Text-editor*
+22. <<text-editor>>*Text-editor*
 
     A text editor is a software application used for creating, editing, and managing plain text files. It provides a basic interface for inputting and manipulating text without the additional features of a full-fledged integrated development environment (IDE).
 
-24. <<terminal-emulator>>*Terminal Emulator*
+23. <<terminal-emulator>>*Terminal Emulator*
 
     A terminal emulator is a software application that emulates a video terminal within a graphical user interface (GUI) or as a standalone application. It allows users to interact with the operating system through a command-line interface (CLI), executing commands and running scripts.
 
-25. <<binary>>*Binary*
+24. <<binary>>*Binary*
 
     An executable binary is a file that contains machine code or bytecode capable of being directly executed by a computer's processor or a virtual machine. Unlike source code, which must be compiled or interpreted, an executable binary is in a format that the operating system can run without further translation.
 
-26. <<zsh-shell>>*Zsh*
+25. <<zsh-shell>>*Zsh*
 
     Zsh (Z shell) is a powerful and highly configurable Unix shell that serves as both a command interpreter and a scripting language. It is known for its enhanced features, improved usability, and customization capabilities compared to other shells like Bash.
 
-27. <<fish-shell>>*Fish*
+26. <<fish-shell>>*Fish*
 
     Fish (Friendly Interactive SHell) is a modern Unix shell designed for user-friendliness and ease of use. It provides features that enhance the command-line experience, including advanced autocompletion, syntax highlighting, and a user-friendly scripting language.
 
-28. <<type-safe>>*Type-safe*
+27. <<type-safe>>*Type-safe*
 
     A programming language or system is considered type-safe if it enforces strict rules to ensure that operations are performed on compatible data types, reducing the likelihood of type-related errors. Type safety helps prevent errors such as type mismatches, unintended type conversions, and operations on invalid types.
 
-29. <<c>>*C*
+28. <<c>>*C*
 
     C is a high-level, general-purpose programming language that provides low-level access to memory and system resources. It was developed in the early 1970s by Dennis Ritchie at Bell Labs and is known for its efficiency and flexibility. C is widely used for system programming, developing operating systems, embedded systems, and applications requiring high performance.
 
-30. <<c++>>*C++*
+29. <<c++>>*C++*
 
     C++ is a high-level, statically-typed programming language that extends C with object-oriented features, allowing for more complex data abstractions and code organization. Developed by Bjarne Stroustrup in the early 1980s, C++ combines the efficiency and low-level access of C with additional features such as classes, inheritance, and polymorphism.
 
-31. <<function>>*Function*
+30. <<function>>*Function*
 
     A function is a self-contained block of code designed to perform a specific task. It can take inputs (parameters), process them, and return an output (result). Functions help in organizing code, promoting reusability, and simplifying complex problems by breaking them down into smaller, manageable pieces.
 
-32. <<parameters>>*Parameters*
+31. <<parameters>>*Parameters*
 
     Parameters are variables defined in the function's declaration or definition that allow the function to accept inputs. They serve as placeholders for values that are passed to the function when it is called, enabling the function to operate on different data and produce varying results based on the inputs.
 
-33. <<linked-list>>*Linked-list*
+32. <<linked-list>>*Linked-list*
 
     A linked list is a data structure consisting of a sequence of elements called nodes, where each node contains a data value and a reference (or pointer) to the next node in the sequence. It provides a way to organize and store data in a linear order while allowing efficient insertion and deletion of elements.
 
-34. <<pseudo-code>>*Pseudo-code**
+33. <<pseudo-code>>*Pseudo-code**
 
     Pseudo code is a high-level, informal representation of an algorithm or program logic. It uses a simplified syntax that resembles programming languages but is designed to be easily understood by humans. Pseudo code focuses on the logic and flow of the algorithm rather than the specific syntax of any programming language.
 
-35. <<official-documentation>>*Official Documentation*
+34. <<official-documentation>>*Official Documentation*
 
     The official documentation for Common Lisp is provided by the ANSI (American National Standards Institute) and is detailed in the ANSI Common Lisp Standard. There are also several comprehensive online resources and books that provide extensive information about Common Lisp: https://common-lisp.net/documentation.
 
-36. <<stdin>>*Stdin*
+35. <<stdin>>*Stdin*
 
     stdin (standard input) is a default data stream in computing that receives input data from the user or other sources. It is one of the standard streams used for input/output operations in many programming environments.
 
-37. <<carriage-return>>*Carriage-return*
+36. <<carriage-return>>*Carriage-return*
 
     A carriage return (CR) is a control character used in computing to move the cursor or print head to the beginning of a line. It is typically represented by the ASCII code 13 (hexadecimal 0x0D) and is often used in conjunction with other control characters to manage text formatting and output.
 
-38. <<variable>>*Variable*
+37. <<variable>>*Variable*
 
     A variable is a symbolic name associated with a value or data that can change during the execution of a program. Variables are fundamental elements in programming that allow for the storage and manipulation of data.
 
-39. <<lexical-scope>>*Lexical scope*
+38. <<lexical-scope>>*Lexical scope*
 
     Lexical scope (also known as static scope) is a scoping rule used in programming languages where the visibility of variables is determined by their physical location within the source code. In lexical scoping, the scope of a variable is determined at compile-time based on the program's structure, specifically where the variable is declared in relation to other blocks of code.
 
-40. <<rickrolling>>*Rickrolling*
+39. <<rickrolling>>*Rickrolling*
 
     Rickrolling is an Internet prank and meme involving an unexpected appearance of the music video for the 1987 Rick Astley song "Never Gonna Give You Up." The prank is a bait-and-switch: a person provides a hyperlink they claim is relevant to the topic at hand, but actually redirects the viewer to Astley's music video.
 
-41. <<arrays>>*Arrays*
+40. <<arrays>>*Arrays*
 
     An array is a data structure used to store a collection of elements, each identified by an index or key. Arrays can hold elements of the same type and provide a way to access these elements efficiently.
 
-42. <<hash-tables>>*Hash-tables*
+41. <<hash-tables>>*Hash-tables*
 
     A hash table (or hash map) is a data structure that stores key-value pairs and allows for efficient data retrieval based on keys. It uses a hash function to compute an index into an array of buckets or slots, where the value associated with the key is stored.
 
-43. <<structures>>*Structures*
+42. <<structures>>*Structures*
 
     A structure (often abbreviated as "struct") is a composite data type in programming that groups together variables (called members or fields) under a single name. Each member can be of a different data type. Structures are used to model and organize data that logically belongs together.
 
-44. <<repl>>*REPL*
+43. <<repl>>*REPL*
 
     REPL stands for Read-Eval-Print Loop. It is an interactive programming environment that reads user input, evaluates the input, prints the result, and then loops back to read the next input. REPLs are commonly used in development environments for rapid testing and debugging.
 
-45. <<quicklisp>>*Quicklisp*
+44. <<quicklisp>>*Quicklisp*
 
     Quicklisp is a package manager for Common Lisp, designed to simplify the process of installing, managing, and loading Common Lisp libraries and dependencies. It provides a streamlined way to handle libraries, making it easier for developers to use and distribute Lisp code.
 
-46. <<npm>>*NPM*
+45. <<npm>>*NPM*
 
     NPM (Node Package Manager) is the default package manager for the JavaScript runtime environment Node.js. It facilitates the installation, management, and sharing of JavaScript packages and modules, making it a crucial tool for modern JavaScript and Node.js development.
 
-47. <<cl-cookbook>>*CL Cookbook*
+46. <<cl-cookbook>>*CL Cookbook*
 
     The CL Cookbook is a resource or collection of practical examples, recipes, and solutions for Common Lisp programming. It provides code snippets, tutorials, and best practices to help developers solve common problems and implement functionality efficiently in Common Lisp. You may can refer it here: https://lispcookbook.github.io/cl-cookbook.
 
-48. <<land-of-lisp>>*Land of Lisp*
+47. <<land-of-lisp>>*Land of Lisp*
 
     "Land of Lisp" is a book by Conrad Barski that introduces readers to the Common Lisp programming language in a fun and engaging manner. It combines programming concepts with a unique narrative style and illustrations, aiming to make learning Lisp enjoyable and accessible. You may refer it here: http://landoflisp.com.
 
