@@ -74,7 +74,7 @@ Thanks to the other people I did not mention here (because there are a lot of th
 
 Last but not least, all thanks to the Almighty for making me human and enabling me to share and be grateful for his gifts.
 
-Also, I would like to remind you and myself about the millions of people being oppressed[[palestine][[/1/]]] right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
+Also, I would like to remind you and myself about the millions of people being oppressed right now in the same world we live in, fighting for basic human needs like food, water, and clothing, let alone a clean and cozy place to sleep or own tools that would enable them to do what we can do right at this moment. May God protect them from the oppressor and distract the enemy in other useless worldly things, letting the innocents live a peaceful life.
 
 \vspace*{\fill}
 
@@ -341,39 +341,35 @@ So, the problem of time allocation isn’t a simple one to solve. My current app
    
 #+LATEX: \chapter{Glossary}
 
-1. <<palestine>>*Israel-Palestine conflict*
-
-   The Israeli-Palestinian conflict has claimed tens of thousands of lives and displaced many millions of people and has its roots in a colonial act carried out more than a century ago. Read Al Jazeera's guide here: https://www.aljazeera.com/news/2023/10/9/whats-the-israel-palestine-conflict-about-a-simple-guide.
-
-2. <<previous-writing>>*How to Stay Sane with Your Tasks*
+1. <<previous-writing>>*How to Stay Sane with Your Tasks*
 
    This was my first book that I wrote to share a few of my experiences around planning and productivity and I hope to be able to enlighten you such that your workflow gains at least a thing or two and help you navigate your life a little better. You may find the book here: [[https://books2read.com/how-to-stay-sane-with-your-tasks]].
 
-3. <<slack>>*Slack*
+2. <<slack>>*Slack*
 
    Slack is a collaboration tool designed for teams and businesses to communicate effectively and efficiently. It provides a platform for real-time messaging, file sharing, and collaboration, with a focus on improving productivity and streamlining communication within organizations.
 
-4. <<microsoft-teams>>*Microsoft Teams*
+3. <<microsoft-teams>>*Microsoft Teams*
 
    Microsoft Teams is a collaborative communication platform that integrates chat, video meetings, file storage, and app integration within the Microsoft 365 ecosystem.
 
-5. <<discord>>*Discord*
+4. <<discord>>*Discord*
 
    Discord is a versatile communication platform primarily used by gamers, offering features such as text and voice chat, server organization, and integration with various gaming-related services.
 
-6. <<reddit>>*Reddit*
+5. <<reddit>>*Reddit*
 
    Reddit is a social media platform characterized by user-generated content, discussion forums (subreddits), and voting mechanisms, covering a wide range of topics and interests.
 
-7. <<twitter>>*Twitter*
+6. <<twitter>>*Twitter*
 
    Twitter is a microblogging platform for sharing short messages (tweets) of up to 280 characters, facilitating real-time communication, news dissemination, and social networking.
 
-8. <<steam>>*Steam*
+7. <<steam>>*Steam*
 
    Steam is a digital distribution platform primarily for video games, offering a vast library of games for purchase, download, and online multiplayer gaming, as well as community features and social networking functionalities.
 
-9. <<ocd>>*OCD*
+8. <<ocd>>*OCD*
 
    Obsessive-Compulsive Disorder (OCD) is a mental health condition characterized by intrusive thoughts (obsessions) and repetitive behaviors (compulsions) aimed at reducing distress or preventing perceived harm.
 
