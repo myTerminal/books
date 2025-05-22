@@ -11,7 +11,7 @@ endif
 ifeq ($(shell command -v xcf2png),)
 	@echo "'xcftools' is required!"
 endif
-ifeq ($(shell command -v convert),)
+ifeq ($(shell command -v magick),)
 	@echo "'ImageMagick' is required!"
 endif
 ifeq ($(shell command -v gs),)
@@ -35,7 +35,7 @@ write: deps create_output_dir
 
 build_cover:
 	xcf2png cover.xcf -o /tmp/cover.png
-	convert /tmp/cover.png ./dist/00-cover.pdf
+	magick convert /tmp/cover.png ./dist/00-cover.pdf
 
 merge_into_one:
 	gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=./dist/book.pdf -f ./dist/*.pdf
